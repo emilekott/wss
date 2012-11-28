@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>.:: Ceon :: Zen Cart :: Module  :: advshipper ::.</title>
+	<style type="text/css">
+	/*<![CDATA[*/
+	@import url(../_css/inc.css.layout_styles.css);
+	@import url(../_css/inc.css.styles.css);
+	/*]]>*/
+	</style>
+	<link href="../_css/inc.css.layout_styles_print.css" type="text/css" media="print" />
+	<script src="../_javascript/inc.js.general_functions.js" type="text/javascript"></script>
+	<script src="../_javascript/inc.js.css_functions.js" type="text/javascript"></script>
+	<script src="../_javascript/inc.js.restrict_width.js" language="javascript" type="text/javascript"></script>
+</head>
+
+<body><a name="top" id="top"></a>
+
+<script language="JavaScript" type="text/javascript"> 
+<!-- 
+// Script resizes main div if client window is larger than a predefined variable
+var restrict_width = new CeonRestrictWidth(360, 900);
+// -->
+</script>
+
+<div id="grad_horiz_left">
+	<div id="grad_horiz_right">
+
+<h1 class="Title">advshipper</h1>
+<p class="TitleByLine">probably the best Zen Cart Shipping Module in the world! ...ever!</p>
+<ul class="MainMenu">
+	<li><a href="../index.html">Overview</a><span> | </span></li>
+	<li><a href="essential_info.html">Essential Info</a><span> | </span></li>
+	<li><a href="features.html">Features</a><span> | </span></li>
+	<li><a href="revision_history.html">Revision History</a><span> | </span></li>
+	<li><a href="installation.html">Installation</a><span> | </span></li>
+	<li><a href="configuration.html">Configuration</a><span> | </span></li>
+	<li><a href="upgrading.html">Upgrading</a><span> | </span></li>
+	<li><a href="faqs.html">FAQs</a><span> | </span></li>
+	<li><a href="support.html">Support</a><span> | </span></li>
+	<li><a href="known_issues.html">Known Issues</a></li>
+</ul>
+
+<h2>Product Selection</h2>
+<p>There are two main ways in which <em>products</em> can be covered by a <em>method</em>.</p>
+<ol>
+	<li>
+		<h4><em>Method</em> as a &ldquo;Fallover&rdquo;.</h4>
+		<p>If a <em>method</em> is set up to act as a &ldquo;Fallover&rdquo;, then it will apply for <strong>all <em>products</em> which don't otherwise have a <em>method</em> defined</strong>.</p>
+		<p class="Example">For Example: If a store has 26 <em>products</em>, named &lsquo;A&rsquo;-&lsquo;Z&rsquo; and the <em>product</em> named &lsquo;C&rsquo; has been selected as being covered by another <em>shipping method</em>, but no other <em>products</em> have been associated with another <em>shipping method</em>,  then this <em>method</em> will be applicable for the <em>products</em> named &lsquo;A&rsquo;, &lsquo;B&rsquo; and &lsquo;D&rsquo;-&lsquo;Z&rsquo;.</p>
+		<p>Even though a <em>method</em> can be set to be acting as a Fallover, it can still have individual <em>products</em> and/or <em>categories</em> and/or <em>manufacturers</em> specified as being applicable for it (covered by it).</p>
+		<p>The reason for this is to <strong>allow individual <em>products</em>/<em>categories</em>/<em>manufacturers</em> to have specific <em>shipping method</em>(s)</strong> set up for them but <strong>still be included by this <em>method</em></strong>.
+		<p>For Example: In the case of an online comic retail store which has a general shipping <em>method</em> that applies to all <em>products</em> on the site (as it has been configured as a Fallover <em>method</em>):
+		<p class="Example">If a 1st edition of a particular comic could be shipped either using the store's &ldquo;Standard&rdquo; <em>shipping method</em>, or via a special &ldquo;Signed For&rdquo; Courier Service, the Advanced Shipper module wouldn't see the store's &ldquo;standard&rdquo; <em>method</em> (the Fallover) as applying to/covering the 1st edition comic.
+		<br />
+		<br />This would be because the module would see that this 1st edition comic already has a specific <em>method</em> set up for it, which would be determined to be the <strong>exclusive</strong> <em>method</em> for that comic.
+		<br />
+		<br />Specifically selecting this 1st edition comic for the &ldquo;Standard&rdquo; <em>method</em> as well means that <strong>both</strong> <em>methods</em> can cover the shipping of the comic and could possibly both be presented as a <em>shipping method</em> option upon checkout.</p>
+	</li>
+	<li><h4><em>Method</em> applies for specific <em>categories</em> and/or <em>manufacturers</em> and/or <em>products</em> only.</h4>
+		<p>If a <em>method</em> is set up to apply for specific <em>categories</em> and/or <em>manufacturers</em> and/or <em>products</em> only then it can only be an option for the <em>categories</em> and/or <em>manufacturers</em> and/or <em>products</em> specified.</p>
+		<p><strong>By selecting a <em>product</em>/<em>category</em>/<em>manufacturer</em> as having this <em>method</em> apply to it, that <em>product</em>/<em>category</em> will only be able to be shipped by this <em>method</em>, unless the <em>product</em>/<em>category</em>/<em>manufacturer</em> is also specifically selected for other <em>method</em>(s) as well.</strong></p>
+	</li>
+</ol>
+
+<h4 class="UnderlinedTitle"><a name="category_selection"></a>Selecting a Category/Categories of Products</h4>
+<p>Selecting a <em>category</em>/<em>categories</em> of <em>products</em> as being applicable for a <em>method</em> is easily done.</p>
+<ul class="Steps">
+	<li>Simply use <em class="ConfigurationOption">Insert</em> to bring up the <em>&ldquo;Categories Selection&rdquo; Popup</em> and select the desired <em>category</em>/<em>categories</em> from the list.</p></li>
+</ul>
+	
+<h4 class="UnderlinedTitle"><a name="manufacturer_selection"></a>Selecting Manufacturer(s) of Products</h4>
+<p>Selecting a <em>manufacturer(s)</em> of <em>products</em> as being applicable for a <em>method</em> is easily done.</p>
+<ul class="Steps">
+	<li>Simply use <em class="ConfigurationOption">Insert</em> to bring up the <em>&ldquo;Manufacturer(s) Selection&rdquo; Popup</em> and select the desired <em>manufacturer(s)</em> from the list.</p></li>
+</ul>
+
+<h4 class="UnderlinedTitle"><a name="product_selection"></a>Selecting a Product</h4>
+<p>Selecting a specific <em>product</em> as being applicable for a <em>method</em> is also a simple matter.</p>
+<ul class="Steps">
+	<li>
+		<p>Upon using <em class="ConfigurationOption">Insert</em> to bring up the <em>&ldquo;Product Selection&rdquo; Popup</em>, a list of the store's <em>categories</em> is displayed.</p>
+	</li>
+	<li>
+		<p>Once a <em>category</em> containing <em>products</em> has been selected, a <em>product</em> from that <em>category</em> can be selected.</p>
+	</li>
+	<li>
+		<ul class="BulletedList">
+			<li>
+				<p>If the <em>product</em> has any options, a specific set of options can be selected, so that the <em>shipping method</em> will apply only if a <em>product</em> with this specific set of options/attributes is in the customer's cart. Alternatively, &ldquo;Apply For All Product Options&rdquo; can be selected, so that any set of options/attributes for this <em>product</em> will be covered by this <em>shipping method</em>.</p>
+			</li>
+			<li>
+				<p>If a <em>product</em> has no options/attributes then no further selections are required.</p>
+			</li>
+		</ul>
+	</li>
+</ul>
+
+<p class="TOCLink"><a href="configuration.html">Configuration Table Of Contents</a></p>
+
+<p class="PrevLink"><a href="configuration_method_titles.html">&lt;- Previous - Shipping Method Titles</a></p>
+<p class="NextLink"><a href="configuration_region_definition.html">Next - Region Configuration - Region Definition -&gt;</a></p>
+
+
+<p id="footer"><a href="http://ceon.net" target="_blank"><img src="../_images/ceon_button_logo.png" alt="Ceon" id="ceon_button_logo" /></a>Module &amp; Documentation &copy; Copyright 2007-2009 <a href="http://ceon.net">Ceon</a></p>
+
+	</div>
+</div>
+
+<script type="text/javascript">
+<!-- // Output resizeable div end tag
+restrict_width.outputClosingTag();
+// -->
+</script>
+
+</body>
+</html>

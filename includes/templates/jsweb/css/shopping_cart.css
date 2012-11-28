@@ -1,0 +1,43 @@
+table#cartContentsDisplay{
+border-collapse: collapse;
+text-align:left;
+width:100%;
+margin:auto;
+font-size:12px;
+
+}
+#cartSubTotal {
+background-color:#fff;
+font-size:16px;
+font-weight:bold;
+color: #990000;
+border:0;
+}
+tr.tableHeading{
+background-color:#333333;
+color:#ffffff;
+text-align:left;
+font-weight:bold;
+border: 1px solid #333333;
+border-collapse: collapse;
+}
+tr.tableHeading th{
+border: 0px solid #e2e2e2;
+border-collapse: collapse;
+font-weight:normal;
+text-align:left;
+padding:5px;
+}
+table#cartContentsDisplay td{
+border: 1px solid #e2e2e2;
+border-collapse: collapse;
+background-color:#f1f1f1;
+vertical-align:middle;
+padding:4px;
+text-align:left;
+}
+.scbutton01 {
+	padding-top:1px;
+	padding-right:1px;
+}
+

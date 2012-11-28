@@ -1,0 +1,102 @@
+body {  
+         behavior: url(includes/csshover.htc);
+} /* WinIE behavior call */
+div#nav-cat {
+	margin-top: 0em;
+	width: 213px;
+	color:#000066;
+	text-decoration: none;
+	font-size: 13px;
+	font-weight: bold;
+}
+div#nav-cat ul {
+	margin: 0em; 
+	padding: 0em; 
+	width: 100%;  
+	z-index: 1000;
+/*     line-height: 15px;*/
+	border: none;
+
+}
+/*
+div#nav-cat ul.level2 {
+	border:1px solid #000;
+}
+div#nav-cat ul.level3 {
+	border:1px solid #000;
+}
+div#nav-cat ul.level4 {
+	border:1px solid #000;
+}
+div#nav-cat ul.level5 {
+	border:1px solid #000;
+}
+div#nav-cat ul.level6 {
+	border:1px solid #000;
+}
+*/
+div#nav-cat li {
+     z-index: 10; 
+     position: relative;
+     list-style: none; 
+          padding-left:5px;
+     padding-right:5px;
+     margin: 0;
+     margin-top: 0px; /* change it to whatever space you want to put space between buttons*/
+ /*    border-bottom: 1px solid black; /* <---this line may help or hinder IE menu shifting issues. */
+ /*    background-color: #ffffff;*/ /*Sets background of Menu items that DOES NOT have sub-menu's SYSTEM WIDE!!! */
+ 	/*height:24px;*/
+line-height:31px;
+	/*padding-top:7px;*/
+		background-image:url(../images/design/nav_bg.jpg);  
+}
+div#nav-cat li li {
+    margin-left: 0em;/* This puts space between menu and sub-menu, reccomend to leave at 0 unless you have over-lapping problems. */
+ /*   background-color: #ffffff; /* sets the background of submenu ,WITHOUT submenus, when menu is HOVERED */
+} 
+div#nav-cat li:hover {/*background-color: #ff0000; color:#000066;*/ } /* sets the HOVER background of any MENU item that DOES NOT have submenu items */
+div#nav-cat li.submenu {/*background-color: #ffffff;*/} /* sets the background of any menu item that DOES have submenu items */
+div#nav-cat li.submenu:hover {/*background-color: #ff0000; color:#000066;*/ } /*sets the HOVER background of any menu item that DOES have submenu items */
+
+
+
+div#nav-cat li a {background-color: transparent; /*<---This will set the background color of the WHOLE MENU, EVERY LEVEL, SYSTEM WIDE!!! If you want different colors, DON'T CHANGE THIS!!! */
+    display: block;
+/*    padding: 0.25em 0 0.3em 0em;*/
+    text-decoration: none; 
+    width: 100%;
+	color: #fff;
+	font-weight:normal;
+	font-size:13px;
+ /* sets the font color of the menu, SYSTEM WIDE!! In order to over-ride the font colors for the menu, and have different 
+    colors for each level, such as font color changing when you hover, you need to remove any MENU colors  referred to in your
+    stylesheet.css, as they over-ride this stylesheet! (includes/templates/YOUR_TEMPLATE/css/stylesheet.css) */
+
+
+}
+div#nav-cat li a:hover {
+color:#fff;
+text-decoration:underline;
+background-color: transparent; /*<---This will set the background color of the WHOLE MENU, EVERY LEVEL, SYSTEM WIDE!!! If you want different colors, DON'T CHANGE THIS!!! */
+    display: block;
+    width: 100%;
+	font-weight:normal;
+	font-size:13px;
+}
+div#nav-cat ul ul {
+    position: absolute; 
+    top: -1px; 
+    left: 100%;
+    display: none; 
+    z-index: 1000;
+}
+
+div#nav-cat ul.level1 li.submenu:hover ul.level2, 
+div#nav-cat ul.level2 li.submenu:hover ul.level3,
+div#nav-cat ul.level3 li.submenu:hover ul.level4,
+div#nav-cat ul.level4 li.submenu:hover ul.level5,
+div#nav-cat ul.level5 li.submenu:hover ul.level6 {
+        display:block;
+}
+/*div#nav-cat ul.level3 li.submenu:hover ul.level4 { height: 200px;overflow: scroll;}*/
+

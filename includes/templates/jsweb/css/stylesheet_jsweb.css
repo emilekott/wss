@@ -1,0 +1,536 @@
+/**
+ * JSWeb CSS Stylesheet
+ *
+ * 
+ * @copyright Copyright 2007 JSWeb
+ * @version $Id: stylesheet_jsweb.css 0001 2007-06-05 16:00:00Z  ricksuffolk
+ */
+/* header css*/
+h1#indexCategoriesHeading {display:none}
+#categoryDescription p {padding-top:0px; margin-top:0px;}
+
+.headerbg01 {
+/* width:1018px;*/
+
+
+}
+#headerWrapper {
+	width:978px;
+	margin:auto;
+ 	margin-top:0px;
+	margin-bottom:0px;
+}
+.header01 {
+	width:978px;
+	background-image: url(../images/design/headerbg01.jpg);
+	background-repeat: repeat-x;
+	text-align: left;
+}
+.sc01 {
+	width:370px;
+	height:32px;
+	margin-top:12px;
+	margin-left:16px;
+	background-image: url(../images/design/basketbg.jpg);
+	background-repeat: no-repeat;	
+	text-align:right;
+	padding-right:7px;
+	padding-top:8px;	
+	color: #fff;
+	text-decoration: none;
+	font-weight:bold;
+	font-size: 11px;
+}
+span.color01 {
+	color:#4baec1;
+	text-decoration: none;
+	font-size: 11px;
+	font-weight: normal;
+}
+h2.nr01 {
+	color:#4baec1;
+	text-decoration: none;
+	text-align:right;
+	font-size: 22px;
+	font-weight: bold;
+}
+A.sclink:visited, A.sclink:link, A.sclink:active	{
+	color: #fff;
+	text-decoration: none;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform:none;
+	}
+A.sclink:hover	{
+	color: #fff;
+	text-decoration: underline;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform:none;
+
+	}
+	
+.header03 {
+	height:40px;
+	padding-left:0px;
+	background-repeat: repeat-x;
+
+}
+.header07 {
+	width:978px;
+	height:21px;
+	background-image: url(../images/design/headertabsbg2.jpg);
+	background-repeat: repeat-x;
+
+}
+.header04 {
+/*	width:106px;*/
+	height:35px;
+	margin-top:4px;
+	
+	padding-left:9px;
+	padding-right:9px;
+	line-height:25px;
+	background-image:none;
+	text-align:center;
+}
+
+
+
+.redbg01 {
+	background-image: url(../images/design/tabbg.png);
+	background-repeat: repeat-x;	
+}
+A.headerlinks01:link, A.headerlinks01:visited, A.headerlinks01:active {
+	font-weight:bold;
+	text-transform:uppercase;
+	font-size:13px;
+	font-family:Arial, Helvetica, sans-serif;
+        color: #413221;
+}
+
+.navdivide {
+    float: left;
+    margin: 1px 0px 0px 0px;
+    width: 2px;
+    height: 33px;
+    background-repeat: no-repeat;
+    background-image: url(../images/design/topnvav_divider.gif);
+}
+/* eof header css*/
+
+/* footer css*/
+.footer01 {
+    background-color: #E9E5DD;
+    padding-bottom: 20px;
+}
+.footer02 {
+	line-height:30px;		
+	text-align:center;
+	color:#fff;
+        background-image: url(/images/footer/menu.jpg);
+        background-repeat: repeat-x;
+        height: 33px;
+        line-height: 33px;
+}
+
+.footer02 ul {
+	margin:0px;
+	padding:0px;
+	list-style-type:none;
+}
+.footer02 ul li {
+	display:inline;
+}
+span.footerpad {
+	padding-right:4px;	
+	padding-left:4px;	
+}
+A.footerlinks01:link, A.footerlinks01:visited, A.footerlinks01:active {
+	color: #fff;
+	font-weight:normal;
+	font-size:11px;	
+}
+A.footerlinks01:hover {
+	color: #fff;	
+	font-weight:normal;
+	font-size:11px;	
+	text-decoration: underline;
+}
+#siteinfoLegal {
+	color: #333;
+	font-weight:normal;
+	font-size:11px;		
+}
+#siteinfoLegal a:link, #siteinfoLegal a:visited, #siteinfoLegal a:active {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333;
+	font-weight:normal;
+	font-size:11px;	
+}
+#siteinfoLegal a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333;	
+	font-weight:normal;
+	font-size:11px;	
+	text-decoration: underline;
+}
+.footbg01 {
+	width:100%;
+	margin-top:0px;
+
+}
+.footbg02 {
+
+ background-repeat:no-repeat;
+ background-position: -10px 0px;
+}
+/*eof footer css*/
+
+/* center css*/
+.cattab01 {
+	color:#FFFFFF;
+	width:208px;
+	height:24px;
+	background-image:url(../images/design/nav_bg.jpg);
+	padding-left:5px;
+	/*line-height:24px;*/
+	padding-top:7px;
+}
+.cattab02 {
+color:#FFFFFF;
+	width:208px;
+	padding-left:5px;
+	line-height:24px;
+	
+	background-image:url(../images/design/nav_bg.gif);
+}
+.cattab03 {
+	color:#FFFFFF;
+	width:208px;
+	height:24px;
+	background-image:url(../images/design/nav_bg.jpg);
+	padding-left:5px;
+	/*line-height:24px;*/
+	padding-top:7px;
+}/*
+.cattab03 a:link {
+	color:#FFFFFF;
+	width:208px;
+	height:24px;
+	background-image:url(../images/design/nav_bg.jpg);
+	padding-left:5px;
+	line-height:24px;
+	padding-top:7px;
+	
+}
+.cattab03 a:visited {
+	color:#FFFFFF;
+	width:208px;
+	height:24px;
+	background-image:url(../images/design/nav_bg.jpg);
+	padding-left:5px;
+	/*line-height:24px;
+	padding-top:7px;
+	
+}
+.cattab03 a:hover {
+
+text-decoration:underline;
+	color:#FFFFFF;
+	width:208px;
+	height:24px;
+	background-image:url(../images/design/nav_bg.jpg);
+	padding-left:5px;
+	/*line-height:24px;
+	padding-top:7px;
+	
+}
+.cattab03 a:active {
+	color:#FFFFFF;
+	width:208px;
+	height:24px;
+	background-image:url(../images/design/nav_bg.jpg);
+	padding-left:5px;
+	/*line-height:24px;
+	padding-top:7px;
+}
+*/
+A.category-top:link, A.category-top:visited, A.category-top:active {
+	color: #fff;
+	font-weight:normal;
+	font-size:13px;
+}
+A.category-top:hover {
+	color: #fff;	
+	font-weight:normal;
+	font-size:13px;	
+	text-decoration: underline;
+}
+.ban01 {
+	border:2px solid #c7c7c7;
+}
+#indexDefaultMainContent p {
+	margin:0px;
+}
+#indexDefaultpromo p {
+	margin:0px;
+}
+.centerColumn2 {
+	padding-left:0.0em;
+	padding-right:0.0em;	
+/*	padding-top:2px;*/
+}
+.centerColumn {
+
+}
+/*eof center css*/
+
+/* product listing  css*/
+.prod_table {
+	width:170px;
+	margin:auto;
+
+}
+.prod_image {
+	width:170px;
+	height:170px;
+	margin:auto;
+	padding-bottom:10px;
+	overflow:hidden;
+}
+.prod_name {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height:17px;
+	width:170px;
+	margin:auto;
+	padding:3px;
+	text-align:center;
+	overflow:hidden;
+	background-image:url(http://www.witteringsurfshop.com/images/prod_bg_img.jpg);
+	background-repeat:repeat-x;
+	border-top:#1b9cae; border-top-style:solid; border-top-width:3px;
+}
+.prod_price {
+font-family: Arial, Helvetica, sans-serif;
+	width:168px;
+	margin:auto;
+	padding-top:5px;
+	text-align: center;
+	overflow:hidden;
+	color: #333333;
+	font-weight:bold;
+	font-size:12px;	
+	text-decoration: none;	
+	line-height:15px;
+}
+A.prod_namelink:link, A.prod_namelink:visited, A.prod_namelink:active {
+	font-family:Arial, Helvetica, sans-serif;
+	color: #666;
+	padding:3px;
+	font-size:12px;	
+
+	text-decoration: none;
+}
+A.prod_namelink:hover {
+	font-family:Arial, Helvetica, sans-serif;
+	color: #36b9cb;
+	padding:3px;
+	font-size:12px;	
+}
+
+/*eof product listing css*/
+
+#checkoutPayment, .ccinfo, .termsdescription, .inputLabelPayment, .important, label.inputLabelPayment, .ws, .centerColumn, #productDescription, .prod_descr, .information, #checkoutPayment p {
+	white-space:normal;
+}
+.rowOdd {
+	background-color: #E8E8E8;
+	height: 1.5em;
+	vertical-align: top;
+	}
+
+.rowEven {
+	background-color:#f1f1f1;
+	height: 1.5em;
+	vertical-align: top;
+	}
+#checkoutShipping form, #checkoutShipping input, #checkoutPayment form, #checkoutPayment input {
+	margin:0px;
+	padding:0px;
+}
+p {
+	padding:0;
+	margin:0;
+}
+#manufacturersContent {
+text-align:center;
+	background-color:#000;
+	border:#000000;
+	border:solid;
+	border-width:1px;
+
+}
+#manufacturersContent a:hover {
+text-align:center;
+	background-color:#000;
+	text-decoration:underline;
+}
+
+#showmanu {
+	display:none;
+		border:#000000;
+	border:solid;
+	border-width:1px;
+}
+#showmanu:hover {
+	display:none;
+		text-decoration:none;
+}
+.cycle_banner:hover {
+cursor:pointer;
+}
+.pics { /*height: 245px; 
+/*width: 492px;*/height: 387px;
+width:775px; padding:0; margin:0; overflow: hidden }
+.pics img { /*height: 245px; /*width: 492px;*/ top:0; left:0; cursor:pointer;}
+/*select option:hover {
+	text-decoration:underline;
+	cursor:pointer;
+}*/
+.centerColumn2 {
+	padding-left:0.0em;
+	padding-right:0.0em;
+	padding-bottom:0.8em;	
+}
+#search01 {
+  	width:116px;
+	height:27px;
+	margin-top:5px;
+        margin-left: 9px;
+/*	background-image: url(../images/design/searchbg01.jpg);*/
+	background-image: url(../images/design/searchbg01.png);
+}
+#search02 {
+  	width:78px;
+	height:20px;
+	margin-top:5px;
+}
+#search01 form, #search01 input, #search02 form, #search02 input {
+	padding:0px;
+	margin:0px;
+	
+}
+.sideBoxContent2 {
+	margin-bottom:0.4em;
+}
+#showmanu a:hover, #showmanua:hover, #showmanu a:hover, #showmanu a:hover {
+	text-decoration:none;
+}
+#showmanu select:hover {
+	text-decoration:none;
+}
+.headpics {
+	width:100%;
+	background-color:#fff;
+}
+.manu_desc {
+	padding-left:5px;
+}
+#viewallbr {
+	width:206px;
+	padding-left:5px;
+	height:20px;
+	line-height:20px;
+	background-color:#2895b2;
+	background-image:url(https://witteringsurfshop.com/images/bra_bg.jpg);
+	background-repeat:repeat-x;
+	border-top:1px solid #acd4e0;
+
+}
+A#viewallbrlink:link, A#viewallbrlink:visited, A#viewallbrlink:active {
+	color: #fff;
+	font-size:11px;	
+	text-decoration: none;
+	width:100%;
+	height:100%;
+	background-color:#2895b2;
+	display:block;
+	text-align:left;
+	background-image:url(https://witteringsurfshop.com/images/bra_bg.jpg);
+	background-repeat:repeat-x;
+}
+A#viewallbrlink:hover {
+	color: #fff;
+	font-size:11px;	
+	text-decoration:underline;
+	background-color:#2895b2;
+	text-align:left;
+}
+
+
+
+
+#salebr {
+	width:210px;
+	padding-left:3px;
+	height:26px;
+	line-height:26px;
+	background-image:url(https://witteringsurfshop.com/images/sale_bg.jpg);
+	background-repeat:repeat-x;
+	border-top:0px solid #bc0404;
+	margin-bottom:5px;
+	color:#FFFFFF;
+	font-weight:bold;
+
+}
+A#salebrlink:link, A#salebrlink:visited, A#salebrlink:active {
+	color: #fff;
+	font-size:11px;	
+	text-decoration: none;
+	width:100%;
+	height:100%;
+	display:block;
+	text-align:left;
+	font-weight:bold;
+}
+A#salelinkbr:hover {
+	color: #fff;
+	font-size:11px;	
+	text-decoration:underline;
+	text-align:left;
+	font-weight:bold;
+}
+
+
+
+#newbr {
+	width:206px;
+	padding-left:3px;
+	height:20px;
+	line-height:19px;
+	border-bottom:1px dotted #666;
+	background-color: #D3D3D3;
+	color: #333333;
+	display:block;
+	font-weight:bold;
+
+}
+A#newbrlink:link, A#newbrlink:visited, A#newbrlink:active {
+	color: #fff;
+	font-size:11px;	
+	text-decoration: none;
+	width:100%;
+	height:100%;
+	display:block;
+	text-align:left;
+	font-weight:bold;
+}
+A#newlinkbr:hover {
+	color: #fff;
+	font-size:11px;	
+	text-decoration:underline;
+	text-align:left;
+	font-weight:bold;
+}

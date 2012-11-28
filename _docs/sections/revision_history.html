@@ -1,0 +1,388 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>.:: Ceon :: Zen Cart :: Module  :: advshipper ::.</title>
+	<style type="text/css">
+	/*<![CDATA[*/
+	@import url(../_css/inc.css.layout_styles.css);
+	@import url(../_css/inc.css.styles.css);
+	/*]]>*/
+	</style>
+	<link href="../_css/inc.css.layout_styles_print.css" type="text/css" media="print" />
+	<script src="../_javascript/inc.js.general_functions.js" type="text/javascript"></script>
+	<script src="../_javascript/inc.js.css_functions.js" type="text/javascript"></script>
+	<script src="../_javascript/inc.js.restrict_width.js" language="javascript" type="text/javascript"></script>
+</head>
+
+<body><a name="top" id="top"></a>
+
+<script language="JavaScript" type="text/javascript"> 
+<!-- 
+// Script resizes main div if client window is larger than a predefined variable
+var restrict_width = new CeonRestrictWidth(360, 900);
+// -->
+</script>
+
+<div id="grad_horiz_left">
+	<div id="grad_horiz_right">
+
+<h1 class="Title">advshipper</h1>
+<p class="TitleByLine">probably the best Zen Cart Shipping Module in the world! ...ever!</p>
+<ul class="MainMenu">
+	<li><a href="../index.html">Overview</a><span> | </span></li>
+	<li><a href="essential_info.html">Essential Info</a><span> | </span></li>
+	<li><a href="features.html">Features</a><span> | </span></li>
+	<li><a href="revision_history.html">Revision History</a><span> | </span></li>
+	<li><a href="installation.html">Installation</a><span> | </span></li>
+	<li><a href="configuration.html">Configuration</a><span> | </span></li>
+	<li><a href="upgrading.html">Upgrading</a><span> | </span></li>
+	<li><a href="faqs.html">FAQs</a><span> | </span></li>
+	<li><a href="support.html">Support</a><span> | </span></li>
+	<li><a href="known_issues.html">Known Issues</a></li>
+</ul>
+
+<h2><a name="revision_history" id="revision_history"></a>Revision History</h2>
+<table width="100%" border="0" cellspacing="0" summary="The Complete Revision History of this module">
+	<tr>
+		<th>Date</th>
+		<th>Version</th>
+		<th>Release Information</th>
+	</tr>
+	<tr>
+		<td class="NoWrap">22nd June 2009</td>
+		<td>3.8.1</td>
+		<td>
+			[ADDED] Support for UTF-8 added. Titles can now use any UTF-8 character (providing the Zen Cart installation itself has UTF-8 support enabled).
+			<br />[ADDED] New calculation method added - totalorderprice - for matching against the total price of all the products for an order (not just the total price of the applicable products for a method!).
+			<br />[ADDED] Support for minimum/maximum rates added for UPS and USPS calculation methods.
+			<br />[ADDED] Support for Polish postcodes added.
+			<br />[UPDATED] Default title for module being used in the language definitions file is no longer &ldquo;Advanced Shipper&rdquo;, but is now &lduqo;Shipping&rdquo;. The information/FAQ about changing this title has been updated also. Should hopefully prevent people making mistakes and trying, wrongly, to remove the title altogether (which causes the module to not get displayed at checkout).
+			<br />[BUGFIX] Recent surcharge functionality update resulted in flat rate surcharges no longer working, this has been fixed.
+			<br />[BUGFIX] Combination rates would incorrectly discount a value if inclusive limits were being used and the first minimum limit being tested against matched the value. As this was the first limit, there could not have been a previous rate band to which the value would have belonged. The combination rate code now correctly sees the value as included in the first rate band.
+		</td>
+	</tr>
+	<tr>
+		<td class="NoWrap">1st May 2009</td>
+		<td>3.8.0</td>
+		<td>
+			[ADDED] Added support for block rates (for all of the rate calculation methods and surcharge calculation methods).
+			<br />[ADDED] Geolocation support added for the US - full database of US zip codes now included as standard with the module!
+			<br />[UPDATED] Surcharges can now use full tables of rates - dramatically increases their flexibility/usefulness! It's now easy to add on insurance for a method for example.
+			<br />[UPDATED] The Advanced Shipper Config Utility now displays any store-side Region Title as well as the Region Admin Title in the method summaries.
+			<br />[UPDATED] Geolocation functionality for the UK no longer rounds the calcuated distances, for slightly more accurate matching capabilities.
+			<br />[UPDATED] Extra title for a method (e.g. UPS/USPS service information for the respectove quote) is now placed straight after the main method title if possible, otherwise it is appended to the method's title.
+			<br />[BUGFIX] Region Admin Titles weren't being saved unless a store-side Region Title was entered.
+			<br />[ADDED] Information about new block rates added to the documentation.
+			<br />[UPDATED] Information about surcharges updated in documentation to use new format for surcharges. 
+		</td>
+	</tr>
+	<tr>
+		<td class="NoWrap">16th April 2009</td>
+		<td>3.6.5</td>
+		<td>
+			[ADDED] Support for Czech Republic postcodes added to module.
+		</td>
+	</tr>
+	<tr>
+		<td class="NoWrap">6th April 2009</td>
+		<td>3.6.4</td>
+		<td>
+			[ADDED] Added support for adding a surcharge based on the number of packages being used to ship the applicable products for a method.
+			<br />[ADDED] Added support for placement tags to be used to display information about the number of packages being used to ship the applicable products for a method, without having to display the full rate calculation.
+			<br />[ADDED] Added support for a placement tag to place the &ldquo;Extra Title&rdquo; for a shipping method (the name of the shipping method as returned by live UPS/USPS quotes) at a specified position in the method's title, instead of it simply being appended to the method's title.
+			<br />[BUGFIX] The packaging weight was being added on to packages after the contents of the packages had been worked out, according to any maximum weight per package setting. The packaging weight is now correctly being calculated at the time the contents of the packages are being worked out, so the checks against the maximum package weight are being compared to the overall package weight - i.e. that which includes the weight of the package as well as weight of the applicable products.
+			<br />[BUGFIX] A surcharge title was being displayed in the method title when the surcharge was zero, it is no longer displayed when there is no surcharge.
+			<br />[ADDED] Information about new placement tags and new number of packages options for surcharges added to the documentation. 
+		</td>
+	</tr>
+	<tr>
+		<td class="NoWrap">31st March 2009</td>
+		<td>3.6.3</td>
+		<td>
+			[ADDED] New option added for regions, which calculates the total price of the applicable products including their tax, rather than the previous default of totalling up the price excluding tax.
+			<br />[BUGFIX] Module was wrongly asking the customer to enter a state, when it couldn't find a usable rate, when the customer had typed a state in rather than having selected one from a state dropdown.
+			<br />[BUGFIX] Negators for Country codes and Postcode Ranges were broken in versions 3.6.1 and 3.6.2.
+			<br />[BUGFIX] Combination rates used by the Price and Weight calculation methods weren't displaying the rate calculations.
+			<br />[BUGFIX] Maximum package weight functionality wasn't working properly with UPS and USPS calculators. Only the first quote was being properly totalled up and none of the quotes were returning the correct rate calculation descriptions.
+			<br />[UPDATED] UPS and USPS calculators updated to inform the user if a post/zip code is required for the quote(s) to be calculated.
+			<br />[ADDED] Several more FAQs added, mostly covering the formatting and display of the shipping information on both the store's catalog side and in the admin.
+			<br />[UPDATED] Table of Contents added to FAQs page.</td>
+	</tr>
+	<tr>
+		<td class="NoWrap">23rd February 2009</td>
+		<td>3.6.2</td>
+		<td>
+			[BUGFIX] Combination rates didn't work with the &ldquo;Number of items&rdquo; rate definition method. This was broken in versions 3.4.0 - 3.6.1 but is fixed now.
+			<br />[BUGFIX] Combination rates were wrongly including any fixed rate for a rate band when the rate limits inclusivity was set to inclusive. This should only have occurred if the limits were exclusive.
+			<br />[ADDED] Support for Indian postcodes added to module.
+			<br />[BUGFIX] Documentation about Spanish postcode ranges fixed to include correct format for range specification for city of Valencia.</td>
+	</tr>
+	<tr>
+		<td class="NoWrap">9th February 2009</td>
+		<td>3.6.1</td>
+		<td>
+			[ADDED] Support for selecting multiple categories at once for a method added to speed up configuration of methods.
+			<br />[ADDED] Support for selecting multiple manufacturers at once for a method added to speed up configuration of methods.
+			<br />[BUGFIX] A mistake in the SQL file for versions 3.4.0 - 3.6.0 meant that any new installation of the module using this file would have an incorrectly configured column type for storing any Packaging Weight settings. Upgrades were not affected by this bug.
+			<br />[BUGFIX] Any postcode range or country negations which matched the customer's shipping address resulted in no further regions being checked instead of the the current region simply being skipped.
+			<br />[BUGFIX] If no products or categories were selected for a method but at least one manufacturer was, a message indicating that no categories/manufacturers/products had been selected was incorrectly being displayed in the method's summary.
+			<br />[BUGFIX] Broken link to Nested Table of Rates information fixed in Rates section of documentation.</td>
+	</tr>
+	<tr>
+		<td class="NoWrap">18th January 2009</td>
+		<td>3.6.0</td>
+		<td>
+			[ADDED] Maximum Weight Per Package setting added to allow a delivery to a region to be split into multiple packages if the applicable products weigh more than a specified amount.
+			<br />[UPDATED] Checks added to surcharge configuration setting to prevent the use of invalid characters.
+			<br />[ADDED] Documentation for Maximum Weight Per Package setting added.</td>
+	</tr>
+	<tr>
+		<td class="NoWrap">12th January 2009</td>
+		<td>3.4.2</td>
+		<td>
+			[UPDATED] Minor documentation updates.</td>
+	</tr>
+	<tr>
+		<td class="NoWrap">24th December 2008</td>
+		<td>3.4.1</td>
+		<td>
+			[BUGFIX] Surcharge titles weren't being saved if their region had no title entered.
+			<br />[BUGFIX] Minimum/Maximum rates weren't being used by price-based tables of rates.
+			<br />[BUGFIX] UPS calculator failed upon checkout because the httpClient class wasn't being loaded in at the checkout process stage.
+			<br />[UPDATED] Text referring to &ldquo;Product Catch-alls&rdquo; for methods updated to more accurately use &ldquo;Fallovers&rdquo;.
+			<br />[ADDED] Documentation for Minimum/Maximum rates and table of Packaging Weights added.</td>
+	</tr>
+	<tr>
+		<td class="NoWrap">27th November 2008</td>
+		<td>3.4.0</td>
+		<td>
+			[ADDED] Support for imposing a minimum and/or maximum limit on the shipping rate added.
+			<br />[ADDED] Support for table of packaging weights added. It is now possible to account for the packaging weight and include it in the weight calculation for the applicable products on a region by region basis (allowing for different packaging depending on the destination)!
+			<br />[UPDATED] Fixed typos in the module, where &ldquo;Manufacturers&rdquo; was spelt incorrectly.
+			<br />[UPDATED] Fixed typos in the documentation, in the introductions for the examples for the UPS and USPS calculators.</td>
+	</tr>
+	<tr>
+		<td class="NoWrap">17th October 2008</td>
+		<td>3.2.4</td>
+		<td>[BUGFIX] Module was failing when formatting numbers for display which had a comma in them (rates larger than 999).
+			<br />[BUGFIX] PHP Warning message was being displayed when nested tables where being used.
+			<br />[BUGFIX] USPS calculator failed upon checkout because the httpClient class wasn't being loaded in at the checkout process stage.
+			<br />[ADDED] Support for New Zealand postcodes added to module.</td>
+	</tr>
+	<tr>
+		<td class="NoWrap">7th September 2008</td>
+		<td>3.2.3</td>
+		<td>[BUGFIX] IE only: The UPS and USPS calculators were being disabled if a region was edited in IE after they had been initially set up as IE wasn't setting the radio buttons properly (due to a bug in IE itself). Module updated to prevent this error from occurring.
+		</td>
+	</tr>
+	<tr>
+		<td class="NoWrap">7th September 2008</td>
+		<td>3.2.2</td>
+		<td>[BUGFIX] Module was always defaulting to using a catchall to match the applicable products in the admin due a but introduced when the Manufacturer selection support was added.
+			<br />[BUGFIX]  The auto-upgrade script wasn't adding in the new Manufacturer table when upgrading from version 2.x to 3.2.x.
+		</td>
+	</tr>
+	<tr>
+		<td class="NoWrap">3rd September 2008</td>
+		<td>3.2.1</td>
+		<td>[ADDED] Support for Malaysian postcodes added.
+			<br />[UPDATED] Documentation updated with examples of Malaysian postcodes.
+		</td>
+	</tr>
+	<tr>
+		<td class="NoWrap">18th August 2008</td>
+		<td>3.2.0</td>
+		<td>[BUGFIX] Warning is now displayed in the Advanced Shipper Configuration Utility when the module itself isn't installed.
+			<br />[UPDATED] Documentation updated with information about new manufacturer's products selection support.
+		</td>
+	</tr>
+	<tr>
+		<td class="NoWrap">12th August 2008</td>
+		<td>3.2.0RC3</td>
+		<td>[ADDED] Module now detects if it is being used by the shipping estimator and varies its &ldquo;No Quotes&rdquo; error message depending on how much of the shipping address the customer has supplied in the shipping estimator. Should encourage the customer to enter more shipping information if a quote isn't found, thereby increasing the chances of a quote being generated and minimising the appearance of the &ldquo;No Shipping Methods Found&rdquo; message.
+			<br />[UPDATED] Information about rate bands with a total cost of 0 is no longer displayed in the rate calculation description and flat rates of 0 are now marked as &ldquo;Free&rdquo;.
+			<br />[BUGFIX] The surcharge amount wasn't being included in the value for the method_total placement tag.
+			<br />[BUGFIX] Attribute information wasn't being added to the method title due to an incorrectly named placement tag.
+			<br />[BUGFIX] Unused placement tags weren't being cleared from the method title.
+			<br />[BUGFIX] The USPS calculator wasn't matching the correct service names in the response and therefore returning fewer quotes than expected.
+		</td>
+	</tr>
+	<tr>
+		<td class="NoWrap">8th August 2008</td>
+		<td>3.2.0RC2</td>
+		<td>[BUGFIX] Auto-upgrade script was broken.
+		</td>
+	</tr>
+	<tr>
+		<td class="NoWrap">8th August 2008</td>
+		<td>3.2.0RC1</td>
+		<td>[ADDED] Manufacturer selection support added. All products for a manufacturer can now be set as being applicable for a method.
+			<br />[UPDATED] Support for dd.mm.yyyy date format added to module admin.
+			<br />[UPDATED] Cancel button added to Category/Product selection popups.
+			<br />[UPDATED] Message is now displayed in Category selectors if no categories exist yet.
+		</td>
+	</tr>
+	<tr>
+		<td class="NoWrap">21st July 2008</td>
+		<td>3.0.4</td>
+		<td>[BUGFIX] Geolocation routine for the UK was comparing distances entered in the admin in Miles to distances returned by its algorithm in Metres! Miles are now compared against Miles once more!
+		</td>
+	</tr>
+	<tr>
+		<td class="NoWrap">18th July 2008</td>
+		<td>3.0.3</td>
+		<td>[ADDED] Surcharge can now make use of combination rates for cumulative build-up of charge based on the weight/price/number of items or even the shipping rate itself!
+		</td>
+	</tr>
+	<tr>
+		<td class="NoWrap">17th July 2008</td>
+		<td>3.0.2</td>
+		<td>[UPDATED] Combination rates' limits are no longer always inclusive, but use the same limits inclusivity settings as the table of rates.
+			<br />[ADDED] Weight descriptions are automatically restricted to the most significant decimal place, for up to 5 decimal places (zeros are stripped from the end).
+		</td>
+	</tr>
+	<tr>
+		<td class="NoWrap">17th July 2008</td>
+		<td>3.0.1</td>
+		<td>[UPDATED] Versioning system improved to automatically update point releases as well as major releases.
+			<br />[BUGFIX] Leading/trailing spaces were wrongly being stripped when a method was being copied in the admin.
+			<br />[BUGFIX] Rate calculation description functionality wasn't working properly - some parts of the title were being skipped.
+			<br />[BUGFIX] Combination Rates weren't correctly using flat rate values.
+			<br />[BUGFIX] Rate calculation template wasn't being appended to the default method title template.
+		</td>
+	</tr>
+	<tr>
+		<td class="NoWrap">16th July 2008</td>
+		<td>3.0.0</td>
+		<td>[UPDATED] Documentation substantially updated to add information about new functionality, a better Table of Contents, Quickstart Examples and to update the sections on Method Titles, Rates and Handling Fees (now Surcharges).
+			<br />[UPDATED] &ldquo;Show Rate Calculations&rdquo; setting removed from module as it is no longer necessary.
+			<br />[BUGFIX] Placement tag functionality updated slightly to allow full usage within title templates as well as method titles themselves.
+		</td>
+	</tr>
+	<tr>
+		<td class="NoWrap">14th July 2008</td>
+		<td>3.0.0RC2</td>
+		<td>[ADDED] Method Sorting setting added. Non-dated methods can now be sorted by their admin order or their total cost.
+			<br />[BUGFIX] Times for the method scheduling settings were being treated as midnight as the values being returned from the database weren't being parsed properly.
+			<br />[ADDED] Basic error checking for missing calculation methods tags in tables of rates added.
+			<br />[BUGFIX] Geolocation functionality wasn't working as the definition method check was wrong. Even with the correct check, the postcode being checked against wouldn't have been right so it would always have failed!
+			<br />[BUGFIX] Module could go into an endless loop when postcode range matching was tested against in the shipping estimator.
+			<br />[BUGFIX] Km conversion for distances wasn't correct in new Australian geolocation functionality.
+			<br />[ADDED] USPS calculator class added. Tag &ldquo;usps&rdquo; can now be used in the table of rates to direct the module to contact USPS for a quote for the applicable products. Config panel to set up USPS calculator added, including support for specifying the &ldquo;Source Country&rdquo; and &ldquo;Source Postcode&rdquo; - allows drop-shipping of products from alternative locations (e.g. straight from the manufacturer)!
+		</td>
+	</tr>
+	<tr>
+		<td class="NoWrap">9th July 2008</td>
+		<td>3.0.0RC1</td>
+		<td>[UPDATED] Format of Table of Rates changed to use XML tags to specify the calculation method within the Table of Rates itself. Shipping Methods' &ldquo;Calculation Method&rdquo; settings are no longer used.
+			<br />[ADDED] Module can now use embedded Tables of Rates instead of a specific rate. Allows using different calculation methods for a shipping method, based on the limits for the previous calculation method. (E.g. Price used up to 30.00, then weight used for any order value above 30!).
+			<br />[UPDATED] &ldquo;Handling Fee&rdquo; renamed to &ldquo;Surcharge&rdquo;. New surcharge functionality includes ability to use percentage rates (and percentage+flat rates). Rates can now be calculated based on the weight, price or numitems for the applicable products or based on the shipping rate itself!
+			<br />[ADDED] New output template system added for complete customisation of the output for a method combination (with product info) or a single method (with no product info).
+			<br />[ADDED] Tag placement functionality added for method titles. Can now add information about the total cost, any rate calculation, any surcharge and the title of the region being shipped to!
+			<br />[ADDED] Region Admin Title setting added. Descriptive region titles for the person configuring the shipping methods can now be used in the Advanced Shipper admin while a different, specific region title can be shown to the customer as part of the method's title (using the new {region_title} placement tag).
+			<br />[ADDED] UPS calculator class added. Tag &ldquo;ups&rdquo; can now be used in the table of rates to direct the module to contact UPS for a quote for the applicable products. Config panel to set up UPS calculator added, including support for specifying the &ldquo;Source Country&rdquo; and &ldquo;Source Postcode&rdquo; - allows drop-shipping of products from alternative locations (e.g. straight from the manufacturer)!
+			<br />[ADDED] Flag contact_after_order added to Advanced Shipper module which warns customers that they have to contact the store after checkout to finalise shipping arrangements/costs. Allows customers to complete their order before having to contact the store.
+			<br />[ADDED] Geolocation support added for Australian postcodes.
+			<br />[UPDATED] The text "Free" is now displayed instead of &ldquo;0.00&rdquo; in rate calculations.
+			<br />[ADDED] JavaScript added to admin so that pressing the Enter key in a text field/on a radio button will cause the form to be submitted instead of the next button in the form to be activated. Previously a Delete or Selection button etc. would have been activated when the Enter key was pressed (in Firefox) which was unintuitive/unexpected behaviour.
+			<br />[UPDATED] Module no longer requires modification of a core file to get the splitPageResults class to work with the method SQL query.
+		</td>
+	</tr>
+	<tr>
+		<td class="NoWrap">14th June 2008</td>
+		<td>2.2.6</td>
+		<td>[ADDED] Support for postcodes in Italy, San Marino and Vatican City added to the module, along with appropriate examples in the appendix.
+		</td>
+	</tr>
+	<tr>
+		<td class="NoWrap">13th June 2008</td>
+		<td>2.2.5</td>
+		<td>[BUGFIX] Major bug found in module! Zen Cart was always defaulting to selecting the first shipping option as the Advanced Shipper module was building quotes for all available methods instead of only the selected method (and Zen Cart takes the first quote as the selected quote).
+		</td>
+	</tr>
+	<tr>
+		<td class="NoWrap">13th June 2008</td>
+		<td>2.2.4</td>
+		<td>[UPDATED] Product Selector now automatically updates the Product Options selection panel when a new product is selected in the dropdown (Previously &ldquo;Display&rdquo; had to be pressed).
+			<br />[BUGFIX] Selected categories/products were only being copied when a method was copied if the source method applied for specific categories/products only. Updated to copy selections when the source method acts as a "catch-all" as well.
+		</td>
+	</tr>
+	<tr>
+		<td class="NoWrap">12th June 2008</td>
+		<td>2.2.3</td>
+		<td>[BUGFIX] Bug caused copying of methods to fail; wrong table name was being used in database query!
+		</td>
+	</tr>
+	<tr>
+		<td class="NoWrap">31st May 2008</td>
+		<td>2.2.2</td>
+		<td>[ADDED] Support for Belgian postcodes added to the module, along with appropriate examples in the appendix.
+			<br />[ADDED] Checks added to admin to help prevent invalid Handling Fees being entered.
+			<br />[ADDED] Information about Handling Fees now displayed in method summaries (always) and region summaries (when defined).
+			<br />[UPDATED] Module now uses PCRE functions instead of standard POSIX regular expression functions as the POSIX functions are being moved to PECL in PHP5.3+.
+			<br />[BUGFIX] Catch-alls for products with attributes were being ignored at checkout!
+			<br />[BUGFIX] Information about catch-alls for products with attributes wasn't being displayed in the main method listing and method configuration (for methods being edited).
+			<br />[BUGFIX] Minor CSS kludge introduced to combat CSS layout problems of region control panel buttons due to buggy CSS implementation by IE.
+		</td>
+	</tr>
+	<tr>
+		<td class="NoWrap">13th May 2008</td>
+		<td>2.2.1</td>
+		<td>[BUGFIX] Admin couldn't handle newlines in the tables of rates or countries/postcode fields. Can now cope with these characters and automatically adds spacing after commas, if necessary, for clearer presentation.</td>
+	</tr>
+	<tr>
+		<td class="NoWrap">13th May 2008</td>
+		<td>2.2.0</td>
+		<td>[ADDED] Support for the new Advanced Shipper Zones module added.
+			<br />[ADDED] A new option for specifying rates added: a special &ldquo;flag&rdquo; can now be entered instead of a numerical rate, to have the module display a &ldquo;Please contact the store for a personal shipping arrangement&rdquo; message, instead of allowing customers to check out with the particular item(s) they have in their cart.
+			<br />[ADDED] Checks added to enforce valid availability and/or shipping scheduling settings. Should prevent any erroneous date selections.
+			<br />[ADDED] Checks added to admin to help prevent invalid Table of Rates being entered. Checks currently limited to limits/rates pairing format and limits format.
+			<br />[BUGFIX] The additional flat rate charge wasn't being added on to the final total for percentage+flat rates.
+			<br />[BUGFIX] Times weren't being reset properly in the Method Configuration in IE.
+			<br />[BUGFIX] Plus (+) symbols in the Titles and Tables of Rates for Regions were going missing as only a single instance of the symbol was being encoded. All are now encoded properly so as many plus symbols as required can be used within these fields.
+		</td>
+	</tr>
+	<tr>
+		<td class="NoWrap">7th May 2008</td>
+		<td>2.0.1</td>
+		<td>[ADDED] Support for negators added to Country Code matching added.
+			<br />[BUGFIX] Module wasn't handling plus signs in Region Titles or spaces in the Tables of Rates properly. Spaces can now be used in the tables of rates.
+			<br />[BUGFIX] When being used in conjunction with the Advanced Shipper Localities module, if a region used a level 1 locality in its definition, any level 2 localities for that level 1 locality weren't being checked against the customer's level 2 locality, only the main level 2 locality was.
+			<br />[BUGFIX] Module was incompatible with Zen Cart 1.2.x - now fully tested and working on 1.2.x!
+			<br />[UPDATED] Debugging output substantially improved.
+			<br />[UPDATED] Documentation updated due to user feedback - should be a little clearer in parts.
+			<br />[UPDATED] Documentation updated to use new display class for better on-screen rendering. Better print output formatting also added. (Tested in IE6-7, Mozilla 2.x and Safari 3.x).
+		</td>
+	</tr>
+	<tr>
+		<td class="NoWrap">24th April 2008</td>
+		<td>2.0.0</td>
+		<td>Complete Rewrite!
+			<br />[UPDATED] Module completely rewritten to mirror real-life shipping methods. Backwards compatibility completely broken but functionality extended exponentially!
+			<br />[ADDED] Product/Category selection support added. Individual products and entire product categories can now have their own specific shipping rates!
+			<br />[ADDED] Locality support added. Can now work with Advanced Shipper Localities module to allow region definition using a set list of States/Localities/Cities.
+		</td>
+	</tr>
+	<tr>
+		<td class="NoWrap">11th January 2008</td>
+		<td>1.0.0</td>
+		<td>Initial Release!</td>
+	</tr>
+</table>
+
+<p class="BackToTop"><a href="#top">Back to top</a></p>
+
+<p id="footer"><a href="http://ceon.net" target="_blank"><img src="../_images/ceon_button_logo.png" alt="Ceon" id="ceon_button_logo" /></a>Module &amp; Documentation &copy; Copyright 2007-2009 <a href="http://ceon.net">Ceon</a></p>
+
+	</div>
+</div>
+
+<script type="text/javascript">
+<!-- // Output resizeable div end tag
+restrict_width.outputClosingTag();
+// -->
+</script>
+
+</body>
+</html>

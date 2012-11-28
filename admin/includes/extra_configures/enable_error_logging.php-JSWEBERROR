@@ -1,0 +1,68 @@
+<?php
+/**
+ * enable_error_logging.php
+ * Tool for debugging hard-to-track-down issues
+ *
+ * @package utilities
+ * @copyright Copyright 2003-2008 Zen Cart Development Team
+ * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
+ * @version $Id: enable_error_logging.php 7842 2008-01-05 07:54:38Z drbyte $
+ */
+/**
+ * HOW TO USE:
+ *
+ * 1. Specify the desired pages to do debugging on below.  Leaving the default of '*' is usually fine.
+ * 2. Upload this file to the /includes/extra_configures/ folder.
+ * 3. Test the page on your site that is having problems -- ie: trigger whatever symptom is ailing you.
+ * 4. Open the /cache/myDEBUG-xxxxxxx.log folder to see the list of any PHP errors that occurred while the page/test was running.
+ * 5. Be sure to delete this file from the /includes/extra_configures folder when done (or rename it to .php1 instead of .php )
+ */
+/**
+ * Specify the pages you wish to enable debugging for (ie: main_page=xxxxxxxx)
+ * Using '*' will cause all pages to be enabled
+ */
+  $pages_to_debug[] = '*';
+  $pages_to_debug[] = '';
+  $pages_to_debug[] = '';
+  $pages_to_debug[] = '';
+  $pages_to_debug[] = '';
+  $pages_to_debug[] = '';
+  $pages_to_debug[] = '';
+  $pages_to_debug[] = '';
+
+/**
+ * The path where the debug log file will be located
+ * Default value is: DIR_FS_SQL_CACHE . '/myDEBUG-00000000.log'
+ * ... which puts it in the /cache/ folder:   /cache/myDEBUG-00000000.log  (where 0000000 is the server's timestamp)
+ */
+  $debug_logfile_path = DIR_FS_SQL_CACHE . '/myDEBUG-' . time() . '.log';
+
+/**
+ * Optional name for log file, which include random value characters, thus making it hard for hackers to snoop around by guessing filenames
+ */
+//  $debug_logfile_path = DIR_FS_SQL_CACHE . '/myDEBUG-' . time() . zen_create_random_value(6) . '.log';
+
+/**
+ * Error reporting level to log
+ * Default: E_ALL ^E_NOTICE
+ */
+  $errors_to_log = E_ALL ^E_NOTICE;
+
+
+
+///// DO NOT EDIT BELOW THIS LINE /////
+
+//////////////////// DEBUG HANDLING //////////////////////////////////
+  if (in_array('*', $pages_to_debug) || in_array($current_page_base, $pages_to_debug)) {
+  /**
+   * Sometimes it is difficult to debug PHP background activities
+   * However, using the PHP error logging facility we can store all PHP errors to a file, and then review separately.
+   * Using this method, the debug details are stored at: /cache/myDEBUG.log
+   */
+    @ini_set('log_errors', 1);          // store to file
+    @ini_set('log_errors_max_len', 0);  // unlimited length of message output
+    @ini_set('display_errors', 0);      // do not output errors to screen/browser/client
+    @ini_set('error_log', $debug_logfile_path);  // the filename
+    @ini_set('error_reporting', $errors_to_log );    // log only errors of more severity than NOTICE
+  }
+?>

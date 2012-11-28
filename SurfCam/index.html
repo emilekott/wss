@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=ISO-8859-1">
+<title>Surf Cam</title>
+<script type="text/javascript" src="jwplayer.js"></script>
+</head>
+<body>
+<div id="PageDiv" style="position:relative; min-height:100%; margin:auto; width:775px">
+	<div id="mediaplayer" style="position:absolute; left:0px; top:0px; width:775px; height:550px; z-index:1; padding:0px" width="775px" height="550px">
+<script type="text/javascript">
+	jwplayer("mediaplayer").setup({
+		modes: [
+			{
+				type: "flash",
+				src: 'player.swf',
+				config: {
+					file: 'http://cdnimages.magicseaweed.com/static/f/jwplayer/eastwitterings-smil.xml',
+					provider: "rtmp",
+					"rtmp.loadbalance": true,
+				}
+			}, {
+				type: "html5",
+				config: {
+					file: 'http://niihau.metcentral.com:1935/live/eastwitterings.stream/playlist.m3u8',
+				}
+			}
+		],
+		provider: 'rtmp',
+		'rtmp.loadbalance': 'true',
+		stretching: "exactfit",
+		'controlbar.position': "over",
+		"logo.hide": true,
+		"autoplay": true,
+		plugins: {}
+	});
+</script>
+</div>
+</div>
+</body>
+</html>

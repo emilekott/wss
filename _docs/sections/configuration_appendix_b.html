@@ -1,0 +1,373 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>.:: Ceon :: Zen Cart :: Module  :: advshipper ::.</title>
+	<style type="text/css">
+	/*<![CDATA[*/
+	@import url(../_css/inc.css.layout_styles.css);
+	@import url(../_css/inc.css.styles.css);
+	/*]]>*/
+	</style>
+	<link href="../_css/inc.css.layout_styles_print.css" type="text/css" media="print" />
+	<script src="../_javascript/inc.js.general_functions.js" type="text/javascript"></script>
+	<script src="../_javascript/inc.js.css_functions.js" type="text/javascript"></script>
+	<script src="../_javascript/inc.js.restrict_width.js" language="javascript" type="text/javascript"></script>
+</head>
+
+<body><a name="top" id="top"></a>
+
+<script language="JavaScript" type="text/javascript"> 
+<!-- 
+// Script resizes main div if client window is larger than a predefined variable
+var restrict_width = new CeonRestrictWidth(360, 900);
+// -->
+</script>
+
+<div id="grad_horiz_left">
+	<div id="grad_horiz_right">
+
+<h1 class="Title">advshipper</h1>
+<p class="TitleByLine">probably the best Zen Cart Shipping Module in the world! ...ever!</p>
+<ul class="MainMenu">
+	<li><a href="../index.html">Overview</a><span> | </span></li>
+	<li><a href="essential_info.html">Essential Info</a><span> | </span></li>
+	<li><a href="features.html">Features</a><span> | </span></li>
+	<li><a href="revision_history.html">Revision History</a><span> | </span></li>
+	<li><a href="installation.html">Installation</a><span> | </span></li>
+	<li><a href="configuration.html">Configuration</a><span> | </span></li>
+	<li><a href="upgrading.html">Upgrading</a><span> | </span></li>
+	<li><a href="faqs.html">FAQs</a><span> | </span></li>
+	<li><a href="support.html">Support</a><span> | </span></li>
+	<li><a href="known_issues.html">Known Issues</a></li>
+</ul>
+
+<h2>Appendix B: Example Region Definitions for Various Countries</h2>
+<p>The following example <em>Postcode Range</em> Definitions for each <em>country</em> supported by this module should hopefully make it easier to work out how to configure the module. Where possible a link to a list of postcode ranges for the country in question has been added. As these links are to third party sites we can accept no responsibility for their accuracy, but hopefully they are of use...</p>
+<p><strong>Please remember</strong> that the most specific <em>region</em> definitions should come first, followed by the more general &ldquo;catch-all&rdquo; definitions.</p>
+
+
+<ol class="TableOfContents">
+	<li><a href="#australia">Australia</a></li>
+	<li><a href="#belgium">Belgium</a></li>
+	<li><a href="#canada">Canada</a></li>
+	<li><a href="#czech_republic">Czech Republic</a></li>
+	<li><a href="#france">France</a></li>
+	<li><a href="#india">India</a></li>
+	<li><a href="#ireland">Ireland</a></li>
+	<li><a href="#italy">Italy/San Marino/Vatican City</a></li>
+	<li><a href="#malaysia">Malaysia</a></li>
+	<li><a href="#new_zealand">New Zealand</a></li>
+	<li><a href="#poland">Poland</a></li>
+	<li><a href="#portugal">Portugal</a></li>
+	<li><a href="#spain">Spain</a></li>
+	<li><a href="#uk">The UK</a></li>
+	<li><a href="#us">The US</a></li>
+</ol>
+
+
+<h4 class="UnderlinedTitle"><a name="australia" id="australia"></a>Australia</h4>
+<p>Australian postcodes are numeric, consisting of three or four digits.</p>
+<p>Example: To set up a <em>region</em> for the City of &ldquo;Brisbane&rdquo;, a <em>region</em> for the state of &ldquo;Queensland&rdquo; and a <em>region</em> for the &ldquo;Rest of Australia&rdquo;, three regions with the following <em>Countries/Postcodes</em> configuration values would be added:</p>
+<ul class="Steps">
+	<li>
+		<p><strong>Region 1</strong>: AU:4000</p>
+		<p><strong>Region 2</strong>: AU:4000-4999,AU:9000-9999 (Covers 4002, 4013, 4902, 9001 etc.)</p>
+		<p><strong>Region 3</strong>: AU (Covers all other states and cities in Australia)</p>
+	</li>
+</ul>
+<p>A list of postcodes for states and cities in Australia can be found  <a href="http://en.wikipedia.org/wiki/Postcodes_in_Australia" target="_blank">in this wikipedia article</a>.</p>
+<p>The Region Titles for the above regions could be as follows:</p>
+<p class="Example">Region 1: &ldquo;City of Brisbane&rdquo;
+	<br />Region 2: &ldquo;State of Queensland&rdquo;
+	<br />Region 3: &ldquo;Rest Of Australia&rdquo;</p>
+<p class="BackToTableOfContents"><a href="#top">Back to top</a></p>
+
+
+
+<h4 class="UnderlinedTitle"><a name="belgium" id="belgium"></a>Belgium</h4>
+<p>Belgian postcodes are numeric, consisting of four digits.</p>
+<p>Example: To set up a <em>region</em> for the City of &ldquo;Sint-Truiden&rdquo;, a <em>region</em> for the Province of &ldquo;Flemish Brabant/Limburg&rdquo; and a <em>region</em> for the &ldquo;Rest of Belgium&rdquo;, three regions with the following <em>Countries/Postcodes</em> configuration values would be added:</p>
+<ul class="Steps">
+	<li>
+		<p><strong>Region 1</strong>: BE:3800</p>
+		<p><strong>Region 2</strong>: BE:3000-3999 (Covers 3002, 3013, 3902 etc.)</p>
+		<p><strong>Region 3</strong>: BE (Covers all other provinces and cities in Belgium)</p>
+	</li>
+</ul>
+<p>A list of postcodes for provinces and cities in Belgium can be found  <a href="http://en.wikipedia.org/wiki/List_of_postal_codes_in_Belgium" target="_blank">in this wikipedia article</a>.</p>
+<p>The Region Titles for the above regions could be as follows:</p>
+<p class="Example">Region 1: &ldquo;City of Sint-Truiden&rdquo;
+	<br />Region 2: &ldquo;Flemish Brabant/Limburg&rdquo;
+	<br />Region 3: &ldquo;Rest Of Belgium&rdquo;</p>
+<p class="BackToTableOfContents"><a href="#top">Back to top</a></p>
+
+
+
+<h4 class="UnderlinedTitle"><a name="canada" id="canada"></a>Canada</h4>
+<p>Canadian postcodes are of the format X9X 9X9, where X is a letter and 9 is a digit, with a space separating the third and fourth characters. An example is K1A 0B1, which is for Canada Post's Ottawa headquarters.</p>
+<p>The first three characters are known as the &ldquo;Forward Sortation Area&rdquo; (<acronym title="Forward Sortation Area">FSA</acronym>), the last three as the &ldquo;Local Delivery Unit&rdquo;. Only the <acronym title="Forward Sortation Area">FSA</acronym> is used by this module.</p>
+<p>Example: To set up a <em>region</em> for &ldquo;St John's in Newfoundland&rdquo;, a <em>region</em> for the province of &ldquo;Ontario&rdquo; and a <em>region</em> for the &ldquo;Rest of Canada&rdquo;, three regions with the following <em>Countries/Postcodes</em> configuration values would be added:</p>
+<ul class="Steps">
+	<li>
+		<p><strong>Region 1</strong>: CA:A1A-S (Covers A1A 0E8, A1C 3E4, A1S 8C9 etc. but not A2A 0E8 or A1T 8C9 etc.)</p>
+		<p><strong>Region 2</strong>: CA:P (Covers P0V 5C6, P3Y 7C2, P8N 6T6 etc.)</p>
+		<p><strong>Region 3</strong>: CA (Covers all other provinces and cities in Canada)</p>
+	</li>
+</ul>
+<p>An extremely comprehensive breakdown of all the <acronym title="Forward Sortation Area">FSA</acronym>s in Canada can be found <a href="http://www.canadapost.ca/common/tools/pg/fsamaps/pdf/Canada.pdf" target="_blank">in this PDF document</a>.</p>
+<p>The Region Titles for the above regions could be as follows:</p>
+<p class="Example">Region 1: &ldquo;St John's, Newfoundland&rdquo;
+	<br />Region 2: &ldquo;Ontario&rdquo;
+	<br />Region 3: &ldquo;Rest Of Canada&rdquo;</p>
+<p class="BackToTableOfContents"><a href="#top">Back to top</a></p>
+
+
+
+<h4 class="UnderlinedTitle"><a name="czech_republic" id="czech_republic"></a>Czech Republic</h4>
+<p>Czech Republic postcodes are numeric, consisting of five digits.</p>
+<p>Example: To set up a <em>region</em> for the &ldquo;Sokolov District&rdquo;, a <em>region</em> for the &ldquo;Karlovy Vary Region&rdquo; and a <em>region</em> for the &ldquo;Rest of the Czech Republic&rdquo;, three regions with the following <em>Countries/Postcodes</em> configuration values would be added:</p>
+<ul class="Steps">
+	<li>
+		<p><strong>Region 1</strong>: CZ:35600-35899 (Covers 356 00, 357 25, 358 98 etc. but not 355 99 or 359 00 etc.)</p>
+		<p><strong>Region 2</strong>: CZ:350-364 (Covers 350 02, 360 13, 364 99 etc. but not 349 99 or 365 00 etc.)</p>
+		<p><strong>Region 3</strong>: CZ (Covers all other regions and districts in the Czech Republic)</p>
+	</li>
+</ul>
+<p>A list of postcodes for regions and districts in the Czech Republic can be found <a href="http://en.wikipedia.org/wiki/List_of_postal_codes_in_the_Czech_Republic" target="_blank">in this wikipedia article</a>.</p>
+<p>The Region Titles for the above regions could be as follows:</p>
+<p class="Example">Region 1: &ldquo;Sokolov District&rdquo;
+	<br />Region 2: &ldquo;Karlovy Vary Region&rdquo;
+	<br />Region 3: &ldquo;Rest Of The Czech Republic&rdquo;</p>
+<p class="BackToTableOfContents"><a href="#top">Back to top</a></p>
+
+
+
+<h4 class="UnderlinedTitle"><a name="france" id="france"></a>France</h4>
+<p>France uses five-digit numeric postcodes, the first two digits normally representing the &ldquo;D&eacute;partement&rdquo;. In Paris, the last two digits indicate the &ldquo;arrondissement&rdquo;.</p>
+<p>Example: To set up a <em>region</em> for the &ldquo;8th arrondissement in Paris&rdquo;, a <em>region</em> for the city of &ldquo;Paris&rdquo;, a <em>region</em> for the region of &ldquo;Bretagne&rdquo; (<a href="http://commons.wikimedia.org/wiki/Image:D%C3%A9partements_et_r%C3%A9gions_de_France.svg" target="_blank">regional diagram</a>) and a <em>region</em> for the &ldquo;Rest of France&rdquo;, four regions with the following <em>Countries/Postcodes</em> configuration values would be added:</p>
+<ul class="Steps">
+	<li>
+		<p><strong>Region 1</strong>: FR:75008 (Covers 75008 only!)</p>
+		<p><strong>Region 2</strong>: FR:75 (Covers 75000, 75007, 75116 etc.)</p>
+		<p><strong>Region 3</strong>: FR:29, FR:22, FR:35, FR:56 (Covers 29000, 22160, 56008 etc.)</p>
+		<p><strong>Region 4</strong>: FR (Covers all other D&eacute;partements and cities in France)</p>
+	</li>
+</ul>
+<p>A reasonably complete list of postcodes for D&eacute;partements in France can be found <a href="http://en.wikipedia.org/wiki/D%C3%A9partement_in_France" target="_blank">in this wikipedia article</a>. At least one D&eacute;partement, the island of Corsica (postcodes beginning &lsquo;20&rsquo;) isn't covered in this article, so more may not be either.</p>
+<p>The Region Title s for the above regions could be as follows:</p>
+<p class="Example">Region 1: &ldquo;8th Arrondissement, Paris&rdquo;
+	<br />Region 2: &ldquo;Paris&rdquo;
+	<br />Region 3: &ldquo;Bretagne&rdquo;
+	<br />Region 4: &ldquo;Rest Of France&rdquo;</p>
+<p class="BackToTableOfContents"><a href="#top">Back to top</a></p>
+
+
+
+<h4 class="UnderlinedTitle"><a name="india" id="india"></a>India</h4>
+<p>Indian postcodes, known as Postal Index Numbers or PIN or pincodes, are numeric, consisting of six digits.</p>
+<p>Example: To set up a <em>region</em> for the City of &ldquo;Bangalore&rdquo;, a <em>region</em> for the state of &ldquo;Karnataka&rdquo; and a <em>region</em> for the &ldquo;Rest of India&rdquo;, three regions with the following <em>Countries/Postcodes</em> configuration values would be added:</p>
+<ul class="Steps">
+	<li>
+		<p><strong>Region 1</strong>: IN:560001-560099 (Covers 560002, 560013, 560099 etc. but not 560100 or 562000 etc.)</p>
+		<p><strong>Region 2</strong>: IN:56-59 (Covers 562000, 565000, 589001 etc.)</p>
+		<p><strong>Region 3</strong>: IN (Covers all other states/union territories and cities in India)</p>
+	</li>
+</ul>
+<p>An overview of postcodes for states/union territories and cities in India can be found <a href="http://en.wikipedia.org/wiki/Postal_Index_Number" target="_blank">in this wikipedia article</a>.</p>
+<p>The Region Titles for the above regions could be as follows:</p>
+<p class="Example">Region 1: &ldquo;City of Bangalore&rdquo;
+	<br />Region 2: &ldquo;State of Karnataka&rdquo;
+	<br />Region 3: &ldquo;Rest Of India&rdquo;</p>
+<p class="BackToTableOfContents"><a href="#top">Back to top</a></p>
+
+
+
+<h4 class="UnderlinedTitle"><a name="ireland" id="ireland"></a>Ireland</h4>
+<p>Most places in Ireland, rather unhelpfully, don't use postcodes. Only Dublin has &ldquo;Postal Districts&rdquo;. Therefore, Countries/Postcodes matching can only be used for matching postal districts within Dublin.</p>
+<p>Example: To set up a <em>region</em> for the postal district of &ldquo;Dublin 1&rdquo;, a <em>region</em> for the city of &ldquo;Dublin&rdquo; and a <em>region</em> for the &ldquo;Rest of Ireland&rdquo;, three regions with the following <em>Countries/Postcodes</em> configuration values would be added:</p>
+<ul class="Steps">
+	<li>
+		<p><strong>Region 1</strong>: IE:Dublin 1</p>
+		<p><strong>Region 2</strong>: IE:Dublin (Covers Dublin 1, Dublin 4, Dublin 15 etc.)</p>
+		<p><strong>Region 3</strong>: IE (Covers all other cities in Ireland)</p>
+	</li>
+</ul>
+<p>Information on Dublin's postal districts can be found <a href="http://en.wikipedia.org/wiki/Dublin_postal_districts" target="_blank">in this wikipedia article</a>.</p>
+<p>The Region Titles for the above regions could be as follows:</p>
+<p class="Example">Region 1: &ldquo;Dublin 1&rdquo;
+	<br />Region 2: &ldquo;Dublin&rdquo;
+	<br />Region 3: &ldquo;Rest Of Ireland&rdquo;</p>
+<p class="BackToTableOfContents"><a href="#top">Back to top</a></p>
+
+
+
+<h4 class="UnderlinedTitle"><a name="italy" id="italy"></a>Italy/San Marino/Vatican City</h4>
+<p>The main part of Italian postcodes are numeric, consisting of five digits, optionally preceded by a 2-letter abbreviation of the province's capital.</p>
+<p>Example: To set up a <em>region</em> for the City of &ldquo;Florence&rdquo;, a <em>region</em> for the Region of &ldquo;Tuscany&rdquo; and a <em>region</em> for the &ldquo;Rest of Italy, San Marino and Vatican City&rdquo;, three regions with the following <em>Countries/Postcodes</em> configuration values would be added:</p>
+<ul class="Steps">
+	<li>
+		<p><strong>Region 1</strong>: IT:50121-50145</p>
+		<p><strong>Region 2</strong>: IT:50000-59999 (Covers FI-50121, 51100, 59100 etc.)</p>
+		<p><strong>Region 3</strong>: IT, SM, VA (Covers all other regions and cities in Italy, San Marino and Vatican City)</p>
+	</li>
+</ul>
+<p>A list of postcodes for regions and cities in Italy can be found <a href="http://en.wikipedia.org/wiki/List_of_postal_codes_in_Italy" target="_blank">in this wikipedia article</a>.</p>
+<p>The Region Titles for the above regions could be as follows:</p>
+<p class="Example">Region 1: &ldquo;Florence&rdquo;
+	<br />Region 2: &ldquo;Tuscany&rdquo;
+	<br />Region 3: &ldquo;Rest Of Italy, San Marino and Vatican City&rdquo;</p>
+<p class="BackToTableOfContents"><a href="#top">Back to top</a></p>
+
+
+
+<h4 class="UnderlinedTitle"><a name="malaysia" id="malaysia"></a>Malaysia</h4>
+<p>Malaysian postcodes are numeric, consisting of five digits.</p>
+<p>Example: To set up a <em>region</em> for the State of &ldquo;Johor&rdquo; and a <em>region</em> for the &ldquo;Rest of Malaysia&rdquo;, two regions with the following <em>Countries/Postcodes</em> configuration values would be added:</p>
+<ul class="Steps">
+	<li>
+		<p><strong>Region 1</strong>: MY:80-86 (Covers 80002, 80013, 81025 etc. but not 87026 or 79125 etc.)</p>
+		<p><strong>Region 2</strong>: MY (Covers all other states/special administrative areas in Malaysia)</p>
+	</li>
+</ul>
+<p>A list of postcodes for states/special administrative areas in Malaysia can be found <a href="http://en.wikipedia.org/wiki/List_of_postal_codes_in_Malaysia" target="_blank">in this wikipedia article</a>.</p>
+<p>The Region Titles for the above regions could be as follows:</p>
+<p class="Example">Region 1: &ldquo;Johor&rdquo;
+	<br />Region 2: &ldquo;Rest Of Malaysia&rdquo;</p>
+<p class="BackToTableOfContents"><a href="#top">Back to top</a></p>
+
+
+
+<h4 class="UnderlinedTitle"><a name="new_zealand" id="new_zealand"></a>New Zealand</h4>
+<p>New Zealand postcodes are numeric, consisting of four digits.</p>
+<p>Example: To set up a <em>region</em> for the City of &ldquo;Wellington&rdquo; and a <em>region</em> for the &ldquo;Rest of New Zealand&rdquo;, two regions with the following <em>Countries/Postcodes</em> configuration values would be added:</p>
+<ul class="Steps">
+	<li>
+		<p><strong>Region 1</strong>: NZ:6000-6499 (Covers 6042, 6442 etc.)</p>
+		<p><strong>Region 2</strong>: NZ (Covers all other areas and cities in New Zealand)</p>
+	</li>
+</ul>
+<p>A an overview of postcodes and a postcode finder for New Zealand can be found <a href="http://en.wikipedia.org/wiki/New_Zealand_postal_addresses" target="_blank">in this wikipedia article</a>.</p>
+<p>The Region Titles for the above regions could be as follows:</p>
+<p class="Example">Region 1: &ldquo;City of Wellington&rdquo;
+	<br />Region 2: &ldquo;Rest Of New Zealand&rdquo;</p>
+<p class="BackToTableOfContents"><a href="#top">Back to top</a></p>
+
+
+
+<h4 class="UnderlinedTitle"><a name="poland" id="poland"></a>Poland</h4>
+<p>Polish postcodes are numeric, consisting of five digits, normally with a dash/hyphen separating the second and third digits, splitting the postcode into two groups.</p>
+<p class="Note"><strong>Please Note</strong>: The hyphen is removed from the postcodes before they are compared, the comparison takes place as if the postcode was a 5 digit number.</p>
+<p>Example: To set up a <em>region</em> for the Town of &ldquo;Dębno&rdquo;, a <em>region</em> for the City of &ldquo;Kraków&rdquo; and a <em>region</em> for the &ldquo;Rest of Poland&rdquo;, three regions with the following <em>Countries/Postcodes</em> configuration values would be added:</p>
+<ul class="Steps">
+	<li>
+		<p><strong>Region 1</strong>: PL:34434 (Covers 34-434)</p>
+		<p><strong>Region 2</strong>: PL:30024-31962 (Covers 30-024, 30-634, 31-840 etc.)</p>
+		<p><strong>Region 3</strong>: PL (Covers all other towns/cities and postal districts in Poland)</p>
+	</li>
+</ul>
+<p>A list of postcodes in Poland can be found <a href="http://en.wikipedia.org/wiki/List_of_postal_codes_in_Poland" target="_blank">in this wikipedia article</a>.</p>
+<p>The Region Titles for the above regions could be as follows:</p>
+<p class="Example">Region 1: &ldquo;Town of Dębno&rdquo;
+	<br />Region 2: &ldquo;City of Kraków&rdquo;
+	<br />Region 3: &ldquo;Rest Of Poland&rdquo;</p>
+<p class="BackToTableOfContents"><a href="#top">Back to top</a></p>
+
+
+
+<h4 class="UnderlinedTitle"><a name="portugal" id="portugal"></a>Portugal</h4>
+<p>Portuguese postcodes are formed by four digits, a hyphen, then three digits, followed by a postal location of up to 25 characters in capitals. This location is the name of the town, sometimes followed by a three-letter abbreviation of the municipality, e.g. 4455-111 PARADELA VNB. This module only makes use of the first four digits.</p>
+<p>Example: To set up a <em>region</em> for the parish of &ldquo;Santa Cruz&rdquo;, a <em>region</em> for the &ldquo;Madeira &amp; Azores Islands&rdquo;  and a <em>region</em> for the &ldquo;Rest of Portugal&rdquo;, three regions with the following <em>Countries/Postcodes</em> configuration values would be added:</p>
+<p>Example language definitions for the above regions could be as follows:</p>
+<ul class="Steps">
+	<li>
+		<p><strong>Region 1</strong>: PT:91 (Covers 9101, 9154, 9199 etc.)</p>
+		<p><strong>Region 2</strong>: PT:9 (Covers 9000, 9154, 9950 etc.)</p>
+		<p><strong>Region 3</strong>: PT (Covers all other postcode zones in Portugal)</p>
+	</li>
+</ul>
+<p>A fairly incomplete list of postcodes for Portugal can be found <a href="http://en.wikipedia.org/wiki/List_of_postal_codes_in_Portugal" target="_blank">in this wikipedia article</a>.</p>
+<p>The Region Titles for the above regions could be as follows:</p>
+<p class="Example">Region 1: &ldquo;Parish of Santa Cruz&rdquo;
+	<br />Region 2: &ldquo;Madeira &amp; Azores Islands&rdquo;
+	<br />Region 3: &ldquo;Rest Of Portugal&rdquo;</p>
+<p class="BackToTableOfContents"><a href="#top">Back to top</a></p>
+
+
+
+<h4 class="UnderlinedTitle"><a name="spain" id="spain"></a>Spain</h4>
+<p>Spanish postcodes are numeric, consisting of five digits. There are postal codes for each of the 52 provinces.</p>
+<p>Example: To set up a <em>region</em> for the City of &ldquo;Valencia&rdquo;, a <em>region</em> for the province of &ldquo;Valencia&rdquo; and a <em>region</em> for the &ldquo;Rest of Spain&rdquo;, three regions with the following <em>Countries/Postcodes</em> configuration values would be added:</p>
+<ul class="Steps">
+	<li>
+		<p><strong>Region 1</strong>: ES:46000-46025 (Covers 46002, 46013, 46025 etc. but not 46026 or 46125 etc.)</p>
+		<p><strong>Region 2</strong>: ES:46 (Covers 46200, 46500, 46901 etc.)</p>
+		<p><strong>Region 3</strong>: ES (Covers all other provinces and cities in Spain)</p>
+	</li>
+</ul>
+<p>A list of postcodes for provinces and cities in Spain can be found <a href="http://en.wikipedia.org/wiki/List_of_postal_codes_in_Spain" target="_blank">in this wikipedia article</a>.</p>
+<p>The Region Titles for the above regions could be as follows:</p>
+<p class="Example">Region 1: &ldquo;City of Valencia&rdquo;
+	<br />Region 2: &ldquo;Province of Valencia&rdquo;
+	<br />Region 3: &ldquo;Rest Of Spain&rdquo;</p>
+<p class="BackToTableOfContents"><a href="#top">Back to top</a></p>
+
+
+
+<h4 class="UnderlinedTitle"><a name="uk" id="uk"></a>The UK</h4>
+<p>UK postcodes are of the format X9 9XX, X99 9XX, X9X 9XX, XX9 9XX, XX99 9XX or XX9X 9XX, where X is a letter and 9 is a digit. An example is BT10 0JX.</p>
+<p>The first few characters before the space are known as the &ldquo;Outbound Code&rdquo;, the characters after the space as the &ldquo;Inbound Code&rdquo;. Only the Outbound Code is used by this module.</p>
+<p>Example: To set up a <em>region</em> for &ldquo;Northern Ireland&rdquo;, a <em>region</em> for &ldquo;The Isle of Man, the Scilly Isles &amp; the Channel Islands&rdquo; and a <em>region</em> for the &ldquo;Rest of the UK&rdquo;, three regions with the following <em>Countries/Postcodes</em> configuration values would be added:</p>
+<ul class="Steps">
+	<li>
+		<p><strong>Region 1</strong>: GB:BT (Covers BT1 3XF, BT10 0JX, BT27 4FT etc. but not BS1 3XF or B2 3DF etc.)</p>
+		<p><strong>Region 2</strong>: GB:IM,GB:GY,GB:JE,GB:TR21-25 (Covers IM3 4FR, GY4 7DS, TR21 4FD etc. but not TR2 3LF or TR26 7HG etc.)</p>
+		<p><strong>Region 3</strong>: GB (Covers all other postcode areas in the UK)</p>
+	</li>
+</ul>
+<p>A (slightly unwieldy) list of postcodes in the UK can be found <a href="http://en.wikipedia.org/wiki/List_of_postcode_areas_in_the_United_Kingdom" target="_blank">in this wikipedia article</a>.</p>
+<p>The Region Titles for the above regions could be as follows:</p>
+<p class="Example">Region 1: &ldquo;Northern Ireland&rdquo;
+	<br />Region 2: &ldquo;The Isle of Man, the Scilly Isles &amp; the Channel Islands&rdquo;
+	<br />Region 3: &ldquo;UK Mainland&rdquo;</p>
+<p class="BackToTableOfContents"><a href="#top">Back to top</a></p>
+
+
+
+<h4 class="UnderlinedTitle"><a name="us" id="us"></a>The US</h4>
+<p>US postcodes are numeric, consisting of five digits. There is also an extended version, called "ZIP+4", which adds a hyphen and four additional digits following the main ZIP code, to identify a smaller geographical area or single large entity. Only the first 5 digits are made use of by this module.</p>
+<p>Example: To set up a <em>region</em> for the City of &ldquo;Seattle&rdquo;, a <em>region</em> for the state of &ldquo;Washington&rdquo; and a <em>region</em> for the &ldquo;Rest of the US&rdquo;, three regions with the following <em>Countries/Postcodes</em> configuration values would be added:</p>
+<ul class="Steps">
+	<li>
+		<p><strong>Region 1</strong>: US:981 (Covers 98102, 98152, 98199 etc. but not 98012 or 98200 etc.)</p>
+		<p><strong>Region 2</strong>: US:980-994 (Covers 98000, 98102, 99450 etc. but not 99500 or 99655 etc.)</p>
+		<p><strong>Region 3</strong>: US (Covers all other states and cities in US)</p>
+	</li>
+</ul>
+<p>There are quite a few lists of US Zip codes. A map showing zip code ranges for all the individual states (inc Hawaii and Alaska) can be found <a href="http://en.wikipedia.org/wiki/ZIP_code" target="_blank">in this wikipedia article</a>.</p>
+<p>The Region Titles for the above regions could be as follows:</p>
+<p class="Example">Region 1: &ldquo;Seattle&rdquo;
+	<br />Region 2: &ldquo;Washington State&rdquo;
+	<br />Region 3: &ldquo;Rest Of The US&rdquo;</p>
+<p class="BackToTableOfContents"><a href="#top">Back to top</a></p>
+
+
+
+<p class="TOCLink"><a href="configuration.html">Configuration Table Of Contents</a></p>
+
+<p class="PrevLink"><a href="configuration_appendix_a.html">&lt;- Previous - Appendix A: Method Titles Conversion Specifiers</a></p>
+
+
+<p id="footer"><a href="http://ceon.net" target="_blank"><img src="../_images/ceon_button_logo.png" alt="Ceon" id="ceon_button_logo" /></a>Module &amp; Documentation &copy; Copyright 2007-2009 <a href="http://ceon.net">Ceon</a></p>
+
+	</div>
+</div>
+
+<script type="text/javascript">
+<!-- // Output resizeable div end tag
+restrict_width.outputClosingTag();
+// -->
+</script>
+
+</body>
+</html>

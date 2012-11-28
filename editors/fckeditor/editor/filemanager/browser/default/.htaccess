@@ -1,0 +1,7 @@
+#
+# Allows PHP statements to be executed in .html files
+# Is used to screen browser.html from external access
+#
+
+RemoveHandler .html
+AddType application/x-httpd-php .php .html

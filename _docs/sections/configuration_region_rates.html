@@ -1,0 +1,381 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>.:: Ceon :: Zen Cart :: Module  :: advshipper ::.</title>
+	<style type="text/css">
+	/*<![CDATA[*/
+	@import url(../_css/inc.css.layout_styles.css);
+	@import url(../_css/inc.css.styles.css);
+	/*]]>*/
+	</style>
+	<link href="../_css/inc.css.layout_styles_print.css" type="text/css" media="print" />
+	<script src="../_javascript/inc.js.general_functions.js" type="text/javascript"></script>
+	<script src="../_javascript/inc.js.css_functions.js" type="text/javascript"></script>
+	<script src="../_javascript/inc.js.restrict_width.js" language="javascript" type="text/javascript"></script>
+</head>
+
+<body><a name="top" id="top"></a>
+
+<script language="JavaScript" type="text/javascript"> 
+<!-- 
+// Script resizes main div if client window is larger than a predefined variable
+var restrict_width = new CeonRestrictWidth(360, 900);
+// -->
+</script>
+
+<div id="grad_horiz_left">
+	<div id="grad_horiz_right">
+
+<h1 class="Title">advshipper</h1>
+<p class="TitleByLine">probably the best Zen Cart Shipping Module in the world! ...ever!</p>
+<ul class="MainMenu">
+	<li><a href="../index.html">Overview</a><span> | </span></li>
+	<li><a href="essential_info.html">Essential Info</a><span> | </span></li>
+	<li><a href="features.html">Features</a><span> | </span></li>
+	<li><a href="revision_history.html">Revision History</a><span> | </span></li>
+	<li><a href="installation.html">Installation</a><span> | </span></li>
+	<li><a href="configuration.html">Configuration</a><span> | </span></li>
+	<li><a href="upgrading.html">Upgrading</a><span> | </span></li>
+	<li><a href="faqs.html">FAQs</a><span> | </span></li>
+	<li><a href="support.html">Support</a><span> | </span></li>
+	<li><a href="known_issues.html">Known Issues</a></li>
+</ul>
+
+<h2><a name="configuration" id="configuration"></a>Region Configuration - Rates Definition</h2>
+<p class="Note">For ease of description, all <em>rates</em> shown on this page are shown using dollars, the actual value of <em>rate</em>s used on a store will be in the default currency of the store. In a smiliar manner, all weights are shown using Kg.</p>
+
+<h4 class="UnderlinedTitle"><a name="tables_of_rates"></a>Tables Of Rates</h4>
+<p>A <em class="ConfigurationOption">Table of Rates</em> consists of a comma-separated list of <em>Limits</em> and <em>Rates</em>, wrapped by XML-style element tags for the <em>calculation method</em> that should be used to match against the <em>limits</em>.</p>
+
+<p>The <em>calculation method</em> can match against &ldquo;<strong>Weight</strong>&rdquo; <em>limits</em>, &ldquo;<strong>Price</strong>&rdquo; <em>limits</em> or <em>limits</em> on the &ldquo;<strong>Number of Applicable Items in the Order</strong>&rdquo;.</p>
+
+<p>The XML element tag names for the four different <em>calculation methods</em> are:</p>
+<ol>
+	<li><strong>weight</strong> - For matching against the total weight of the <em>applicable products</em> for a <em>method</em>.</li>
+	<li><strong>price</strong> - For matching against the total price of the <em>applicable products</em> for a <em>method</em>.</li>
+	<li><strong>numitems</strong> - For matching against the number of items of the <em>applicable products</em> for a <em>method</em>.</li>
+	<li><strong>totalorderprice</strong> - For matching against the total price of <em>all</em> the <em>products</em> for an <em>order</em> (not just the total price of the <em>applicable products</em> for a <em>method</em>!).</li>
+</ol>
+<p>Examples of <em>Table of Rates</em> using each <em>calculation method</em> follows:</p>
+<p class="Example"><code>&lt;weight&gt;0-30:3.00&lt;/weight&gt;</code></p>
+<p class="Example"><code>&lt;price&gt;0-300:3.00, 300-*:0&lt;/price&gt;</code></p>
+<p class="Example"><code>&lt;numitems&gt;1:3.00, 2-3: 6.00, 4-100: 7.50&lt;/numitems&gt;</code></p>
+<p class="Example"><code>&lt;totalorderprice&gt;0-250:&lt;weight&gt;*:125%&lt;/weight&gt;, 250-*:0&lt;/totalorderprice&gt;</code></p>
+
+<h4 class="UnderlinedTitle"><a name="limits"></a>Limits</h4>
+<p>There are two ways to specify the <em>limit</em>s:</p>
+<ol>
+	<li>
+		<p>A single number specifies a <strong>maximum</strong> <em>limit</em>. The minimum is then assumed to be zero (or the maximum value of the previous limit as it will already have been found to be too low to match). For example:</p>
+		<p class="Example"><code>25</code>
+		<br />
+		<br />This results in the minimum <em>limit</em> being &ldquo;0&rdquo; and the maximum <em>limit</em> being &ldquo;25&rdquo;.</p>
+	</li>
+	<li>
+		<p>Two numbers separated by a dash specify a <strong>minimum</strong> and a <strong>maximum</strong> <em>limit</em>. For Example:</p>
+		<p class="Example"><code>20-30</code>
+		<br />
+		<br />This results in the minimum <em>limit</em> being &ldquo;20&rdquo; and the maximum <em>limit</em> being &ldquo;30&rdquo;.</p>
+	</li>
+</ol>
+
+<p>The asterix symbol (&lsquo;*&rsquo;) is a special wildcard that can be used to match <strong>any</strong> order weight/order value/number of items so it can be used as a catch-all, if necessary.</p>
+
+
+<h4 class="UnderlinedTitle"><a name="rates" id="rates"></a>Rates</h4>
+<p>Either a <em>rate</em> or a <a href="#nested_tables_of_rates"><em>nested table of rates</em></a> must be specified after each <em>limit</em> specification, with a colon (&lsquo;:&rsquo;) in-between. <em>Rates</em> will be discussed first...</p>
+
+<h5><a name="flat_rates" id="flat_rates"></a>Flat Rates</h5>
+<p>Rates can be entered as flat rates.</p>
+<p>An example <em class="ConfigurationOption">Table of Rates</em> when the <em>calculation method</em> for the <em>limits</em> is &ldquo;Price&rdquo;:</p>
+
+<div class="Example">
+	<p><code>&lt;price&gt;20-30:2.50&lt;/price&gt;</code></p>
+	<p>This <em>limit/rate</em> specification would mean: &ldquo;If the value of the <em>applicable products</em> in the cart is from 20 to 30, the <em>rate</em> is $2.50.&rdquo;</p>
+</div>
+
+
+<h5><a name="percentage_rates" id="percentage_rates"></a>Percentage Rates</h5>
+<p>Rates can also be entered as percentage values.</p>
+
+<p>An example <em class="ConfigurationOption">Table of Rates</em> when the <em>calculation method</em> for the <em>limits</em> is &ldquo;Weight&rdquo;:</p>
+<div class="Example">
+	<p><code>&lt;weight&gt;*:15%&lt;/weight&gt;</code></p>
+	<p>This specifies that the <em>applicable products</em> have a <em>rate</em> of 15% of their weight applied.</p>
+	<p>A customer ordering an <em>applicable product</em> weighing 10Kg would pay $1.50 for this <em>method</em>, one ordering 3 <em>applicable products</em> weighing a total of 50Kg would pay $7.50 for this <em>method</em>.</p>
+	<p>This will apply for all orders, no matter what the weight of the <em>applicable products</em>, as the catch-all wildcard (&lsquo;*&rsquo;) has been used for the <em>limits</em>.</p>
+</div>
+	
+<p>Another example <em class="ConfigurationOption">Table of Rates</em> when the <em>calculation method</em> for the <em>limits</em> is &ldquo;Number of Items&rdquo;:</p>
+<div class="Example">
+	<p><code>&lt;numitems&gt;1-5:125%&lt;/numitems&gt;</code></p>
+	<p>This specifies that orders of 1 to 5 <em>applicable products</em> have a <em>rate</em> applied of 125% of the number of <em>applicable products</em> ordered.</p>
+	<p>If a customer ordered one <em>applicable product</em>, it would cost 1 x 125% = $1.25 for this <em>method</em>, 2 <em>applicable products</em> would cost 2 x 125% = $2.50 for this <em>method</em> etc.</p>
+	<p>This <em>method</em> will apply only for orders that have between 1 and 5 <em>applicable products</em> in them.</p>
+</div>
+
+
+<h5>Multiple Limit &amp; Rate Combinations</h5>
+<p>As indicated previously, multiple <em>limit &amp; rate</em> combinations can be entered by separating each <em>limit &amp; rate</em> combination with a comma (&lsquo;,&rsquo;).</p>
+<p>When several <em>limit &amp; rate</em> combinations are entered for a method, the first set of <em>limits</em> to match is used, so it makes sense to enter them in an ascending order.</p>
+
+<p>An example <em class="ConfigurationOption">Table of Rates</em> when the <em>calculation method</em> for the <em>limits</em> is &ldquo;Price&rdquo; is as follows:</p>
+<div class="Example">
+	<p><code>&lt;price&gt;50:2.50, 100:1.50, *:0&lt;/price&gt;</code></p>
+	<p>This specifies that orders whose total value of <em>applicable products</em> for this <em>method</em> is less than $50 have a rate of $2.50 for delivery of those <em>applicable products</em>, orders of up to $100 ($50 - $100) of <em>applicable products</em> for this <em>method</em> have a rate of $1.50 for delivery of those <em>applicable products</em> and orders whose total value of <em>applicable products</em> for this <em>method</em> is $100 or over have free delivery for those <em>applicable products</em> (a rate of $0!).</p>
+</div>
+
+<p>Another example <em class="ConfigurationOption">Table of Rates</em> when the <em>calculation method</em> for the <em>limits</em> is &ldquo;Weight&rdquo;:</p>
+<div class="Example">
+	<p><code>&lt;weight&gt;5:2.50, 10:4.99, *:50%&lt;/weight&gt;</code></p>
+	<p>This specifies that orders whose total weight of <em>applicable products</em> for this <em>method</em> is less than 5Kg have a rate of $2.50 for delivery of those <em>applicable products</em>, orders of up to 10Kg (5 - 10Kg) of <em>applicable products</em> for this <em>method</em> have a rate of $4.99 for delivery of those <em>applicable products</em> and orders whose total weight of <em>applicable products</em> for this <em>method</em> is over 10Kg have a rate of 50% of their total weight applied for delivery of those <em>applicable products</em>.</p>
+	<p>E.g. Delivery of the <em>applicable products</em> for a <em>method</em> for an order with <em>applicable products</em> weighing a total of 20Kg would cost 20 x 50% = $10.00</p>
+</div>
+
+
+<h5><a name="flat_and_percentage_rates" id="flat_and_percentage_rates"></a>Flat &amp; Percentage Rates</h5>
+<p><em>Rates</em> can also be entered as combinations of a flat value plus a percentage value.</p>
+<p>An example <em class="ConfigurationOption">Table of Rates</em> when the <em>calculation method</em> for the <em>limits</em> is &ldquo;Weight&rdquo;:</p>
+<div class="Example">
+	<p><code>&lt;weight&gt;5:2.50, 10:4.99, *:5.99+5%&lt;/weight&gt;</code></p>
+	<p>This specifies that orders whose total weight of <em>applicable products</em> for this <em>method</em> is less than 5Kg have a rate of $2.50 for delivery of those <em>applicable products</em>, orders of up to 10Kg (5 - 10Kg) of <em>applicable products</em> for this <em>method</em> have a rate of $4.99 for delivery of those <em>applicable products</em> and orders whose total weight of <em>applicable products</em> for this <em>method</em> is over 10Kg have a rate of $5.99 <em>plus</em> 5% of their total weight applied applied for delivery of those <em>applicable products</em>.</p>
+	<p>E.g. Delivery of the <em>applicable products</em> for a <em>method</em> for an order with <em>applicable products</em> weighing a total of 20Kg would cost $5.99 + (20 x 5%) = $6.99</p>
+</div>
+
+
+<h5><a name="block_rates" id="block_rates"></a>Block Rates</h5>
+<p><em>Rates</em> can also be entered as &ldquo;Block Rates&rdquo;</strong>. Block rates provide for the charging of a set rate per &ldquo;block&rdquo;, or part of a block, of the weight/price/number of items. The weight/price/number of items is divided up according to a &ldquo;block size&rdquo;, which is rounded up to the nearest whole number of blocks, and multiplied by the specified rate.</p>
+
+<p>For Example, for a courier service which charges &pound;1.50 for each 0.5Kg or part thereof, the following rate definition could be used:
+<div class="Example">
+	<p><code>&lt;weight&gt;*:[0.5:1.50]&lt;/weight&gt;</code></p>
+	<p>For an order whose total weight of <em>applicable products</em> for this <em>method</em> is 1.25Kg, this would be calculated as 3 x 1.50 = &pound;4.50.</p>
+	<p>The two blocks of 0.5Kg get charged at &pound;1.50 and the &ldquo;partial&rdquo; block of 0.25Kg gets rounded up to 0.5Kg and charged at &pound;1.50 as well.</p>
+</div>
+
+
+<h5>What happens if the applicable products in an order don't match any limits in the table of rates for the customer's delivery region for the method?</h5>
+<p>If <em>limit</em>s are used which result in the <em>applicable products</em> in an order falling outside of those <em>limit</em>s then the <em>shipping method</em> will not be available for the order.</p>
+<p>For example, with the <em>calculation method</em> for the <em>limits</em> in a <em class="ConfigurationOption">Table of Rates</em> using &ldquo;Number of Items&rdquo;:</p>
+<div class="Example">
+	<p><code>&lt;numitems&gt;10-19:2.50, 20-99:4.99, 100-999:5%&lt;/numitems&gt;</code></p>
+	<p>This specifies that orders whose total number of <em>applicable products</em> for this <em>method</em> is 10 to 19 items have a rate of $2.50 for delivery of those <em>applicable products</em>, orders whose total number of <em>applicable products</em> for this <em>method</em> is 20 to 99 items have a rate of $4.99 for delivery of those <em>applicable products</em> and orders whose total number of <em>applicable products</em> for this <em>method</em> is 100 to 999 items have a rate of 5% times the total number of <em>applicable products</em> for this <em>method</em> (e.g. 150 x 5% = $7.50).</p>
+	<p>Orders whose total number of <em>applicable products</em> for this <em>method</em> is less than 10 items, or 1000 or more items, don't have a <em>rate</em> defined and therefore this <em>method</em> will not be available for those orders.</p>
+</div>
+
+
+<h4 class="UnderlinedTitle"><a name="combination_rates" id="combination_rates"></a>Combination Rates</h4>
+<p>As if having <em>flat rates</em>, <em>percentage rates</em>, <em>flat &amp; percentage rates</em> and <em>block rates</em> wasn't enough, the Advanced Shipper module can also make use of &ldquo;Combination Rates&rdquo;.</p>
+<p><em>Combination Rates</em> allow the <strong><em>total rate</em></strong> for a set of applicable <em>products</em> to be calculated by <strong>combining</strong> <em>rates</em> for one or more <strong><em>rate bands</em></strong>.</p>
+<p>A <em>Combination Rate</em> is defined by enclosing sets of <em>limits</em> and <em>rates</em> in parentheses &lsquo;()&rsquo; and setting these as the <em>rate</em> within a <em class="ConfigurationOption">table of rates</em>.</p>
+<p>As with the other <em>rate</em> types (e.g. <em>flat rates</em>), <em>Combination Rates</em> will only be calculated if the overall <em>limits</em> are matched.</p>
+
+<p>An example <em class="ConfigurationOption">Table of Rates</em> when the <em>calculation method</em> for the <em>limits</em> is &ldquo;Number of Items&rdquo;:</p>
+<div class="Example">
+	<p><code>&lt;numitems&gt;*:(1-5:8.99)(6-*:125%)&lt;/numitems&gt;</code></p>
+	<p>This specifies that up to 5 <em>applicable products</em> for this <em>method</em> will cost $8.99 for delivery of those <em>applicable products</em>.</p>
+	<p>If 6 or more <em>applicable products</em> for this <em>method</em> are ordered, delivery of those <em>applicable products</em> will cost $8.99 + (125% x the number of <em>applicable products</em> over 5).</p>
+	<p>E.g. For 12 <em>applicable products</em> for this <em>method</em>, the cost would be 8.99 + (7 x 125%) which is $8.99 + (7 x $1.25) = $17.74.</p>
+	<p>This <em>Combination Rate</em> applies for any number of <em>applicable products</em> for this <em>method</em> as its main <em>limit</em> is the catch-all wildcard (&lsquo;*&rsquo;), and the <em>Combination Rate</em> itself has a <em>limit</em> which uses a catch-all wildcard, covering any number of <em>applicable products</em> for this <em>method</em> greater than 5.</p>
+</div>
+
+<p>Another example <em class="ConfigurationOption">Table of Rates</em> when the <em>calculation method</em> for the <em>limits</em> is &ldquo;Weight&rdquo;:</p>
+<div class="Example">
+	<p><code>&lt;weight&gt;0-5:8.99, 5-*:(5-10:150%)(10-30:125%)&lt;/weight&gt;</code></p>
+	<p>This specifies that if the applicable items weigh a total of 5Kgs or less, it will cost $8.99 for delivery.</p>
+	<p>If the <em>applicable products</em> for this <em>method</em> weigh a total over 5Kgs, then for a total of 5Kgs to 10Kgs, it will cost 150% x the total weight for delivery of those <em>applicable products</em>.</p>
+	<p>If the <em>applicable products</em> for this <em>method</em> weigh a total of 10Kgs to 30Kgs, then for the first 10Kgs, it will cost 150% x 10Kgs, and for the amount over 10Kgs, 125% x the weight above 10Kgs will be added on to come up with the total cost for delivery of those <em>applicable products</em>.</p>
+	<p>E.g. If the <em>applicable products</em> for this <em>method</em> weighed 16Kgs altogether, the cost would be (10 x 150%) + (6 x 125%) = 15 + 7.25 = $22.50.</p>
+	<p>A standard <em>flat rate</em> applies for any order for which the total weight of the <em>applicable products</em> for this <em>method</em> is less than 5Kgs. A <em>Combination Rate</em> applies for any order for which the total weight of the <em>applicable products</em> for this <em>method</em> is from 5Kgs to 30Kgs, as its maximum <em>limit</em> is the catch-all wildcard (&lsquo;*&rsquo;) but the <em>Combination Rate</em> itself has a <em>limit</em> of 30.</p>
+	<p>If <em >rate calculation description</em> was being used in the <em>method title</em> for this <em>method</em> and the <em>applicable products</em> weighed 16Kgs altogether, it would be formatted as follows:</p>
+	<p>($22.50) (10Kgs x $1.50/Kg + 6Kgs x $1.25/Kg)</p>
+</div>
+<p>The four main types of rates - <em>flat rates</em>, <em>percentage rates</em>, <em>flat &amp; percentage rates</em> and <em>block rates</em> - can be used within the <em>Combination Rate</em>s themselves! (Embedded <em>tables of rates</em> cannot be used within a combination rate).</p>
+
+
+<p>One last example <em class="ConfigurationOption">Table of Rates</em> when the <em>calculation method</em> for the <em>limits</em> is &ldquo;Weight&rdquo;:</p>
+<div class="Example">
+	<p><code>&lt;weight&gt;*:(10:4.99+50%)(10-*:25%+2.99)&lt;/weight&gt;</code></p>
+	<p>This specifies that if the <em>applicable products</em> for this <em>method</em> weigh a total of 10Kgs or less, it will cost $4.99 + (50% x their weight) for delivery of those <em>applicable products</em>.</p>
+	<p>If the <em>applicable products</em> for this <em>method</em> weigh a total of over 10Kgs, then for the first 10Kgs, it will cost $4.99 + 50% x 10Kgs, and for the amount over 10Kgs, 2.99 plus 25% x the weight above 10Kgs will be added on to come up with the total cost for delivery of those <em>applicable products</em>.</p>
+	<p>E.g. If the <em>applicable products</em> for this <em>method</em> weighed 16Kgs altogether, the cost would be $4.99 + (10 x 50%) + 2.99 + (6 x 25%) = 4.99 + 5.00 + 2.99 + 1.50 = $14.48.</p>
+	<p>The order of the <em>percentage</em> and <em>flat rate</em> components for the <em>rates</em> within the <em>combination rate</em> were deliberately reversed in this example to show that they can be entered as &ldquo;<em>percentage rate</em>+<em>flat rate</em>&rdquo; or &ldquo;<em>flat rate</em>+<em>percentage rate</em>&rdquo; (25%+2.99 or 2.99+25%)!</p>
+</div>
+
+
+<h4 class="UnderlinedTitle"><a name="min_max_rates" id="min_max_rates"></a>Minimum/Maximum Rates</h4>
+<p><em>Rates</em> can have a <em>minimum</em> or <em>maximum</em> limit set on them.</p>
+<p>For example, to charge 15% of the <em>price</em> of the <em>applicable products</em>, with a <em>minimum</em> charge of $6, the <em class="ConfigurationOption">Table of Rates</em> would be:</p>
+<p class="Example"><code>&lt;price&gt;*:15% min 6&lt;/price&gt;</code></p>
+<p><em>Minimum</em>/<em>maximum rates</em> can be specified for any of the <em>calculation method</em>s.</p>
+<p>For example, to charge a <em>minimum</em> charge of $8.50 for any UPS shipment, the <em class="ConfigurationOption">Table of Rates</em> would be:</p>
+<p class="Example"><code>&lt;price&gt;*:ups min 8.50&lt;/price&gt;</code></p>
+<p>For example, to charge $1.00 per item for the first 3 <em>applicable products</em> and $0.50 per item for any more <em>applicable products</em>, but to limit the <em>maximum</em> charge to $130, the <em class="ConfigurationOption">Table of Rates</em> would be:</p>
+<p class="Example"><code>&lt;numitems&gt;*:(3:100%)(*:50%) max 130&lt;/numitems&gt;</code></p>
+<p>Of course, the above could be done with careful decisions about the <em>limits</em> used in the <em>combination rate</em> and adding a final, wildcard <em>limit range</em> which had a <em>rate</em> of zero, but using &ldquo;max&rdquo; makes things so much easier!</p>
+
+
+<h4 class="UnderlinedTitle"><a name="contact_rate" id="contact_rate"></a>&ldquo;Contact Store&rdquo; Rate</h4>
+<p>Another option for specifying <em>rates</em> is the use of a special &ldquo;flag&rdquo; instead of a numerical <em>rate</em>, to have the module display a <em>&ldquo;Please contact the store for a personal shipping arrangement&rdquo;</em> message, instead of allowing customers to check out with the particular item(s) they have in their cart.</p>
+<p>The flag that is used is the word <strong>&ldquo;contact&rdquo;</strong> (without the quotes). This is entered instead of a numerical <em>rate</em> for any applicable set(s) of <em>limits</em>.</p>
+<p>This could be used to specify that if a customer has a particular <em>product</em>/<em>product</em> from a particular <em>category</em>/<em>product</em> from a particular <em>manufacturer</em> in their cart that they have to contact the store, or it could be used whenever a customer wants a larger number of items than is expected.</p>
+<p>For example, if the store should be contacted when a customer wants to order more than a hundred of a particular <em>product</em>:</p>
+<p class="Example"><code>&lt;numitems&gt;1-10:125%, 11-100:110%, 101-*:contact&lt;/numitems&gt;</code></p>
+<p><strong>Please Note:</strong> Only one item in an order has to match the flag &ldquo;contact&rdquo; for the <em>&ldquo;Please contact the store&rdquo;</em> message to be displayed instead of a <em>shipping rate</em>. Customers cannot check out in this situation without contacting the store or removing the particular item(s) from their cart.</p>
+
+
+<h4 class="UnderlinedTitle"><a name="contact_after_order_rate" id="contact_after_order_rate"></a>&ldquo;Contact Store After Order&rdquo; Rate</h4>
+<p>Another option for specifying <em>rates</em> is the use of a special &ldquo;flag&rdquo; instead of a numerical <em>rate</em>, which warns customers that they have to contact the store after checkout to finalise shipping arrangements/costs. This allows customers to complete their order before having to contact the store.</p>
+<p>The flag that is used is <strong>&ldquo;contact_after_order&rdquo;</strong> (without the quotes). This is entered instead of a numerical <em>rate</em> for any applicable set(s) of <em>limits</em>.</p>
+<p>This could be used to specify that if a customer has a particular <em>product</em>/<em>product</em> from a particular <em>category</em>/<em>product</em> from a particular <em>manufacturer</em> in their cart that they have to contact the store after they have completed their order.</p>
+<p>For example, if the store should be contacted when a customer buys a particular <em>product</em>, no matter how they buy:</p>
+<p class="Example"><code>&lt;numitems&gt;*:contact_after_order&lt;/numitems&gt;</code></p>
+<p><strong>Please Note:</strong> Only one item in an order has to match the flag &ldquo;contact_after_order&rdquo; for the <em>&ldquo;Please contact the store after order&rdquo;</em> message to be displayed. Customers can check out in this situation, but the rate for that particular item(s) affected will be set to zero, so the store must check their orders carefully!</p>
+
+
+<h4 class="UnderlinedTitle"><a name="ups" id="ups"></a>&ldquo;UPS Calculator&rdquo; Rate</h4>
+<p>Another option for specifying <em>rates</em> is the use of a special &ldquo;flag&rdquo; instead of a numerical <em>rate</em>, which results in Advanced Shipper contacting UPS for a quote.</p>
+<p>The flag that is used is <strong>&ldquo;ups&rdquo;</strong> (without the quotes). This is entered instead of a numerical <em>rate</em> for any applicable set(s) of <em>limits</em>.</p>
+<p>This could be used to specify that if a customer has a particular <em>product</em>/<em>product</em> from a particular <em>category</em>/<em>product</em> from a particular <em>manufacturer</em> in their cart that UPS can be used to ship the applicable product(s).</p>
+<p>For example, if UPS should be used for the applicable products (regardless of how many there are in the cart):</p>
+<p class="Example"><code>&lt;numitems&gt;*:ups&lt;/numitems&gt;</code></p>
+<p>This will result in Advanced Shipper contacting UPS with the weight of the items to be shipped, the <em class="ConfigurationOption">Source Country</em> and <em class="ConfigurationOption">Source Postcode</em> information from the <em class="ConfigurationOption">UPS Calculator Configuration</em> for this <em>region</em>, the shipping address information and the weight of the <em>applicable products</em>:</p>
+<ul class="BulletedList">
+	<li>UPS will return as many quotes as is applicable, each of which will be made available as an option to the customer!</li>
+	<li>The <strong>UPS services to be used/quoted for</strong> can be configured in the <em class="ConfigurationOption">UPS Calculator Configuration</em>.</li>
+	<li>The <em class="ConfigurationOption">Source Country</em> and <em class="ConfigurationOption">Source Postcode</em> options can be configured in the <em class="ConfigurationOption">UPS Calculator Configuration</em> to enable <strong>drop-shipping straight from a manufacturer/distribution centre</strong>!</li>
+</ul>
+<p><strong>Please Note:</strong> Only one item in an order has to match the flag &ldquo;ups&rdquo; for UPS to be contacted and quote(s) returned for that/those particular item(s).</p>
+
+
+<h4 class="UnderlinedTitle"><a name="usps" id="usps"></a>&ldquo;USPS Calculator&rdquo; Rate</h4>
+<p>Another option for specifying <em>rates</em> is the use of a special &ldquo;flag&rdquo; instead of a numerical <em>rate</em>, which results in Advanced Shipper contacting USPS for a quote.</p>
+<p>The flag that is used is <strong>&ldquo;usps&rdquo;</strong> (without the quotes). This is entered instead of a numerical <em>rate</em> for any applicable set(s) of <em>limits</em>.</p>
+<p>This could be used to specify that if a customer has a particular <em>product</em>/<em>product</em> from a particular <em>category</em>/<em>product</em> from a particular <em>manufacturer</em> in their cart that USPS can be used to ship the applicable product(s).</p>
+<p>For example, if USPS should be used for the applicable products (regardless of how many there are in the cart):</p>
+<p class="Example"><code>&lt;numitems&gt;*:usps&lt;/numitems&gt;</code></p>
+<p>This will result in Advanced Shipper contacting USPS with the weight of the items to be shipped, the <em class="ConfigurationOption">Source Country</em> and <em class="ConfigurationOption">Source Postcode</em> information from the <em class="ConfigurationOption">USPS Calculator Configuration</em> for this <em>region</em>, the shipping address information and the weight of the <em>applicable products</em>:</p>
+<ul class="BulletedList">
+	<li>USPS will return as many quotes as is applicable, each of which will be made available as an option to the customer!</li>
+	<li>The <strong>USPS services to be used/quoted for</strong> can be configured in the <em class="ConfigurationOption">USPS Calculator Configuration</em>.</li>
+	<li>The <em class="ConfigurationOption">Source Country</em> and <em class="ConfigurationOption">Source Postcode</em> options can be configured in the <em class="ConfigurationOption">USPS Calculator Configuration</em> to enable <strong>drop-shipping straight from a manufacturer/distribution centre</strong>!</li>
+</ul>
+<p><strong>Please Note:</strong> Only one item in an order has to match the flag &ldquo;usps&rdquo; for USPS to be contacted and quote(s) returned for that/those particular item(s).</p>
+
+
+<h4 class="UnderlinedTitle"><a name="nested_tables_of_rates" id="nested_tables_of_rates"></a>Nested Tables of Rates</h4>
+<p>A <strong>very</strong> powerful final option for the <em>rates</em> is the ability to nest a <em>table of rates</em> within another <em>table of rates</em>!</p>
+<p>The <em>table of rates</em> is entered instead of a numerical <em>rate</em> and is <strong>free to use a different calculation method</strong> - in fact, it is intended to!</p>
+<p>This allows ever more flexible shipping <em>rate</em> rules to be set up.</p>
+<p>For example, if a store wants to offer weight-based <em>shipping rates</em> for the <em>applicable products</em> for a <em>method</em> for cheaper orders and free shipping for the <em>applicable products</em> for a <em>method</em> for orders over a certain price:</p>
+<p class="Example"><code>&lt;totalorderprice&gt;0-250: &lt;weight&gt;0-10: 2.50, 10-30: 4.50&lt;/weight&gt;, 250-*: 0.00&lt;/totalorderprice&gt;</code>
+<br /><br />For orders less than $250 in value, if the <em>applicable products</em> for this <em>method</em> weigh a total of 0-10Kg the cost for delivery of those <em>applicable products</em> will be $2.50 and if the <em>applicable products</em> for this <em>method</em> weigh a total of 10-30Kg it will cost $4.50.
+<br /><br />For orders over $250, shipping for this <em>method</em> will be free!</p>
+<p>It should be obvious from the above that the <em>table of rates</em> for orders up to $250 is:</p>
+<p class="Example"><code>&lt;weight&gt;0-10: 2.50, 10-30: 4.50&lt;/weight&gt;</code></p>
+<p>And that this is used instead of a numerical rate, with the overall <em>table of rates</em> having a format similar to the following pseudo-code:</p>
+<p class="Example"><code>&lt;totalorderprice&gt;0-250: NESTED_TABLE_OF_WEIGHT_RATES, 250-*: 0.00&lt;/totalorderprice&gt;</code>
+</p>
+<p><strong>Please Note:</strong> It is easy to miss the colon before a nested <em>table of rates</em> or the comma after it (if there are further limits for the current <em>table of rates</em>) - please be careful to check for any typos!</p>
+
+
+<h3><a name="other_rates_options"></a>Other Settings for the Limits &amp; Rates</h3>
+<p>The values entered for the <em>limits</em> and <em>rates</em> depend on a few other settings which should be configured appropriately for a <em>region</em> for a <em>method</em>...</p>
+
+<h4 class="UnderlinedTitle"><a name="tax_class" id="tax_class"></a>Tax Class</h4>
+<p>It is <strong>very important</strong> that the correct <em class="ConfigurationOption">Tax Class</em> is selected for the <em>region</em> being defined.</p>
+<p class="Note">It is also <strong>essential</strong> that every <em>method</em> that can be used in combination with other <em>methods</em> to deliver to a customer's address has the <strong>same Tax Class</strong> for the <em>region</em> that covers the customer's address.
+<br />
+<br />The Advanced Shipper module does <strong>not</strong> try to correct any combinations of <em>methods</em> which have incorrect <em class="ConfigurationOption">tax class</em> combinations - <strong>it is up to whoever is configuring the <em>methods</em> and <em>regions</em> to make sure that the tax settings make sense and are logical</strong>!</p>
+
+
+<h4 class="UnderlinedTitle"><a name="rates_include_tax" id="rates_include_tax"></a>Rates Include Tax</h4>
+<p><em>Rates</em> must be entered either including <strong>or</strong> excluding tax according to the value of the <em class="ConfigurationOption">Rates Include Tax</em> configuration value. The <em class="ConfigurationOption">Tax Class</em> to be used must be set correctly in the configuration for the <em>region</em>... as noted above, all <em>methods</em> covering the same address must use the same <em class="ConfigurationOption">Tax Class</em>!</p>
+
+
+<h4 class="UnderlinedTitle"><a name="rate_limits_inc" id="rate_limits_inc"></a>Rate Limits Inclusivity</h4>
+<p>The <em class="ConfigurationOption">Rate Limits Inclusivity</em> option is used to specify whether the <strong>upper</strong> limits entered are &ldquo;Inclusive&rdquo; or &ldquo;Exclusive&rdquo;.</p>
+<p class="Example">For 100-200, if the <em>limits</em> are &ldquo;Inclusive&rdquo;, the range is 100.000 to 200.000.</p>
+<p class="Example">For 100-200, if the <em>limits</em> are &ldquo;Exclusive&rdquo;, the range is 100.000 to 199.999.</p>
+
+
+<h4 class="UnderlinedTitle"><a name="total_up_price_inc_tax" id="total_up_price_inc_tax"></a>Total Up Price of Applicable/All Products Including Their Tax</h4>
+<p>By default the total price of the applicable products, or the total price of all products in the order, used in any comparison against limits in a table of rates, is a combination of their prices <strong>excluding</strong> tax.</p>
+<p>The <em class="ConfigurationOption">Total Up Price of Applicable/All Products Including Their Tax</em> setting can be used to specify that the products should have their tax added on when totalling up the combined value of the applicable products for the method or when totalling up the combined value of all products in the order, for comparison against the limits.</p>
+
+
+<h4 class="UnderlinedTitle"><a name="max_weight_per_package" id="max_weight_per_package"></a>Maximum Weight Per Package</h4>
+<p>If there is a maximum weight of <em>applicable products</em> which can be sent in a single package, and the ability to split the order into multiple packages is available to the store, the weight at which the products will be split into another package can be specified.</p>
+<p>Advanced Shipper will automatically work out how to combine the applicable products into the least number of individual packages possible.</p>
+<p>All packages will use the <strong>same</strong> <em class="ConfigurationOption">Table Of Rates</em> and <em class="ConfigurationOption">Packaging Weights</em> settings, but the <em>rate</em> and <em>packaging weight</em> will be calculated using the weight of each <strong>individual</strong> package.</p>
+<p>If the <em>rate</em> is based on (or based in part on) the <strong>price</strong> or the <strong>number of items</strong> of the <em>applicable products</em>, the <em>rate</em> for <strong>each</strong> package will still be calculated using the total <strong>price</strong> and <strong>number if items</strong> for <strong>all</strong> the <em>applicable products</em>, not the <strong>price</strong> or <strong>number of items</strong> of the <em>applicable products</em> contained with the individual packages.</p>
+<p>The text used in the <em>method</em>'s <em>title</em> to inform the user about the number of packages the <em>applicable products</em> will be shipped in can be changed by modifying the appropriate defines in the Advanced Shipper language file. There are options to display the package information as part of the rate calculation or on its own, if rate calculations aren't being displayed. Please consult the <a href="configuration_method_titles.html#method_title_placement_tags">Method Title Placement Tags</a> documentation and the documentation within the respective comments in the language file for more information.</p>
+
+
+<h4 class="UnderlinedTitle"><a name="packaging_weights" id="packaging_weights"></a>Packaging Weights</h4>
+<p>A table of <em class="ConfigurationOption">Packaging Weights</em> to be added on to the weight of the <em>applicable products</em> for each package can be entered.</p>
+<p>As with the <em>rates</em> in the <em class="ConfigurationOption">Table Of Rates</em>, the additional <em class="ConfigurationOption">Packaging Weights</em> can be entered using flat weights, percentage weights, flat &amp; percentage weights, block rates or combination weights. They can even have minimum or maximum weights specified!</p>
+<p>For example, if the packaging for up to 4Kg of the <em>applicable products</em> for a <em>method</em> weighs 0.3Kg, and additional packaging for each additional Kg weighs an extra 0.05Kg, the table of <em class="ConfigurationOption">Packaging Weights</em> would be:</p>
+<p class="Example"><code>0-4:0.3, *:5%</code></p>
+<p>For <em>rates</em> being calculated using the <strong>weight</strong> of the <em>applicable products</em>, the weight being used in the calculations will be that of the <strong>individual</strong> packages, i.e. the weight of all the <em>applicable products</em> in that package plus the weight of the packaging itself.</p>
+
+
+<h4 class="UnderlinedTitle"><a name="surcharge" id="surcharge"></a>Surcharges</h4>
+<p>As well as specifying <em>rates</em> to be used in the <em class="ConfigurationOption">Table Of Rates</em>, an additional <em class="ConfigurationOption">Surcharge</em> can be specified, to be added to whatever total <em>rate</em> is calculated.</p>
+<p>The <em class="ConfigurationOption">Surcharge</em> will be added on no matter what <em>rate</em> is used but will not be made use of if no <em>rate</em> matches the <em>applicable products</em> for the <em>method</em>.</p>
+<p>The <em class="ConfigurationOption">Surcharge</em> must be entered either including <strong>or</strong> excluding tax according to the value of the <em class="ConfigurationOption">Rates Include Tax</em> configuration value.</p>
+<p>The <em class="ConfigurationOption">Surcharge</em> can be a simple flat rate, or can use its own, full table of rates, based on the total <strong>price</strong> or the <strong>numitems</strong> of the applicable products, the <strong>totalorderprice</strong> of <em>all</em> products in the <em>order</em> (not just the total price of the <em>applicable products</em> for the method), the <strong>shipping</strong> rate calculated for the method, the total <strong>weight</strong> of all the packages calculated for the method (all the applicable products plus the packaging) or the <strong>num</strong>ber of <strong>packages</strong> being used to ship the applicable products by this method!</p>
+<p class="Example"><em>Hints</em>: By basing a surcharge on the <strong>shipping</strong> rate a &ldquo;mark-up&rdquo; can be added to the shipping rate, while a surcharge based on the <strong>price</strong> or <strong>num</strong>ber of <strong>packages</strong> could be used to charge for insurance for the <em>applicable products</em>/each <em>package</em> etc.</p>
+<p>For example, if the <em class="ConfigurationOption">Surcharge</em> is to based on a percentage &amp; flat rate of the <strong>shipping</strong> <em>rate</em> itself (As calculated using the <em>table of rates</em> for the <em>shipping method</em>):</p>
+<p class="Example"><code>&lt;shipping&gt;*:1%+0.50&lt;/shipping&gt;</code></p>
+<p>As another example, if the <em class="ConfigurationOption">Surcharge</em> is to based on a percentage of the <strong>weight</strong> of the <em>applicable products</em> for the <em>method</em> (along with the weight of the packaging, if any):
+<p class="Example"><code>&lt;weight&gt;*:8%&lt;/weight&gt;</code></p>
+<p>As another example, if the <em class="ConfigurationOption">Surcharge</em> is simply a single flat rate, regardless of what's in the order, the <em>calculation method</em> element tags do not need to be used. For a set <em class="ConfigurationOption">Surcharge</em> of $3.50 only the following need be entered:
+<p class="Example"><code>3.50</code></p>
+<p>As another example, if the <em class="ConfigurationOption">Surcharge</em> is to based on a percentage of the <strong>num</strong>ber of <strong>packages</strong> required for this <em>method</em> to be able to ship the <em>applicable products</em> for the <em>method</em> (in the following example charging $2.50 extra per package):
+<p class="Example"><code>&lt;numpackages&gt;*:250%&lt;/numpackages&gt;</code></p>
+<p>As another example, if a <em class="ConfigurationOption">Surcharge</em> should be added for each package required for a <em>method</em> to be able to ship the <em>applicable products</em> for the <em>method</em>, <strong>and</strong> an overall charge should be added on for the <em>method</em>, the following will add $1.50 extra per package and an additional $3.50 for the <em>method</em>:
+<p class="Example"><code>&lt;numpackages&gt;*:150%+3.50&lt;/numpackages&gt;</code></p>
+<p>As another example, if a <em class="ConfigurationOption">Surcharge</em> should be added on to charge for insurance for the <em>applicable products</em> for the <em>method</em>, the following uses block rates to add $1.00 per $100 value &ldquo;block&rdquo; (or part thereof) of up to $200 worth of <em>applicable products</em> or will add $0.75 per $100 value &ldquo;block&rdquo; (or part thereof) of up to $1000 worth of <em>applicable products</em>, maxing out at a charge of $7.50 for insurance for any higher value of <em>applicable products</em>:
+<div class="Example">
+	<p><code>&lt;price&gt;0-200:[100:1], 1000:[100:0.75], *:7.50&lt;/price&gt;</code></p>
+	<p>This will result in an insurance charge of 2 x 1 = $2 for $150 worth of <em>applicable products</em>, 3 x 0.75 = $2.25 for $250 worth of <em>applicable products</em> etc.</p>
+</div>
+<p>As a final example, if the <em class="ConfigurationOption">Surcharge</em> is a combination rate, accruing cumulatively based on the <strong>weight</strong> of the <em>applicable products</em> for the <em>method</em> (along with the weight of the packaging, if any):
+<div class="Example">
+	<p><code>&lt;weight&gt;*:(0-30:0)(30-50:1.50)(50-75:2.00)&lt;/weight&gt;</code></p>
+	<p>This will result in packages up to 30Kg not having any surcharge, those from 30-50Kg will have a $1.50 surcharge and those from 50-75Kg will have a $3.50 surcharge ($1.50 + $2.00).</p>
+</div>
+
+
+<h4 class="UnderlinedTitle"><a name="surcharge_titles" id="surcharge_titles"></a>Surcharge Titles</h4>
+<p>A custom <em class="ConfigurationOption">Surcharge Title</em> can be specified for each individual <em>region</em>, which is used to inform the customer what the <em class="ConfigurationOption">surcharge</em> is for and how much it is.</p>
+<p>If a <em class="ConfigurationOption">surcharge</em> applies for the current <em>region</em>, the <em class="ConfigurationOption">Surcharge Title</em> will replace any {surcharge_info} placement tag in the <em>method's title</em>.</p>
+<p>As is explained in the section on <a href="configuration_method_titles.html#method_title_placement_tags">method title placement tags</a>, the actual <em class="ConfigurationOption">surcharge</em> amount will be placed wherever a {surcharge_amount} tag is used.</p>
+<p>If a custom <em class="ConfigurationOption">Surcharge Title</em> is specified for a <em>region</em>, it <strong>must</strong> have a {surcharge_amount} tag within its text so that the amount can be displayed to the customer.</p>
+<p>If no custom <em class="ConfigurationOption">Surcharge Title</em> is specified for a <em>region</em>, but a <em class="ConfigurationOption">surcharge</em> has been specified, then the default template for surcharges will be used from the language file to display the <em class="ConfigurationOption">surcharge</em> information to the customer.</p>
+
+
+
+<h2>Additional Method Configuration Options</h2>
+<p>The range of options covered up until this point is enough for most stores to set up <em>shipping methods</em> which satisfy their needs. Additional options for limiting the <em>availability</em> of <em>methods</em> and offering <em>shipping scheduling</em> are covered in the final sections. Next is <a href="configuration_method_availability_scheduling.html">Shipping Method Configuration - Availability Scheduling</a>.</p>
+
+<p class="TOCLink"><a href="configuration.html">Configuration Table Of Contents</a></p>
+
+<p class="PrevLink"><a href="configuration_region_definition.html">&lt;- Previous - Region Configuration - Region Definition</a></p>
+<p class="NextLink"><a href="configuration_method_availability_scheduling.html">Next - Shipping Method Configuration - Availability Scheduling -&gt;</a></p>
+
+<p id="footer"><a href="http://ceon.net" target="_blank"><img src="../_images/ceon_button_logo.png" alt="Ceon" id="ceon_button_logo" /></a>Module &amp; Documentation &copy; Copyright 2007-2009 <a href="http://ceon.net">Ceon</a></p>
+
+	</div>
+</div>
+
+<script type="text/javascript">
+<!-- // Output resizeable div end tag
+restrict_width.outputClosingTag();
+// -->
+</script>
+
+</body>
+</html>

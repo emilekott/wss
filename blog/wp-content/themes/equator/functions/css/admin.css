@@ -1,0 +1,229 @@
+table.admintable {
+	border:0px solid #caedff;
+	width:100%;
+	margin:0;
+	padding:0;
+	}
+
+table.admintable tr td {
+	padding:15px; 
+	margin:0; 
+	vertical-align:top; 
+	border-bottom:1px solid #ccc;
+	}
+
+table.admintable tr:nth-child(2n+1) { 	}
+
+table.admintable td h2 { 
+	text-align:left; 
+	font:bold 18px/26px Arial, Sans-serif;
+	margin:0 0 15px 0;
+	}
+
+table.admintable td h2 span{ 
+float:right;
+}
+
+
+table.admintable small { 
+	color:#7b7b7b; 
+	font:normal 10px/14px Verdana, Sans-serif;
+	margin:5px 0;
+	}
+
+
+table.admintable td input, 
+table.admintable td select, 
+table.admintable td textarea {
+    background-color: #f1f1f1;
+    margin-bottom: 10px !important;
+    padding: 6px;
+    border: 1px solid;
+    border-color: #b3b3b3 #e0e0e0 #e0e0e0 #b3b3b3;
+	}
+
+table.admintable td label 		{ width:100px;}
+table.admintable td select.csr 	{ width:120px;}
+
+table.admintable td span.csrbox {
+	border:1px solid #ccc; 
+	background:#fff; 
+	padding:8px; 
+	margin-bottom:5px; 
+	display:block;
+	}
+
+.foot {
+	background :#ddd; 
+	padding:0 30px 0 0; 
+	margin:0 0 5px 205px; 
+	width:540px; 
+	border:1px solid #ccc;
+	}
+
+.submit {
+	margin-right:15px;
+	text-align:right;
+	}
+
+.submit input {
+	padding:3px; 
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-khtml-border-radius:4px;
+	}
+
+
+p.info {
+	font:bold 14px/18px Arial, Tahoma, Verdana, Sans-serif;
+}
+
+span.info {
+	padding:10px;
+	display:block;
+	font:normal 13px/22px Arial, Tahoma, Verdana, Sans-serif;
+	}
+
+
+.admintable label{
+	vertical-align:middle;
+	padding:5px;
+	display:compact;
+	float:left;
+	width:auto !important;
+	margin:0 10px 5px 0;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-khtml-border-radius:4px;
+	}	
+
+
+.topimg {
+	border:1px solid #ccc; 
+	background:#fff; 
+	padding:2px;
+	}
+
+
+/*------TABS------*/
+
+#container{
+	width: 780px;
+	position:relative;
+	border:1px solid #ccc;
+	background:url(../img/bg_content.gif) top left repeat-y #fff;
+	overflow:hidden;
+	height:100%;border-radius:5px;
+	-moz-border-radius-topleft:10px;
+	-moz-border-radius-topright:10px;
+	}
+
+.qhead {
+	background:#535353 url(../img/bg_head.gif) bottom left repeat-x;
+	height:80px;
+	display:block;
+	padding:15px;
+	-moz-border-radius-topleft:10px;
+	-moz-border-radius-topright:10px;
+	}
+
+.qhead h2 {
+	font:bold 18px Arial, Verdana, Sans-serif !important;
+	color:#fff;
+	margin:0;
+	padding:0;
+	}
+
+.updated {
+	background: #ccfcd1;border: 1px solid #60a400;
+	padding:5px;
+	}
+
+.infohead {
+	background:#d0e7fa;
+	border-bottom:2px solid #8ebde6;
+	padding:10px 10px;
+	color:#000;
+	text-align:right;
+	font:bold 11px Verdana, Arial, sans-serif;
+	}
+
+
+#tabsAndContent ul, #tabsAndContent li{
+	padding: 0;
+	margin:0;
+	}
+
+ul#tabsNav{
+	float: left;
+	width: 200px;
+	list-style: none;
+	overflow:hidden;
+	}
+
+ul#tabsNav li{
+	background: url(../img/menu_normal.png) no-repeat center right;
+	}
+
+ul#tabsNav li a img{
+	margin-right:5px;
+	vertical-align:middle;
+	}
+
+ul#tabsNav li:hover{
+	background: url(../img/menu_hover.png) no-repeat center right;
+	}
+
+ul#tabsNav li.active{
+	background: #fff;
+	}
+
+ul#tabsNav li.active a{
+	color: #303030;
+	}
+
+ul#tabsNav li a{
+	padding: 12px 15px;
+	margin: 0 0 0 0;
+	display: block;
+	width: 170px;
+	text-decoration: none;
+	color: #fff;
+	font: 12px Arial, Verdana, sans-serif;
+	}
+
+ul#tabsNav a:hover{
+	color: #fff
+	}
+
+ul#tabContent{
+	margin: 0 0 0 0;
+	background: url(images/tabContent.png) no-repeat top right #fff;
+	min-height: 380px;
+	width: 540px;
+	float: left;
+	list-style: none;
+	padding: 20px;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	}
+
+#tabContent>li{
+	width: 540px;
+	list-style: none;
+	}
+
+#tabContent li ul li{
+	list-style: none;
+	}
+
+#tabContent li ul li a{
+	display: block;
+	border-bottom: 1px solid #e7e7e7;
+	padding: 10px 0;
+	}
+
+#tabContent li ul li a:hover{
+	background: url(images/tabContentHover.png) no-repeat center bottom;
+	}
+
+http://widowmaker.kiev.ua/checkbox/

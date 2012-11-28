@@ -1,0 +1,5 @@
+AuthUserFile /hsphere/local/home/witteringsurfsho/.statspasswd
+AuthGroupFile /dev/null
+AuthName EnterPassword
+AuthType Basic
+require user witteringsurfsho

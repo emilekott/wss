@@ -1,0 +1,13 @@
+/* Protx Error Messages */
+
+.ProtxDirectFormGadgetError, .ErrorInfo, .ExtraErrorInfo { 
+background: #f00; color: #fff; font-weight: bold; 
+}
+/*.ccinfo input{height: 14px;}*/
+
+.ccinfo select {height:20px;}
+
+/* Ceon Manula Card  Error Messages */
+.CeonManualCardFormGadgetError { background: #FF6633; font-weight: bold; }
+
+.CeonManualCardCardIcon { margin-right: 4px; margin-bottom: 4px; }

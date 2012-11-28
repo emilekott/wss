@@ -1,0 +1,123 @@
+/**
+ * JSWeb CSS Stylesheet IE specific
+ *
+ * 
+ * @copyright Copyright 2007 JSWeb
+ * @version $Id: ie_stylesheet.css 0001 2007-06-05 16:00:00Z  ricksuffolk
+ */
+
+.cssButton, .cssButtonHover{
+  /*  _width: 0; needed to stop IE adding "magic" padding to the input, _width is a hack that uses an IE6 bug */
+  _width: 0;
+  overflow: visible;  
+}
+A.headerlinks01:link, A.headerlinks01:visited, A.headerlinks01:active {
+	color: #fff;
+	font-weight:bold;
+	text-transform:uppercase;
+	font-size:11px;	
+}
+A.headerlinks01:hover {
+	color: #fff;
+	font-weight:bold;
+	font-size:11px;	
+	text-transform:uppercase;
+	text-decoration: underline;
+}
+.cattab03 {
+/*	width:190px;
+	height:22px;
+	padding-left:10px;
+	line-height:22px;
+	border-bottom:1px dashed #c7c7c7;*/
+}
+#navtab01 {width:38px;}
+#navtab02 {width:58px;}
+#navtab03 {width:58px;}
+#navtab04 {width:62px;}
+#navtab05 {width:90px;}
+#navtab06 {width:30px;}
+#navtab07 {width:120px;}
+#navtab08 {width:48px;}
+#navtab09 {width:74px;}
+.header04:hover {
+/*	width:106px;*/
+	height:35px;
+	margin-top:4px;
+	margin-left:1px;
+	margin-right:1px;
+	padding-left:9px;
+	padding-right:9px;
+	line-height:25px;
+background-image: none;
+}
+.header04a:hover {
+	/*width:126px;*/
+
+	padding-left:9px;
+	padding-right:9px;
+	line-height:25px;
+	height:35px;
+	margin-top:4px;
+	margin-left:1px;
+	margin-right:1px;
+background-image: none;
+}
+.header04b:hover {
+/*	width:86px;*/
+	padding-left:9px;
+	padding-right:9px;
+	line-height:25px;
+	height:35px;
+	margin-top:4px;
+	margin-left:1px;
+	margin-right:1px;
+background-image: none;
+
+}
+.redbg01 {
+	background-image: none;
+}
+#search01 {
+
+	margin-top:4px;
+  	width:135px;
+	height:27px;
+/*	background-image: url(../images/design/searchbg01.jpg);*/
+	background-image: url(../images/design/searchbg01.png);
+/*	background-repeat: no-repeat;
+background-attachment:relative;
+position:relative;
+azimuth: expression(
+this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+this.src = "images/blank.gif"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='scale')",
+this.runtimeStyle.backgroundImage = "none")),this.pngSet=true);
+*/
+}
+.prodinfo02 {
+	width:53%;
+	padding:7px;
+	padding-top:23px;
+}
+#cartAdd2 {
+/*	float: left;*/
+	width:50%;
+	text-align: left;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;	
+	padding-top:27px;
+	padding-bottom:0.5em;	
+	}
+.iewidth01 {
+	width:48%;
+}
+
+#header-mnu ul li {
+display: inline;
+}
+#header-mnu ul li a {
+    display: block;
+    float: left;
+}

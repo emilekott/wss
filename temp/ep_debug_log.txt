@@ -1,0 +1,12 @@
+Product debris corresponding to the following product_id(s) cannot be deleted by EasyPopulate:
+257:1955bde916598b528490dbf1feb7b775
+259:9c7ba3a6a903a894ceea41e8f9b21e74
+262:231e4ed4f78b27106698ece7e9b4a97d
+262:98a9c2d6178467bb11ce0188d82e9aad
+262:3d85ad4b8c82453814f895e75562df88
+461:9e8ea7d5bdc0d7126dc05f31dd20fcf9
+461:57800d4d041661529a99373a6eff38c0
+453:97d89697ee5ba040e30049d66cf56433
+706:2bb54190317592aacb3d6bbea7e12bf3
+It is recommended that you delete this corrupted data using phpMyAdmin.
+

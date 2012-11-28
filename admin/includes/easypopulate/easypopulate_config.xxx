@@ -1,0 +1,37 @@
+<?php
+/*
+Easy Populate Config File
+*/
+
+/**
+ * UPLOADS DIRECTORY SECURITY ENHANCEMENT
+ *
+ * The following setting is set to restrict the adjustment of the location for your uploads directory.
+ * It does this by preventing store admins from changing the upload directory location.
+ * This is for your own good as it prevents the potential execution of scripts uploaded by malicious users
+ * and prevents deletion by store admins of Zen Cart application files.
+ *
+ * It is recommended that you do not alter $uploads_security
+ *
+ * If $uploads_security = true: You MUST set the path to your uploads directory ($secure_dir). This will over-ride
+ * the setting in Zen Cart Admin. Ensure that the uploads folder resides outside a publicly viewable web folder for added
+ * security. You cannot have an uploads folder anywhere in the store directory tree in this mode.
+ * Eg (linux): $secure_dir = '/home/username/uploads/';
+ * Eg (windows): $secure_dir = 'D:/path/to/myuserspace/uploads/';
+ *
+ * If $uploads_security = false: you can install your uploads directory in a publicly viewable web folder.
+ * Ensure that you include the .htaccess file and the index.html files provided. Uploads directory is set in admin, and
+ * not by $secure_dir below, which is over-ridden in this mode.
+ *
+ * DO NOT COMMENT OUT OR REMOVE $uploads_security. YOU CAN ONLY USE: $uploads_security = true; OR $uploads_security = false;
+ *
+ */
+
+$uploads_security = true;
+$secure_dir = '/home/username/uploads/';
+
+/*
+ *
+ * END UPLOADS DIRECTORY SECURITY ENHANCEMENT
+ *
+**/

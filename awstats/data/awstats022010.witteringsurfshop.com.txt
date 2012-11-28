@@ -1,0 +1,828 @@
+AWSTATS DATA FILE 6.8 (build 1.910)
+# If you remove this file, all statistics for date 201002 will be lost/reset.
+
+# Position (offset in bytes) in this file of beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 1915                
+POS_TIME 2601                
+POS_VISITOR 21603               
+POS_DAY 23893               
+POS_DOMAIN 3350                
+POS_LOGIN 3677                
+POS_ROBOT 3832                
+POS_WORMS 4005                
+POS_EMAILSENDER 4136                
+POS_EMAILRECEIVER 4279                
+POS_SESSION 24555               
+POS_SIDER 24764               
+POS_FILETYPES 4414                
+POS_OS 4666                
+POS_BROWSER 4779                
+POS_SCREENSIZE 4965                
+POS_UNKNOWNREFERER 5039                
+POS_UNKNOWNREFERERBROWSER 5126                
+POS_ORIGIN 5208                
+POS_SEREFERRALS 5349                
+POS_PAGEREFS 5493                
+POS_SEARCHWORDS 17492               
+POS_KEYWORDS 17644               
+POS_MISC 2265                
+POS_ERRORS 17703               
+POS_CLUSTER 3533                
+POS_SIDER_404 17856               
+POS_PLUGIN_geoip_city_maxmind 20893               
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20100301102252 1237 392292 10678710691182
+FirstTime 20100207094657
+LastTime 20100228160454
+LastUpdate 20100302032406 1237 1236 0 0 0
+TotalVisits 115                 
+TotalUnique 52                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 52                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 3 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 0 0 0 0 0 0
+1 0 0 0 21 22 80762
+2 0 0 0 1 1 3671
+3 0 0 0 1 1 3671
+4 1 1 28592 2 2 7342
+5 0 0 0 1 1 0
+6 0 0 0 1 1 27190
+7 0 0 0 0 0 0
+8 2 29 59960 2 2 55348
+9 259 2056 35567609 73 80 337678
+10 341 2051 54565607 71 91 703470
+11 359 2547 45063628 91 102 552477
+12 434 1511 37826291 104 139 883438
+13 654 2389 46279155 198 218 1422844
+14 556 1956 41377697 125 139 832168
+15 870 3720 69458585 197 227 1699937
+16 425 2036 38966965 81 86 349264
+17 36 482 10762031 38 42 176962
+18 20 204 5239678 21 23 76192
+19 0 0 0 1 1 0
+20 1 1 28298 31 31 114785
+21 2 2 56166 4 4 1256
+22 7 98 3512417 17 17 81752
+23 12 124 2567644 9 10 51952
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 8
+gb 3968 19179 391069430
+ie 3 20 84780
+cn 3 3 75630
+us 1 1 28298
+tw 1 1 28004
+hu 1 1 18494
+ca 1 1 28162
+al 1 1 27525
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 1
+no_user_agent 26 629398 20100228191052 1
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 10
+css 1322 1786006 0 0
+png 2593 169539668 0 0
+pdf 1 932356 0 0
+php 2672 88720202 0 0
+html 1305 28025252 0 0
+jpg 7094 73386024 0 0
+js 642 11810797 0 0
+xml 11 37950 0 0
+gif 3566 17103574 0 0
+com 1 18494 0 0
+END_FILETYPES
+
+# OS ID - Hits
+BEGIN_OS 7
+winxp 14180
+winlong 4478
+win95 1
+winunknown 1
+win2000 1
+winnt 541
+win98 5
+END_OS
+
+# Browser ID - Hits
+BEGIN_BROWSER 9
+msie6.0 5
+firefox3.0.18 3641
+msie4.01 2
+firefox3.5.6 1
+firefox3.6 210
+firefox3.0.17 10215
+firefox3.5.8 828
+safari 259
+firefox3.5.7 4046
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 0
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 0
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 218 218
+From1 0 0
+From2 0 0
+From3 3761 18989
+From4 0 0
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 191
+http://212.78.234.1/admin/product.php 1074 1527
+http://212.78.234.1/admin/categories.php 954 1199
+http://212.78.234.1/admin/image_handler.php 373 2117
+http://212.78.234.1 171 2265
+http://212.78.234.1/index.php 111 1925
+http://212.78.234.1/admin/manufacturers.php 95 166
+http://212.78.234.1/surfboards-longboards-c-5_29.html 89 211
+http://212.78.234.1/xcel-wetsuits-accessories-c-23.html 60 676
+http://212.78.234.1/page.html 50 453
+http://212.78.234.1/surfboards-shortboards-c-5_19.html 41 146
+http://212.78.234.1/surfing-essentials-c-11.html 20 69
+http://212.78.234.1/dog-accessories-c-31.html 27 717
+http://212.78.234.1/creatures-7ft-6-longboard-stretch-sox-p-51.html 2 4
+http://212.78.234.1/admin/define_pages_editor.php 4 4
+http://212.78.234.1/surfboards-softboards-c-5_30.html 8 17
+http://212.78.234.1/occy-the-rise-and-fall-p-113.html 0 1
+http://212.78.234.1/xcel-mens-infiniti-543-winter-wetsuit-p-98.html 7 180
+http://212.78.234.1/surfco-super-slick-diamond-tip-nose-guard-p-174.html 4 44
+http://212.78.234.1/xcel-peaked-skull-cap-2mm-wetsuit-hood-p-90.html 0 1
+http://212.78.234.1/escape-7ft-2-mini-mal-surfboard-p-185.html 1 3
+http://212.78.234.1/still-filthy-dvd-p-102.html 0 2
+http://212.78.234.1/ezydog-element-jacket-blue-tartan-m-p-211.html 0 2
+http://212.78.234.1/leashes-c-7.html 25 121
+http://212.78.234.1/creatures-8ft-backdoor-leash-p-224.html 1 52
+http://212.78.234.1/fcs-h2-small-surfboard-fins-p-40.html 0 2
+http://212.78.234.1/sitemap.html 1 2
+http://212.78.234.1/escape-7ft-6-mini-mal-surfboard-p-189.html 0 2
+http://212.78.234.1/ezydog-dog-accessoires-c-31.html 1 66
+http://212.78.234.1/surfboards-quads-c-5_26.html 8 24
+http://212.78.234.1/admin/ezpages.php 3 8
+http://212.78.234.1/jp-6ft-8-pin-tail-surfboard-p-168.html 0 1
+http://212.78.234.1/conditions.html 0 1
+http://212.78.234.1/car-accessories-c-14.html 34 213
+http://212.78.234.1/luke-young-iron-fist-micro-6ft-6-shortboard-p-152.html 3 14
+http://212.78.234.1/fcs-cdrive-surfboard-fins-p-50.html 0 3
+http://212.78.234.1/one-track-mind-dvd-p-182.html 1 38
+http://212.78.234.1/gorilla-grip-fishtail-tail-pad-p-129.html 4 12
+http://212.78.234.1/luke-young-sr70rs-6ft-3-shortboard-p-151.html 0 7
+http://212.78.234.1/xcel-mens-infiniti-543-hooded-winter-wetsuit-p-27.html 1 46
+http://212.78.234.1/fcs-m-11.html 10 26
+http://212.78.234.1/town-and-country-m-31.html 3 12
+http://212.78.234.1/ezydog-72-dog-lead-in-pink-p-203.html 0 2
+http://212.78.234.1/xcel-skull-cap-05mm-wetsuit-hood-p-89.html 2 4
+http://212.78.234.1/fcs-premium-double-soft-roof-racks-p-65.html 1 47
+http://212.78.234.1/dear-yonder-dvd-p-184.html 1 2
+http://212.78.234.1/products_new.html 8 45
+http://212.78.234.1/escape-9-ft-1-noserider-longboard-surfboard-p-195.html 22 785
+http://212.78.234.1/escape-6-ft-8-flying-carpet-surfboard-p-197.html 2 7
+http://212.78.234.1/jp-6-ft-squash-tail-shortboard-p-162.html 1 4
+http://212.78.234.1/jp-6ft-4-hybird-swallow-tail-shortboard-p-166.html 5 17
+http://212.78.234.1/the-present-dvd-p-105.html 2 159
+http://212.78.234.1/creatures-garret-parks-tail-pad-p-126.html 1 42
+http://212.78.234.1/includes/templates/jsweb/css/stylesheet_categories_menu.css 0 165
+http://212.78.234.1/fcs-carbon-lite-gcrv-surfboard-fins-p-41.html 2 42
+http://www.3838pk.com 1 1
+http://212.78.234.1/creatures-7ft-6-longboard-deluxe-day-use-5mm-boardbag-slim-fit-p-138.html 3 4
+http://212.78.234.1/editors/fckeditor/editor/fckdialog.html 3 6
+http://212.78.234.1/gorilla-grip-m-9.html 2 17
+http://212.78.234.1/surfco-super-slick-longboard-nose-guard-p-175.html 0 1
+http://212.78.234.1/xcel-ladies-xflex-53-winter-wetsuit-p-122.html 10 12
+http://212.78.234.1/surfing-dvds-c-13.html 32 191
+http://212.78.234.1/resin-8-surfboards-m-8.html 2 4
+http://212.78.234.1/ocean-earth-uv-resin-kit-p-61.html 1 9
+http://212.78.234.1/black-white-6ft-0-shortboard-p-157.html 1 16
+http://212.78.234.1/creatures-6ft-7-day-use-hybird-fish-5mm-boardbag-slim-fit-p-134.html 1 4
+http://212.78.234.1/dude-cruise-dvd-p-181.html 3 41
+http://212.78.234.1/escape-9-ft-1-noserider-longboard-surfboard-p-196.html 25 434
+http://212.78.234.1/surfboards-mini-mals-c-5_28.html 5 55
+http://212.78.234.1/zamora-surfboards-m-20.html 1 3
+http://212.78.234.1/surfboards-retro-special-c-5_27.html 6 28
+http://212.78.234.1/nxr-5ft-10-quad-fin-surfboard-p-161.html 3 6
+http://212.78.234.1/jp-6-ft-2-swallow-tail-shortboard-p-164.html 1 3
+http://212.78.234.1/black-white-surfboards-m-15.html 6 20
+http://212.78.234.1/escape-9-ft-6-noserider-longboard-surfboard-p-194.html 1 50
+http://212.78.234.1/admin/attributes_controller.php 39 155
+http://212.78.234.1/creatures-6ft-3-shortboard-stretch-sox-p-52.html 1 3
+http://212.78.234.1/xcel-2mm-peaked-wetsuit-hood-p-91.html 3 15
+http://212.78.234.1/fcs-m3-quad-glass-flex-surfboard-fins-p-39.html 1 39
+http://212.78.234.1/admin/login.php 35 51
+http://212.78.234.1/admin/configuration.php 12 19
+http://212.78.234.1/fcs-ratchet-fin-tool-p-48.html 0 1
+http://212.78.234.1/admin/featured.php 2 2
+http://212.78.234.1/jp-6ft-0-twin-fin-fish-surfboard-p-170.html 1 3
+http://212.78.234.1/luke-young-surfboards-m-23.html 2 11
+http://212.78.234.1/creatures-6ft-backdoor-leash-p-18.html 1 19
+http://212.78.234.1/books-c-12.html 4 40
+http://212.78.234.1/tail-pads-c-8.html 10 162
+http://212.78.234.1/admin/layout_controller.php 2 3
+http://212.78.234.1/admin/developers_tool_kit.php 1 1
+http://212.78.234.1/escape-9-ft-progressive-longboard-surfboard-p-193.html 4 23
+http://212.78.234.1/black-white-6ft-8-quad-fin-fish-surfboard-p-33.html 6 11
+http://212.78.234.1/ezydog-cujo-72-lead-acrilic-camo-p-201.html 0 2
+http://212.78.234.1/town-and-country-black-van-double-cover-p-233.html 0 1
+http://212.78.234.1/editors/fckeditor/editor/skins/default/fck_editor.css 0 33
+http://212.78.234.1/xcel-infiniti-split-toe-5mm-wetsuit-boots-p-85.html 2 3
+http://212.78.234.1/bourton-6ft-1-standard-hip-shortboard-p-159.html 10 16
+http://212.78.234.1/keypod-car-key-security-p-49.html 0 40
+http://212.78.234.1/admin/product_types.php 3 7
+http://212.78.234.1/future-fins-fea-surfboard-fins-p-34.html 3 11
+http://212.78.234.1/admin/specials.php 1 1
+http://212.78.234.1/black-white-6ft-8-shortboard-p-157.html 0 37
+http://212.78.234.1/ocean-earth-25-metre-tie-downs-p-60.html 0 2
+http://212.78.234.1/fluid-juice-6ft-2-quad-fin-fish-surfboard-p-154.html 0 2
+http://212.78.234.1/escape-7-ft-6-mini-mal-surfboard-p-190.html 1 4
+http://212.78.234.1/ezydog-standard-dog-collar-black-p-198.html 1 77
+http://212.78.234.1/admin/orders.php 6 14
+http://212.78.234.1/town-and-country-black-hawaiian-single-seat-cover-p-227.html 0 2
+http://212.78.234.1/creatures-6ft-comp-leash-p-19.html 0 7
+http://212.78.234.1/editors/fckeditor/editor/skins/default/fck_dialog.css 0 6
+http://212.78.234.1/xcel-infiniti-5-finger-3mm-wetsuit-gloves-p-88.html 1 8
+http://212.78.234.1/luke-young-slaker-6ft-2-shortboard-p-150.html 0 1
+http://212.78.234.1/xcel-wetsuits-accessories-m-1.html 3 3
+http://212.78.234.1/admin.html 0 1
+http://212.78.234.1/escape-7-ft-10-mini-mal-surfboard-p-173.html 11 16
+http://212.78.234.1/fluid-juice-surfboards-m-27.html 4 43
+http://212.78.234.1/editors/fckeditor/editor/dialog/fck_paste.html 0 1
+http://212.78.234.1/xcel-mens-drylock-543-hooded-winter-wetsuit-p-82.html 0 1
+http://212.78.234.1/creatures-ry-craike-tail-pad-p-131.html 1 3
+http://212.78.234.1/admin/products_expected.php 3 3
+http://212.78.234.1/admin/includes/stylesheet.css 0 50
+http://212.78.234.1/includes/templates/jsweb/css/stylesheet_jsweb.css 0 943
+http://212.78.234.1/creatures-stephanie-gilmore-tail-pad-p-222.html 0 1
+http://212.78.234.1/ocean-and-earth-m-6.html 2 14
+http://212.78.234.1/luke-young-slacker-6ft-3-surfboard-p-31.html 2 5
+http://212.78.234.1/creatures-wax-comb-p-178.html 0 4
+http://212.78.234.1/days-of-the-strange-dvd-p-180.html 0 39
+http://212.78.234.1/escape-surfboards-m-21.html 13 411
+http://212.78.234.1/firewire-6ft-0-alternator-squash-tail-surfboard-p-35.html 0 2
+http://212.78.234.1/xcel-infiniti-3-finger-5mm-wetsuit-gloves-p-87.html 3 11
+http://212.78.234.1/admin/ 10 10
+http://212.78.234.1/editors/fckeditor/editor/dialog/fck_image/fck_image_preview.html 0 1
+http://212.78.234.1/admin/easypopulate.php 1 1
+http://212.78.234.1/fluid-juice-6-ft-6-quad-fin-fish-surfboard-p-155.html 4 10
+http://212.78.234.1/admin/options_values_manager.php 2 2
+http://212.78.234.1/town-and-country-black-3d-stetch-single-seat-cover-p-232.html 0 3
+http://212.78.234.1/surfboards-c-5.html 28 205
+http://212.78.234.1/includes/templates/jsweb/css/stylesheet.css 0 376
+http://212.78.234.1/bra-boys-dvd-p-183.html 3 21
+http://212.78.234.1/sola-6-ft-softboard-surfboard-p-241.html 2 44
+http://212.78.234.1/ezydog-standard-dog-collar-pink-camo-p-199.html 1 3
+http://212.78.234.1/escape-7ft-4-mini-mal-surfboard-p-186.html 0 1
+http://212.78.234.1/creatures-8ft-makaha-leash-p-42.html 11 23
+http://212.78.234.1/surfboard-repair-c-10.html 4 23
+http://212.78.234.1/far-king-cool-water-surfboard-wax-p-66.html 3 21
+http://212.78.234.1/escape-7-ft-4-mini-mal-surfboard-p-188.html 0 1
+http://212.78.234.1/ocean-earth-chompers-tail-pad-p-74.html 0 2
+http://212.78.234.1/future-fins-m-13.html 1 7
+http://212.78.234.1/admin/media_types.php 1 1
+http://212.78.234.1/surfboards-second-hand-c-5_30.html 1 2
+http://212.78.234.1/luke-young-robot-5ft-8-surfboard-p-141.html 0 1
+http://212.78.234.1/island-rose-10-ft-longboard-surfboard-p-177.html 4 9
+http://212.78.234.1/editors/fckeditor/editor/dialog/fck_hiddenfield.html 0 1
+http://212.78.234.1/xcel-ladies-infiniti-543-winter-wetsuit-p-123.html 0 2
+http://212.78.234.1/xcel-hooded-polypro-rash-vest-p-121.html 1 3
+http://212.78.234.1/creatures-6ft-3-day-use-hybird-fish-5mm-boardbag-slim-fit-p-133.html 0 1
+http://212.78.234.1/creature-6ft-7-travel-boardbag-10mm-slim-fit-p-145.html 1 6
+http://212.78.234.1/jp-6ft-5-pin-tail-surfboard-p-167.html 0 1
+http://212.78.234.1/fcs-longboard-box-adapter-fin-p-47.html 0 1
+http://212.78.234.1/ezydog-25-cujo-dog-lead-arctic-camo-p-204.html 0 8
+http://212.78.234.1/drive-thru-australia-2-dvd-p-106.html 0 1
+http://212.78.234.1/town-and-country-boot-liner-p-234.html 1 8
+http://212.78.234.1/jp-6-ft-0-squash-tail-shortboard-p-162.html 0 2
+http://212.78.234.1/jp-surfboards-m-16.html 3 25
+http://212.78.234.1/editors/fckeditor/editor/fckeditor.html 0 114
+http://212.78.234.1/erro.html 1 2
+http://212.78.234.1/jp-6-ft-2-swallow-tail-shortboard-p-163.html 0 1
+http://212.78.234.1/admin/modules.php 13 58
+http://212.78.234.1/admin/store_manager.php 2 5
+http://212.78.234.1/creatures-8ft-teahupoo-leash-p-42.html 0 38
+http://212.78.234.1/admin/invoice.php 0 1
+http://212.78.234.1/editors/fckeditor/editor/dialog/fck_image.html 1 5
+http://212.78.234.1/firewire-surfboards-m-19.html 2 44
+http://212.78.234.1/creatures-6ft-pro-leash-p-45.html 8 23
+http://212.78.234.1/xcel-infiniti-round-toe-7mm-wetsuit-boots-p-101.html 2 5
+http://212.78.234.1/xcel-mens-drylock-543-winter-wetsuit-p-81.html 1 50
+http://212.78.234.1/creatures-9ft-mal-comp-ankle-leash-p-43.html 5 51
+http://212.78.234.1/contact_us.html 3 12
+http://212.78.234.1/admin/alt_nav.php 5 8
+http://212.78.234.1/boardbags-c-6.html 22 79
+http://212.78.234.1/admin/index.php 37 149
+http://212.78.234.1/town-and-country-whiteblack-hawaiian-single-seat-cover-p-228.html 0 7
+http://212.78.234.1/creatures-6ft-3-shortboard-deluxe-day-use-5mm-boardbag-slim-fit-p-136.html 5 9
+http://212.78.234.1/fins-c-9.html 13 65
+http://212.78.234.1/jp-6ft-2-swallow-tail-surfboard-p-32.html 1 5
+http://212.78.234.1/creatures-of-leisure-m-5.html 11 57
+http://212.78.234.1/ezydog-dog-accessories-c-31.html 4 327
+http://212.78.234.1/shippinginfo.html 1 3
+http://212.78.234.1/surf-co-quick-fix-45oz-complete-resin-kit-p-62.html 4 9
+http://212.78.234.1/fcs-js1-surfboard-fins-p-38.html 0 39
+http://212.78.234.1/jp-5-ft-10-quad-fin-fish-surfboard-p-169.html 0 1
+http://212.78.234.1/surf-co-quick-fix-25oz-complete-resin-kit-p-63.html 4 8
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 6
+403 1 4243
+302 856 0
+206 66 5185912
+400 14 52542
+404 233 913309
+301 44 676755
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 93
+//webmail/config.inc.php 2 -
+/main.php 1 -
+/images/8%270%20green%20spray.jpg 22 http://212.78.234.1/surfboards-mini-mals-c-5_28.html
+//PHPMYADMIN/config/config.inc.php 3 -
+/dmin 1 -
+/phpMyAdmin-2.5.4/main.php 1 -
+//admin/config/config.inc.php 3 -
+/mail2//bin/msgimport 2 -
+//mysql/config/config.inc.php 3 -
+/phpMyAdmin-2.2.3/main.php 1 -
+http://www.ofagear.com/images/water-bottle.jpg 1 -
+//dbadmin/config/config.inc.php 3 -
+http://www.google.com/intl/zh-CN/ 1 -
+/phpMyAdmin-2.6.3-pl1/main.php 1 -
+/sql/ 1 -
+/wm//bin/msgimport 2 -
+/w00tw00t.at.ISC.SANS.DFind:) 8 -
+/mysqladmin/main.php 1 -
+/phpMyAdmin-2.6.3-rc1/main.php 1 -
+/scripts/setup.php 2 -
+/mysql-admin/main.php 1 -
+//config/config.inc.php 2 -
+/mysql/ 1 -
+/roundcubemail//bin/msgimport 2 -
+/dbadmin/main.php 1 -
+/cube//bin/msgimport 2 -
+//p/m/a/config/config.inc.php 1 -
+/dog-accessorihh=pndjom4jvtpa04389ph8gigq66 1 -
+//phpMyAdmin/%20/scripts/setup.php 1 -
+/phpMyAdmin-2.5.1/main.php 1 -
+/roundcube//bin/msgimport 1 -
+/adminastrator 1 -
+/images/JP-60-twin.jpg 7 http://212.78.234.1/jp-6ft-0-twin-fin-fish-surfboard-p-170.html
+//zeroboard/skin/zero_vote/login.php 1 -
+/w00tw00t.at.ISC.SANS.test0:) 1 -
+/mysql/main.php 1 -
+/administrator 2 -
+//phpMyAdmin/config/config.inc.php 4 -
+/db/main.php 1 -
+/images/drylock_54_hooded.jpg 16 http://212.78.234.1/xcel-wetsuits-accessories-c-23.html
+/images/xcel_54_infiniti_hooded.jpg 23 http://212.78.234.1/xcel-wetsuits-accessories-c-23.html
+/web/phpMyAdmin/main.php 1 -
+/phpMyAdmin-2.6.0/main.php 1 -
+/rc//bin/msgimport 1 -
+//zboard/skin/zero_vote/login.php 1 -
+//phpMyAdmin/ 4 -
+//mysql/ 4 -
+/roundcubemail-0.1//bin/msgimport 2 -
+/admin/mysql/main.php 1 -
+/admin.html 1 -
+//user/templates/footer.tpl 2 -
+/admin/main.php 1 -
+//mail/config.inc.php 2 -
+/phpMyAdmin-2.6.2-rc1/main.php 1 -
+/roundcube-0.2//bin/msgimport 2 -
+//board/skin/zero_vote/login.php 1 -
+/adminstrator 1 -
+/sitemap 1 -
+/roundcube-0.1//bin/msgimport 2 -
+//phpMyAdmin2/config.inc.php 2 -
+/rms//bin/msgimport 2 -
+/sitemap.html 1 -
+/user/soapCaller.bs 1 -
+/phpMyAdmin-2.5.6/main.php 1 -
+/roundcubemail-0.2//bin/msgimport 2 -
+/webmail2//bin/msgimport 2 -
+//phppgadmin/config.inc.php 2 -
+/webmail//bin/msgimport 2 -
+/images/8%270%20green%20spray.png 15 http://212.78.234.1/surfboards-mini-mals-c-5_28.html
+/admin/phpmyadmin/main.php 1 -
+//php-my-admin/config/config.inc.php 3 -
+/phpMyAdmin-2.6.0-pl1/main.php 1 -
+/phpmyadmin2/main.php 1 -
+//bbs/skin/zero_vote/login.php 1 -
+/PMA/main.php 1 -
+/phpMyAdmin-2.2.6/main.php 1 -
+/phpmyadmin/main.php 1 -
+/mail//bin/msgimport 2 -
+/myadmin/main.php 1 -
+/mss2//bin/msgimport 2 -
+//phpmyadmin2/config.inc.php 2 -
+//phpmyadmin/config/config.inc.php 4 -
+/round//bin/msgimport 2 -
+/bin/msgimport 2 -
+//store/admin/includes/stylesheet.css 1 -
+//pma/config/config.inc.php 4 -
+/phpMyAdmin-2.6.3/main.php 1 -
+//phpmyadmin/ 4 -
+//phpmyadmin//scripts/setup.php 2 -
+/phpMyAdmin/ 1 -
+/admin/pma/main.php 1 -
+/erro.html 1 -
+//myadmin/config/config.inc.php 3 -
+END_SIDER_404
+
+# Plugin key - Pages - Hits - Bandwidth - Last access
+BEGIN_PLUGIN_geoip_city_maxmind 16
+unknown 0 8724 0 0
+gb_oxford_k2 0 4922 0 0
+gb_london_h9 0 3042 0 0
+gb_newbury_p4 0 1913 0 0
+gb_slough_m1 0 248 0 0
+gb_dudley_d7 0 190 0 0
+gb_ilminster_m3 0 75 0 0
+gb_kidderminster_q4 0 65 0 0
+ie_louth_19 0 20 0 0
+cn_wenzhou_02 0 2 0 0
+al_tirana_50 0 1 0 0
+hu_budaörs_16 0 1 0 0
+us_littleton_co 0 1 0 0
+tw_taipei_03 0 1 0 0
+ca_toronto_on 0 1 0 0
+cn_shenyang_19 0 1 0 0
+END_PLUGIN_geoip_city_maxmind
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 52
+81.178.6.169 561 4166 78181491 20100226174924
+212.183.140.21 497 1105 30165333 20100228160454
+87.113.21.79 413 2645 28138546 20100218162634
+87.114.151.44 379 2056 37790122 20100213154527
+87.113.170.212 292 721 18732203 20100223181351
+87.114.144.9 221 728 30996588 20100210172318
+87.113.90.145 207 813 32429396 20100216145833
+87.114.17.185 205 756 16762153 20100212145023
+87.115.114.7 202 459 9693646 20100226152844
+87.114.31.231 193 239 9844117 20100226165727
+59.125.177.226 1 1 28004 20100215211914
+80.3.140.61 6 128 3071476 20100211154611
+86.173.127.193 7 98 3512417 20100220221849
+87.113.53.175 16 248 1624172 20100220161133
+87.114.24.2 47 486 3690959 20100209171256
+87.112.169.146 1 1 30120 20100225143841
+87.114.242.37 2 6 189330 20100225152243
+87.112.228.5 7 31 1781319 20100217121209
+212.183.140.22 2 6 73664 20100227145653
+87.112.148.74 135 546 11404308 20100222151315
+99.254.36.214 1 1 28162 20100209215440
+81.131.183.27 8 245 5657676 20100227155308
+82.37.36.226 6 65 2069765 20100216142019
+60.21.206.10 1 1 28544 20100216232215
+87.114.34.202 163 568 8372121 20100208161504
+87.112.179.244 1 64 31790 20100226090518
+61.164.150.144 2 2 47086 20100216133313
+86.184.69.188 10 103 2002529 20100210185844
+87.113.2.242 5 130 1945423 20100225164933
+87.112.163.106 40 172 5281943 20100224161454
+86.157.13.71 2 75 1794457 20100207105849
+87.115.35.210 6 87 1740059 20100211133653
+87.112.28.218 100 286 7245594 20100215150120
+87.112.150.234 2 3 56428 20100225101710
+87.112.235.140 16 115 5057350 20100221143633
+212.183.140.19 2 6 70879 20100227160923
+212.183.140.37 18 614 750612 20100212123234
+80.3.136.170 1 62 1668265 20100216141830
+78.137.170.170 3 20 84780 20100210104627
+86.175.233.243 10 122 2520606 20100207234014
+212.183.140.52 4 77 2271702 20100210105950
+212.183.140.34 2 8 149705 20100227141607
+212.183.140.38 3 28 213963 20100211141133
+67.106.40.12 1 1 28298 20100223200352
+91.120.21.93 1 1 18494 20100217233339
+87.113.21.82 23 293 2151061 20100207152606
+217.24.240.68 1 1 27525 20100211102025
+87.113.179.137 31 173 6317916 20100214133230
+87.112.32.138 2 2 58134 20100225141714
+212.183.140.102 2 69 1108869 20100227112549
+87.112.141.2 116 556 14280683 20100219130902
+87.113.88.184 2 18 140540 20100212151657
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 22
+20100207 35 490 6466124 4
+20100208 242 1275 17569788 7
+20100209 48 487 3719121 4
+20100210 274 1210 40257952 10
+20100211 69 462 10095671 9
+20100212 297 1510 20366998 5
+20100213 379 2056 37790122 2
+20100214 31 173 6317916 3
+20100215 122 431 9698515 7
+20100216 218 1024 38554949 7
+20100217 67 701 22299343 6
+20100218 605 3914 43294142 4
+20100219 130 647 16610840 3
+20100220 23 346 5136589 3
+20100221 16 115 5057350 3
+20100222 139 615 13051826 3
+20100223 299 833 21573032 6
+20100224 42 181 5522911 6
+20100225 30 370 7385735 7
+20100226 400 928 23365273 7
+20100227 18 344 7810303 8
+20100228 495 1095 29415823 1
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+1h+ 20
+5mn-15mn 10
+0s-30s 52
+30s-2mn 13
+15mn-30mn 7
+2mn-5mn 4
+30mn-1h 9
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 190
+/admin/product.php 914 25233212 1 1
+/admin/categories.php 892 39549753 0 5
+/admin/image_handler.php 375 10711054 0 0
+/editors/fckeditor/editor/fckeditor.html 260 273592 0 0
+/index.php 227 5738504 16 64
+/ 146 3921390 75 12
+/admin/manufacturers.php 76 2375701 0 0
+/surfboards-longboards-c-5_29.html 60 1455916 0 0
+/xcel-wetsuits-accessories-c-23.html 51 1623320 0 1
+/page.html 51 1221614 1 3
+/jp-6ft-4-hybird-swallow-tail-shortboard-p-166.html 5 129214 0 0
+/fcs-m3-quad-glass-flex-surfboard-fins-p-39.html 2 55077 0 0
+/admin/specials.php 1 16127 0 0
+/town-and-country-black-van-double-cover-p-233.html 1 25522 0 0
+/xcel-ladies-xflex-53-winter-wetsuit-p-122.html 3 80187 0 0
+/admin/easypopulate.php 1 17664 0 0
+/creatures-6ft-3-shortboard-stretch-sox-p-52.html 2 51571 0 0
+/creatures-6ft-3-day-use-hybird-fish-5mm-boardbag-slim-fit-p-133.html 1 26258 0 0
+/creatures-wax-comb-p-178.html 2 50453 0 0
+/keypod-car-key-security-p-49.html 2 51705 0 0
+/firewire-6ft-0-alternator-squash-tail-surfboard-p-35.html 1 26972 0 0
+/town-and-country-black-3d-stetch-single-seat-cover-p-232.html 1 27228 0 1
+/escape-7-ft-4-mini-mal-surfboard-p-187.html 1 25914 0 0
+/one-track-mind-dvd-p-182.html 2 53180 0 0
+/fcs-cdrive-surfboard-fins-p-50.html 2 51212 0 0
+/ezydog-element-jacket-blue-tartan-m-p-211.html 1 27657 0 0
+/editors/fckeditor/editor/dialog/fck_image/fck_image_preview.html 1 2975 0 0
+/privacy.html 1 24792 0 1
+/escape-7ft-6-mini-mal-surfboard-p-189.html 1 25980 0 0
+/xcel-mens-infiniti-543-winter-wetsuit-p-98.html 10 286812 0 0
+/xcel-infiniti-3-finger-5mm-wetsuit-gloves-p-87.html 2 52240 0 0
+/editors/fckeditor/editor/dialog/fck_image.html 1 9785 0 0
+/surfboards-softboards-c-5_30.html 8 160172 0 0
+/still-filthy-dvd-p-102.html 1 26555 0 0
+/images/drift-in_sample_menu_2010.pdf 1 932356 0 0
+/admin/layout_controller.php 2 103340 0 0
+/ocean-earth-chompers-tail-pad-p-74.html 1 25494 0 0
+/creatures-6ft-backdoor-leash-p-18.html 3 92133 0 0
+/escape-7-ft-10-mini-mal-surfboard-p-173.html 7 180444 0 0
+/far-king-cool-water-surfboard-wax-p-66.html 7 178927 0 0
+/sola-6-ft-softboard-surfboard-p-241.html 2 50882 0 0
+/jp-6-ft-2-swallow-tail-shortboard-p-163.html 1 25947 0 0
+/creatures-garret-parks-tail-pad-p-126.html 4 103061 0 0
+/drive-thru-australia-2-dvd-p-106.html 1 25880 0 0
+/ezydog-25-cujo-dog-lead-arctic-camo-p-204.html 2 51252 0 0
+/admin/media_types.php 1 16715 0 0
+/surf-co-quick-fix-25oz-complete-resin-kit-p-63.html 3 77215 0 0
+/town-and-country-boot-liner-p-234.html 1 27376 0 0
+/fluid-juice-6-ft-6-quad-fin-fish-surfboard-p-155.html 4 103996 0 0
+/creatures-ry-craike-tail-pad-p-131.html 1 25780 0 0
+/jp-6ft-2-swallow-tail-surfboard-p-32.html 2 52941 0 0
+/books-c-12.html 4 101935 0 0
+/ezydog-cujo-72-lead-acrilic-camo-p-201.html 1 25728 0 0
+/luke-young-slaker-6ft-2-shortboard-p-150.html 1 25823 0 0
+/black-white-6ft-0-shortboard-p-157.html 6 154274 0 0
+/black-white-6ft-8-quad-fin-fish-surfboard-p-33.html 3 78948 0 0
+/escape-surfboards-m-21.html 27 682084 0 0
+/bra-boys-dvd-p-183.html 8 211805 0 2
+http://www.3838pk.com 1 18494 1 1
+/fluid-juice-surfboards-m-27.html 8 178253 0 0
+/luke-young-sr70rs-6ft-3-shortboard-p-151.html 2 51348 0 0
+/admin/orders.php 7 157970 0 0
+/car-accessories-c-14.html 30 872111 0 2
+/escape-7-ft-4-mini-mal-surfboard-p-188.html 2 51893 0 0
+/creatures-6ft-pro-leash-p-45.html 6 165152 0 0
+/ocean-earth-25-metre-tie-downs-p-60.html 1 25542 0 0
+/editors/fckeditor/editor/dialog/fck_hiddenfield.html 1 3141 0 0
+/town-and-country-m-31.html 3 98413 0 0
+/creatures-8ft-makaha-leash-p-42.html 4 116395 0 0
+/surfco-super-slick-diamond-tip-nose-guard-p-174.html 5 128203 0 0
+/future-fins-m-13.html 2 43179 0 0
+/resin-8-surfboards-m-8.html 2 40142 0 0
+/future-fins-fea-surfboard-fins-p-34.html 2 52180 0 0
+/escape-9-ft-1-noserider-longboard-surfboard-p-196.html 28 747428 0 0
+/escape-7ft-2-mini-mal-surfboard-p-185.html 2 51514 0 0
+/escape-9-ft-6-noserider-longboard-surfboard-p-194.html 9 247135 0 0
+/admin/define_pages_editor.php 3 48653 0 0
+/ezydog-dog-accessoires-c-31.html 3 62521 0 0
+/jp-6-ft-2-swallow-tail-shortboard-p-164.html 2 51256 0 0
+/town-and-country-black-hawaiian-single-seat-cover-p-227.html 1 25637 0 0
+/ocean-earth-uv-resin-kit-p-61.html 2 50185 0 0
+/creature-6ft-7-travel-boardbag-10mm-slim-fit-p-145.html 2 52224 0 0
+/admin/invoice.php 1 6425 0 0
+/zamora-surfboards-m-20.html 1 22176 0 0
+/jp-6ft-0-twin-fin-fish-surfboard-p-170.html 2 51414 0 0
+/admin/attributes_controller.php 43 2156376 0 0
+/admin/products_expected.php 3 44219 0 0
+/gorilla-grip-m-9.html 2 51818 0 0
+/escape-7ft-4-mini-mal-surfboard-p-186.html 1 25761 0 0
+/admin/modules.php 19 718179 0 2
+/jp-6ft-5-pin-tail-surfboard-p-167.html 1 25673 0 0
+/xcel-wetsuits-accessories-m-1.html 3 91250 0 0
+/luke-young-slacker-6ft-3-surfboard-p-31.html 3 79628 0 0
+/town-and-country-whiteblack-hawaiian-single-seat-cover-p-228.html 2 51304 0 0
+/creatures-6ft-7-day-use-hybird-fish-5mm-boardbag-slim-fit-p-134.html 1 26395 0 0
+/firewire-surfboards-m-19.html 4 87911 0 1
+/jp-6-ft-squash-tail-shortboard-p-162.html 1 26928 0 0
+/jp-6-ft-0-squash-tail-shortboard-p-162.html 1 25846 0 0
+/xcel-mens-infiniti-543-hooded-winter-wetsuit-p-27.html 3 81838 0 0
+/surfboards-shortboards-c-5_19.html 35 1045427 0 0
+/fcs-h2-small-surfboard-fins-p-40.html 2 52739 0 0
+/fcs-premium-double-soft-roof-racks-p-65.html 3 76685 0 0
+/tail-pads-c-8.html 12 387000 0 1
+/xcel-2mm-peaked-wetsuit-hood-p-91.html 3 81286 0 0
+/surfboards-quads-c-5_26.html 7 172772 0 0
+/surfboards-retro-special-c-5_27.html 7 174898 0 0
+/occy-the-rise-and-fall-p-113.html 1 25940 0 0
+// 4 102861 4 4
+/admin/login.php 36 56238 8 1
+/escape-6-ft-8-flying-carpet-surfboard-p-197.html 3 78048 0 0
+http://www.sina.com.cn/ 1 28004 1 1
+/fins-c-9.html 11 327831 0 0
+/admin/index.php 33 648634 0 0
+/jp-6ft-8-pin-tail-surfboard-p-168.html 1 25695 0 0
+/fluid-juice-6ft-8-quad-fin-fish-surfboard-p-156.html 1 25997 0 0
+/ezydog-dog-accessories-c-31.html 14 291798 0 0
+/xcel-infiniti-5-finger-3mm-wetsuit-gloves-p-88.html 1 25816 0 0
+/black-white-6ft-8-shortboard-p-157.html 2 51874 0 0
+/fcs-carbon-lite-gcrv-surfboard-fins-p-41.html 5 128822 0 0
+/ezydog-standard-dog-collar-black-p-198.html 3 84432 0 0
+/admin/options_values_manager.php 2 148263 0 0
+/surfing-essentials-c-11.html 17 489199 0 0
+/xcel-ladies-infiniti-543-winter-wetsuit-p-123.html 2 53960 0 0
+/creatures-stephanie-gilmore-tail-pad-p-222.html 1 25626 0 0
+/days-of-the-strange-dvd-p-180.html 3 77571 0 0
+/xcel-hooded-polypro-rash-vest-p-121.html 2 52913 0 0
+/creatures-of-leisure-m-5.html 12 421559 0 0
+/luke-young-surfboards-m-23.html 2 49780 0 0
+/surfing-dvds-c-13.html 27 698173 1 1
+/dog-accessories-c-31.html 44 1236526 1 2
+/ocean-and-earth-m-6.html 2 51232 0 0
+/jp-5-ft-10-quad-fin-fish-surfboard-p-169.html 1 26012 0 0
+/products_new.html 8 213319 0 0
+/xcel-mens-drylock-543-winter-wetsuit-p-81.html 5 140590 0 1
+http://www.yahoo.com/ 1 28592 1 1
+/the-present-dvd-p-105.html 9 233236 0 0
+/ezydog-standard-dog-collar-pink-camo-p-199.html 1 28349 0 0
+/black-white-surfboards-m-15.html 6 133841 0 0
+/surfboard-repair-c-10.html 5 119025 0 1
+/creatures-9ft-mal-comp-ankle-leash-p-43.html 3 85956 0 0
+/admin/ 11 216200 4 0
+/conditions.html 1 32317 0 1
+/surfboards-c-5.html 18 418089 1 0
+/boardbags-c-6.html 13 434918 0 1
+/escape-9-ft-progressive-longboard-surfboard-p-193.html 7 198043 0 1
+/creatures-8ft-backdoor-leash-p-224.html 2 54790 0 0
+/admin/ezpages.php 3 125390 0 0
+/surfboards-mini-mals-c-5_28.html 6 149300 0 0
+/admin/product_types.php 5 92959 0 0
+/editors/fckeditor/editor/dialog/fck_paste.html 1 12291 0 0
+/escape-9-ft-1-noserider-longboard-surfboard-p-195.html 39 1032299 0 0
+/creatures-7ft-6-longboard-stretch-sox-p-51.html 2 52438 0 0
+/admin/configuration.php 13 400467 0 0
+/dear-yonder-dvd-p-184.html 1 26029 0 0
+/shippinginfo.html 1 23804 0 0
+/bourton-6ft-1-standard-hip-shortboard-p-159.html 4 103295 0 0
+/admin/developers_tool_kit.php 1 21920 0 0
+/dude-cruise-dvd-p-181.html 4 105771 0 0
+/editors/fckeditor/editor/fckdialog.html 3 68745 0 0
+/contact_us.html 2 44093 0 0
+/surf-co-quick-fix-45oz-complete-resin-kit-p-62.html 3 77552 0 0
+/admin/featured.php 2 32056 0 0
+/fcs-longboard-box-adapter-fin-p-47.html 1 25303 0 0
+/xcel-mens-drylock-543-hooded-winter-wetsuit-p-82.html 1 27393 0 0
+/fluid-juice-6ft-2-quad-fin-fish-surfboard-p-154.html 1 26028 0 0
+/xcel-peaked-skull-cap-2mm-wetsuit-hood-p-90.html 1 25992 0 1
+/island-rose-10-ft-longboard-surfboard-p-177.html 3 79283 0 0
+/xcel-skull-cap-05mm-wetsuit-hood-p-89.html 2 51898 0 0
+/creatures-7ft-6-longboard-deluxe-day-use-5mm-boardbag-slim-fit-p-138.html 2 53342 0 0
+/luke-young-iron-fist-micro-6ft-6-shortboard-p-152.html 4 103975 0 0
+/fcs-m-11.html 9 239791 0 0
+/creatures-6ft-comp-leash-p-19.html 1 29187 0 0
+/nxr-5ft-10-quad-fin-surfboard-p-161.html 1 25880 0 0
+/creatures-6ft-3-shortboard-deluxe-day-use-5mm-boardbag-slim-fit-p-136.html 4 106718 0 0
+/gorilla-grip-fishtail-tail-pad-p-129.html 3 76913 0 0
+/xcel-infiniti-round-toe-7mm-wetsuit-boots-p-101.html 1 26800 0 0
+/xcel-infiniti-split-toe-5mm-wetsuit-boots-p-85.html 1 26737 0 0
+/escape-7-ft-6-mini-mal-surfboard-p-190.html 2 52006 0 0
+/admin/store_manager.php 2 48460 0 0
+/admin/alt_nav.php 7 157756 0 0
+/creatures-8ft-teahupoo-leash-p-42.html 2 53078 0 0
+/fcs-js1-surfboard-fins-p-38.html 3 77511 0 0
+/leashes-c-7.html 20 480166 0 2
+/luke-young-robot-5ft-8-surfboard-p-141.html 1 25914 0 0
+/surfco-super-slick-longboard-nose-guard-p-175.html 1 25684 0 0
+/captcha_img.php 3 94167 0 0
+/fcs-ratchet-fin-tool-p-48.html 1 25377 0 0
+/ezydog-72-dog-lead-in-pink-p-203.html 1 25804 0 0
+/surfboards-second-hand-c-5_30.html 1 19771 0 0
+/jp-surfboards-m-16.html 3 80331 0 0
+END_SIDER

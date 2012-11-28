@@ -1,0 +1,159 @@
+v_products_model	v_categories_name_1	v_categories_name_2	v_categories_name_3	v_categories_name_4	v_categories_name_5	v_categories_name_6	v_categories_name_7	EOREOR
+MG200MMS	Hardware	Graphics Cards						EOREOR
+MG400-32MB	Hardware	Graphics Cards						EOREOR
+HPLJ1100XI	Hardware	Printers						EOREOR
+MSINTKB	Hardware	Keyboards						EOREOR
+MSIMPRO	Hardware	Mice						EOREOR
+MSIMEXP	Hardware	Mice						EOREOR
+DVD-RPMK	DVD Movies	Action						EOREOR
+DVD-MATR	DVD Movies	Action						EOREOR
+DVD-UNSG	DVD Movies	Action						EOREOR
+DVD-UNSG2	DVD Movies	Action						EOREOR
+DVD-FDBL	DVD Movies	Action						EOREOR
+DVD-DHWV	DVD Movies	Action						EOREOR
+DVD-LTWP	DVD Movies	Action						EOREOR
+DVD-SPEED	DVD Movies	Action						EOREOR
+DVD-SPEED2	DVD Movies	Action						EOREOR
+DVD-BLDRNDC	DVD Movies	Science Fiction						EOREOR
+DVD-YGEM	DVD Movies	Comedy						EOREOR
+DVD-TSAB	DVD Movies	Comedy						EOREOR
+DVD-ABUG	DVD Movies	Cartoons						EOREOR
+DVD-FRAN	DVD Movies	Thriller						EOREOR
+DVD-REDC	DVD Movies	Drama						EOREOR
+DVD-CUFI	DVD Movies	Drama						EOREOR
+DVD-BELOVED	DVD Movies	Drama						EOREOR
+PC-SWAT3	Software	Simulation						EOREOR
+PC-UNTM	Software	Action						EOREOR
+PC-TWOF	Software	Strategy						EOREOR
+PC-DISC	Software	Strategy						EOREOR
+GIFT005	Gift Certificates							EOREOR
+GIFT 010	Gift Certificates							EOREOR
+GIFT025	Gift Certificates							EOREOR
+GIFT050	Gift Certificates							EOREOR
+GIFT100	Gift Certificates							EOREOR
+GIFT	Gift Certificates							EOREOR
+DVD-BLDRNDC	Big Linked							EOREOR
+DVD-MATR	Big Linked							EOREOR
+DVD-YGEM	Big Linked							EOREOR
+DVD-ABUG	Big Linked							EOREOR
+DVD-UNSG	Big Linked							EOREOR
+DVD-FDBL	Big Linked							EOREOR
+DVD-DHWV	Big Linked							EOREOR
+DVD-LTWP	Big Linked							EOREOR
+DVD-REDC	Big Linked							EOREOR
+DVD-FRAN	Big Linked							EOREOR
+DVD-CUFI	Big Linked							EOREOR
+DVD-SPEED	Big Linked							EOREOR
+DVD-TSAB	Big Linked							EOREOR
+DVD-BELOVED	Big Linked							EOREOR
+PC-SWAT3	Big Linked							EOREOR
+PC-UNTM	Big Linked							EOREOR
+PC-TWOF	Big Linked							EOREOR
+PC-DISC	Big Linked							EOREOR
+HPLJ1100XI	Big Linked							EOREOR
+DVD-ABUG	Big Linked							EOREOR
+TESTMINUNITSNOMIX	Big Linked							EOREOR
+TESTMINUNITSMIX	Big Linked							EOREOR
+MAXSAMPLE-1	Big Linked							EOREOR
+MAXSAMPLE-3	Big Linked							EOREOR
+HPLJ1100XI	Test Examples							EOREOR
+TEST1	Test Examples							EOREOR
+TEST2	Test Examples							EOREOR
+TEST3	Test Examples							EOREOR
+MINUNITSMIX	Test Examples							EOREOR
+MINUNITSNOMIX	Test Examples							EOREOR
+HPLJ1100XI	Test Examples							EOREOR
+HPLJ1100XI	Test Examples							EOREOR
+Test25-AttrAll	Test Examples							EOREOR
+Test25	Test Examples							EOREOR
+Test120	Test Examples							EOREOR
+Test90	Test Examples							EOREOR
+FreeShipping	Test Examples							EOREOR
+HIDEQTY	Test Examples							EOREOR
+FreeShippingNoWeight	Test Examples							EOREOR
+SoldOut	Test Examples							EOREOR
+HIDEQTYBOX	Test Examples							EOREOR
+TESTFREE	Free Call Stuff							EOREOR
+TESTCALL	Free Call Stuff							EOREOR
+TESTFREEATTRIB	Free Call Stuff							EOREOR
+Free1	Free Call Stuff							EOREOR
+Free2	Free Call Stuff							EOREOR
+TESTFREEALL	Free Call Stuff							EOREOR
+TESTCALL	Free Call Stuff							EOREOR
+HPLJ1100XI	Test 10% by Attrib							EOREOR
+HPLJ1100XI	Test 10% by Attrib							EOREOR
+Test25-10AttrAll	Test 10% by Attrib							EOREOR
+HPLJ1100XI	Test 10% by Attrib							EOREOR
+Test120-5	Sale Deduction	$5.00 off						EOREOR
+Test120-90-5	Sale Deduction	$5.00 off						EOREOR
+HPLJ1100XI	Test 10%							EOREOR
+TESTFREE	Test 10%							EOREOR
+TESTCALL	Test 10%							EOREOR
+TESTCALL	Test 10%							EOREOR
+TESTFREE	Test 10%							EOREOR
+MINUNITSMIXSALE	Test 10%							EOREOR
+MINUNITSNOMIXSALE	Test 10%							EOREOR
+HPLJ1100XI	Test 10%							EOREOR
+HPLJ1100XI	Test 10%							EOREOR
+Test25-10	Test 10%							EOREOR
+Test120-90-10-Skip	Sale Percentage	10% off Skip						EOREOR
+Test120-90-10-Skip	Sale Percentage	10% off Skip						EOREOR
+Test120-90-10-Price	Sale Percentage	10% off Price						EOREOR
+Test120-90off-10-Price	Sale Percentage	10% off Price						EOREOR
+Test120-90-10	Sale Percentage	10% off						EOREOR
+Test120-90off-10	Sale Percentage	10% off						EOREOR
+Test120-90off-10	Sale Percentage	10% off						EOREOR
+Test120-New100	Sale New Price	Set $100						EOREOR
+Test120-25-New100	Sale New Price	Set $100						EOREOR
+Test120-90off-10	Sale Percentage	10% off Attrib						EOREOR
+Test120-25-New100-Skip	Sale New Price	Set $100 Skip						EOREOR
+Test120-New100-Off-Skip	Sale New Price	Set $100 Skip						EOREOR
+Test120-5SKIP	Sale Deduction	$5.00 off Skip						EOREOR
+Test120-90-5SKIP	Sale Deduction	$5.00 off Skip						EOREOR
+TEST1	Big Unlinked							EOREOR
+TEST2	Big Unlinked							EOREOR
+TEST3	Big Unlinked							EOREOR
+Test2	Big Unlinked							EOREOR
+Test4	Big Unlinked							EOREOR
+Test5	Big Unlinked							EOREOR
+Test1	Big Unlinked							EOREOR
+Test8	Big Unlinked							EOREOR
+Test3	Big Unlinked							EOREOR
+Test10	Big Unlinked							EOREOR
+Test6	Big Unlinked							EOREOR
+Test7	Big Unlinked							EOREOR
+Test12	Big Unlinked							EOREOR
+Test9	Big Unlinked							EOREOR
+Test11	Big Unlinked							EOREOR
+Normal	New v1.2	Discount Qty						EOREOR
+Special	New v1.2	Discount Qty						EOREOR
+Normal	New v1.2	Discount Qty						EOREOR
+Normal	New v1.2	Discount Qty						EOREOR
+Special	New v1.2	Discount Qty						EOREOR
+Normal	New v1.2	Discount Qty						EOREOR
+PRICEFACTOR	New v1.2	Attributes						EOREOR
+PRICEFACTOROFF	New v1.2	Attributes						EOREOR
+PRICEFACTOROFFATTR	New v1.2	Attributes						EOREOR
+ONETIME	New v1.2	Attributes						EOREOR
+ATTQTYPRICE	New v1.2	Attributes						EOREOR
+PERWORDREQ	New v1.2	Text Pricing						EOREOR
+PERLETTERREQ	New v1.2	Text Pricing						EOREOR
+GolfClub	New v1.2	Real Sale						EOREOR
+ROPE	New v1.2	Real Sale						EOREOR
+DOWNLOAD2	New v1.2	Downloads						EOREOR
+DOWNLOAD1	New v1.2	Downloads						EOREOR
+GolfClub	New v1.2	Real						EOREOR
+ROPE	New v1.2	Real						EOREOR
+GolfClub	New v1.2	Real						EOREOR
+ROPE	New v1.2	Real						EOREOR
+Book	New v1.2	Real						EOREOR
+RTBHUNTER	Music							EOREOR
+	Documents							EOREOR
+DPT	Documents							EOREOR
+PGT	Mixed Product Types							EOREOR
+PMT	Mixed Product Types							EOREOR
+	Mixed Product Types							EOREOR
+DPT	Mixed Product Types							EOREOR
+PFS	Mixed Product Types							EOREOR
+Test Document	--none--							EOREOR
+samples/3_small.jpg	--none--							EOREOR

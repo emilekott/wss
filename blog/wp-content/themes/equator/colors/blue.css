@@ -1,0 +1,454 @@
+/* 
+Theme Name: eQuator Global Community
+Description: Blog Magazine WordPress theme.
+Version: 2.8
+Author: system32
+Author URI: http://www.themeforest.net/user/system32
+Tags: community, blog, magazine, news, personal blog
+*/
+
+/* Body >> General
+----------------------------------------------------------------------------------------------------*/
+
+#locate {
+		background:#fff url(blue/main-bg.jpg) 0 0 repeat-x; 
+		}
+
+	h2{
+		color:#444847;
+		}
+
+
+a {color:#009fce; text-decoration:none;}
+a:hover { color:#000; text-decoration:underline;}
+
+hr.seperator {
+	border:none;
+	border-top:1px solid #c5c7cd;
+	border-bottom:1px solid #FFFFFF;
+	}
+
+/* Body >> General & Headings
+----------------------------------------------------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {}
+
+
+/* Body >> Top Bar
+----------------------------------------------------------------------------------------------------*/
+	.top-bar a{
+		color:#a3a3a3; 
+		text-decoration:none;
+		}
+
+	.top-bar a:hover {
+		color:#fff;
+		}
+
+/* Body >> Bread Crumb
+----------------------------------------------------------------------------------------------------*/
+span.breadcrumbs {
+		color:#71757d;
+		text-transform:capitalize;
+		}
+
+
+
+
+/* Body >> Content
+----------------------------------------------------------------------------------------------------*/
+
+.contentbg {
+	background:transparent url(../images/contentbg.gif) repeat-y center top;
+	}
+
+
+/* Body >> Posts & Excerpt
+----------------------------------------------------------------------------------------------------*/
+
+.excerpt {
+	border-bottom:1px solid #cfcfcf;
+	}
+
+
+		.excerpt h1 a { color:#000; }
+		.excerpt h1 a:hover { color:#000; text-decoration:none; border-bottom:1px solid #000;}
+
+		.excerpt .comments {
+			background:URL(blue/commentsbg.jpg) no-repeat;
+			width:78px;
+			height:78px;
+			text-align:center;
+			}
+
+
+		.excerpt .comments b {
+			color:#fff;
+			letter-spacing:-1px;
+			}
+
+		.comments a:hover {text-decoration:none;}
+
+.imgborder {
+		background:#eeeeee;
+		border:1px solid #bbb;
+		}
+
+
+.postmetadata a {
+	color: #ffffff !important;
+	text-transform:capitalize;
+	}
+
+.postmetadata em {
+	background: #009fce;
+	color: #ffffff;
+	}
+
+.post h3 {color:#212121;}
+.post h3 a{color:#212121;}
+.post h3 a:hover{text-decoration:none;}
+
+
+/* Body >> Sidebar Search Box
+----------------------------------------------------------------------------------------------------*/
+
+div.search form label {
+	border:1px solid #cccccc;
+	background:#ffffff url(../images/search_48.jpg) 95% 3px no-repeat; 
+	height: 28px; 
+	}
+
+
+	div.search form label input {
+		width: 250px; 
+		color:#484848;
+		}
+
+
+/* Body >> Search Page
+----------------------------------------------------------------------------------------------------*/
+.s-result {
+	border:1px solid #ddd;
+	background:#f2f2f2;
+	}
+
+.s-result h2 {
+	color:#444847;
+	}
+
+
+/* Body >> Top-Bar
+----------------------------------------------------------------------------------------------------*/
+
+.top-bar li a {
+	text-decoration: none;
+	}
+
+.top-bar li a:hover,
+.top-bar li.active a { } 
+
+/* Body >> Footer
+----------------------------------------------------------------------------------------------------*/
+.footer {
+	background:#313131; 
+	color:#999999;
+	}
+
+.footer h2, .footer h6 {color:#fff;}
+
+/* Body >> Footer Blog Roll
+----------------------------------------------------------------------------------------------------*/
+.footer ul.blogroll li a 	{
+		color:#999;
+		background: URL(../images/arrow.gif) 2% 50% no-repeat; 
+		border-bottom:1px solid #424242;
+		}
+.footer ul.blogroll li a:hover {
+		color:#fff; 
+		background:URL(../images/arrow.gif) 2.5% 50% no-repeat; 
+		text-decoration:none; 
+		}
+
+
+/* Body >> Recent Comments
+----------------------------------------------------------------------------------------------------*/
+ul.recentcomment li 	{ 
+		border-bottom:1px solid #424242;
+		color:#666;
+		}
+ul.recentcomment li a 	{ 
+		color:#999; 
+		}
+ul.recentcomment li a:hover {
+		color:#fff;
+		text-decoration:none; 
+		}
+
+
+/* Sidebar >> Sub Menu
+----------------------------------------------------------------------------------------------------*/
+		
+	.submenu li a {
+		background:URL(../images/arrow.gif) 2% 50% no-repeat;
+		border-bottom:1px solid #ccc;				
+		text-decoration:none;
+		}
+
+	.submenu li a:link, .submenu li a:visited {
+		color:#484848;
+		}
+
+		.submenu li li a {
+			border-bottom:0px solid #ccc;
+			text-decoration:none;
+			}
+
+		.submenu li li a:link, .submenu li li a:visited {
+			color:#484848;
+			}
+
+	.submenu li.current-cat a, 	.submenu li.current-page-item a{
+		background:URL(../images/arrow_hover.gif) 2% 50% no-repeat;
+		color:#000;
+		text-decoration:none;
+		}
+
+	.submenu li a:hover {
+		background:URL(../images/arrow_hover.gif) 3% 50% no-repeat;
+		color:#000;
+		text-decoration:none;
+		}
+
+/* Body >> Recent Comments
+----------------------------------------------------------------------------------------------------*/
+
+.quote{
+	color:#999;
+	}
+
+.quote p{
+	background: #404040;
+	border-top:1px solid #212121;
+	}
+
+.quote ul {
+	background: url(../images/quotes_bottom.gif) no-repeat 20px 0;
+	color:  #666;
+	}
+
+.quote li{
+	color:#999;
+	}
+
+.quote p a {color:#999;}
+.quote p a:hover {color:#fff; text-decoration:none;}
+
+
+ul#recentcomments {margin:0;}
+
+ul#recentcomments li {
+	background:#ffffff;
+	}
+
+ul#recentcomments li a{
+	background:none;
+	border:none;
+	}
+
+#screenshot{
+	border:1px solid #ccc;
+	background:#333;
+	color:#fff;
+	}
+
+/* Body >> Sidebar RSS Feeds
+----------------------------------------------------------------------------------------------------*/
+
+#demotip { 
+    background:transparent url(../images/black_arrow.png); 
+    color:#fff;     
+	}
+
+#tooltip{
+	border:5px solid #4e4e4e;
+	background:#000;
+	color:#fff;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	-khtml-border-radius:10px;
+	}	
+
+
+.feeds{
+	background:#dbdbdb URL(../images/bar_top.gif) center top no-repeat;
+	border-bottom:1px solid #c7c7c7;
+	}	
+
+.feeds a{	}
+
+/* Body >> Share Post
+----------------------------------------------------------------------------------------------------*/
+.shareit-box {
+	background:#f5f5f5;
+	border:1px solid #ddd;
+	}
+
+/* Body >> Related Post
+----------------------------------------------------------------------------------------------------*/
+
+.post-bottom-box {
+	background:#f5f5f5;
+	border:1px solid #ddd;
+	}
+
+
+	ul.related-posts li a {
+		background:URL(../images/arrow.gif) 2% 50% no-repeat;
+		border-bottom:1px solid #ccc;				
+		border-top:1px solid #fff;				
+		color:#484848;
+		text-decoration:none;
+		}
+
+	ul.related-posts li a:hover {
+		background:URL(../images/arrow_hover.gif) 3% 50% no-repeat;
+		color:#000;
+		text-decoration:none;
+		}
+
+/* Body >> Community Link Feeds
+----------------------------------------------------------------------------------------------------*/
+.communityfeeds ul li {
+		border-bottom:1px solid #ccc;
+		}
+
+.communityfeeds h6 a { }
+
+.fvCommunityNewsList li {
+		border-bottom:1px solid #ddd;
+		}
+
+/* Body >> General Submit Button
+----------------------------------------------------------------------------------------------------*/
+.button{
+	border: 1px solid #bbb;
+	background: #f8f8f8 url(../images/page-btn.gif) repeat-x scroll 0 100%;
+	color: #000;
+	text-decoration: none;
+	text-transform:uppercase;
+	}
+
+a.button:hover {color:#0099cf;text-decoration:none; }
+
+/* Body >> Author Box
+----------------------------------------------------------------------------------------------------*/
+
+.authorbox {
+	background:#f2f2f2;
+	border:1px solid #ddd;
+	}
+
+/* Body >> Post Entry Blockquote CSS
+----------------------------------------------------------------------------------------------------*/
+
+		
+blockquote{
+	background:#FFFFFF;
+	border-left:5px solid #ccc;
+	}
+
+/* Body >> Sidebar Popular Post
+----------------------------------------------------------------------------------------------------*/
+
+	.pop-post li a {
+		background:URL(../images/arrow.gif) 2% 50% no-repeat;
+		color:#484848;
+		border-bottom:1px solid #ccc;				
+		text-decoration:none;
+		}
+
+	.pop-post li a:hover {
+		background:URL(../images/arrow_hover.gif) 3% 50% no-repeat;
+		color:#000;
+		text-decoration:none;
+		}
+
+/* Body >> Post User Lists
+----------------------------------------------------------------------------------------------------*/
+
+ul.twitters li {
+	color:#7c7c7c;
+	background:none;
+	background:#f0f0f0;
+	border:1px solid #d1d1d1;
+	}
+
+
+ul.twitters li img {
+	background:#ffffff;
+	border:1px solid #bcbcbc;
+	}
+
+ul.twitters li small {
+	color:#bababa;
+	}
+/* Body >> WP Page Navigation
+----------------------------------------------------------------------------------------------------*/
+.wp-pagenavi {
+	color: #777777;
+	}
+
+.wp-pagenavi a
+	border: 1px solid #c8c8c8;
+	background: #f8f8f8 url(../images/page-btn.gif) repeat-x scroll 0 100%;
+	color: #777777;
+	text-decoration: none;
+	}
+
+.wp-pagenavi a:hover, span.current {
+	color: #009fce;
+	}
+
+.wp-pagenavi a, .wp-pagenavi a:link {
+	color:#777777;
+	border: 1px solid #c8c8c8;
+	background-color: #FFFFFF;	
+}
+.wp-pagenavi a:visited {
+	color:#777777;
+	border: 1px solid #c8c8c8;
+	background-color: #FFFFFF;	
+}
+.wp-pagenavi a:hover {	
+	color:#009fce;	
+	border: 1px solid #cccccc;
+	background-color: #FFFFFF;
+}
+.wp-pagenavi a:active {
+	border: 1px solid #ccc;
+	background-color: #ffffff;	
+	color: #009fce;
+}
+.wp-pagenavi span.pages {
+	text-transform:uppercase;
+	border:none;
+}
+.wp-pagenavi span.current {
+	border: 1px solid #009fce;
+	color:#777;
+}
+.wp-pagenavi span.extend {
+	border: 1px solid #c8c8c8;
+	background-color: #FFFFFF;
+	color: #777777;
+}
+
+/* Body >> Pre Code
+----------------------------------------------------------------------------------------------------*/
+pre {
+	background: #f0f0f0;
+	border-left: 1px solid #b4cbff;
+	border-bottom: 1px solid #b4cbff;
+	background: url(../images/pre_bg.gif) repeat-y left top; /*--Background of lined paper--*/
+}

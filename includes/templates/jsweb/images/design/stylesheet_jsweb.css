@@ -1,0 +1,529 @@
+/**
+ * JSWeb CSS Stylesheet
+ *
+ * 
+ * @copyright Copyright 2007 JSWeb
+ * @version $Id: stylesheet_jsweb.css 0001 2007-06-05 16:00:00Z  ricksuffolk
+ */
+/* header css*/
+h1#indexCategoriesHeading {display:none}
+#categoryDescription p {padding-top:0px; margin-top:0px;}
+
+.headerbg01 {
+/* width:1018px;*/
+ width:998px; 
+ margin:auto;
+ 	margin-top:0px;
+	margin-bottom:0px;
+background-color:#fff;
+ background-image: url(../images/design/totalbg001.jpg);
+ background-repeat:no-repeat;
+ /* background-position: bottom left;*/
+ background-position: -10px 0px;
+
+}
+#headerWrapper {
+	width:978px;
+	margin:auto;
+ 	margin-top:0px;
+	margin-bottom:0px;
+}
+.header01 {
+	width:978px;
+	background-image: url(../images/design/headerbg01.jpg);
+	background-repeat: repeat-x;
+	text-align: left;
+}
+.sc01 {
+	width:360px;
+	height:24px;
+	margin-top:17px;
+	margin-left:16px;
+	background-image: url(../images/design/basketbg.jpg);
+	background-repeat: no-repeat;	
+	text-align:right;
+	padding-right:7px;
+	padding-top:6px;	
+	color: #fff;
+	text-decoration: none;
+	font-weight:bold;
+	font-size: 11px;
+}
+span.color01 {
+	color:#50bbc1;
+	text-decoration: none;
+	font-size: 11px;
+	font-weight: normal;
+}
+h2.nr01 {
+	color:#50bbc1;
+	text-decoration: none;
+	text-align:right;
+	font-size: 22px;
+	font-weight: bold;
+}
+A.sclink:visited, A.sclink:link, A.sclink:active	{
+	color: #fff;
+	text-decoration: none;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: lowercase;
+	}
+A.sclink:hover	{
+	color: #fff;
+	text-decoration: underline;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: lowercase;
+	}
+
+.header03 {
+	width:976px;
+	height:35px;
+	padding-left:0px;
+	background-repeat: repeat-x;
+
+}
+.header07 {
+	width:978px;
+	height:21px;
+	background-image: url(../images/design/headertabsbg2.jpg);
+	background-repeat: repeat-x;
+
+}
+.header04 {
+/*	width:106px;*/
+	height:35px;
+	margin-top:4px;
+	margin-left:1px;
+	margin-right:1px;
+	padding-left:9px;
+	padding-right:9px;
+	line-height:25px;
+	background-image:none;
+	text-align:center;
+}
+.header04 a {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.header04:hover {
+/*	width:106px;*/
+	height:35px;
+	margin-top:4px;
+	margin-left:1px;
+	margin-right:1px;
+	padding-left:9px;
+	padding-right:9px;
+	line-height:25px;
+	background-image: url(../images/design/tabbg.png);
+	background-repeat:repeat-x;
+}
+.header04a {
+/*	width:126px;*/
+	height:35px;
+	margin-top:4px;
+	margin-left:1px;
+	margin-right:1px;
+	line-height:23px;
+	padding-left:9px;
+	padding-right:9px;
+	line-height:25px;
+	background-image:none;
+	text-align:center;
+}
+.header04a a {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.header04a:hover {
+	/*width:126px;*/
+
+	padding-left:9px;
+	padding-right:9px;
+	line-height:25px;
+	height:35px;
+	margin-top:4px;
+	margin-left:1px;
+	margin-right:1px;
+	background-image: url(../images/design/tabbg.png);
+	background-repeat:repeat-x;
+}
+.header04b {
+	/*width:86px;*/
+	padding-left:9px;
+	padding-right:9px;
+	line-height:25px;
+	height:35px;
+	margin-top:4px;
+	margin-left:1px;
+	margin-right:1px;
+	line-height:23px;
+	background-image:none;
+	text-align:center;
+}
+.header04b a {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.header04b:hover {
+/*	width:86px;*/
+	padding-left:9px;
+	padding-right:9px;
+	line-height:25px;
+	height:35px;
+	margin-top:4px;
+	margin-left:1px;
+	margin-right:1px;
+	background-image: url(../images/design/tabbg.jpg);
+	background-repeat:repeat-x;
+}
+.redbg01 {
+	background-image: url(../images/design/tabbg.jpg);
+	background-repeat: repeat-x;	
+}
+A.headerlinks01:link, A.headerlinks01:visited, A.headerlinks01:active {
+	color: #ffffff;
+	font-weight:bold;
+	text-transform:uppercase;
+	font-size:12px;	
+	font-family:"Trebuchet MS", Verdana;
+}
+A.headerlinks01:hover {
+	color: #ffffff;
+	font-weight: bold;
+	font-size:12px;	
+	text-transform:uppercase;	
+	font-family:"Trebuchet MS", Verdana;
+}
+/* eof header css*/
+
+/* footer css*/
+.footer01 {
+	width:978px;
+	margin:auto;
+		margin-top:0px;
+		padding:0px;
+}
+.footer02 {
+	width:978px;
+	height:30px;
+	line-height:30px;		
+	text-align:center;
+	color:#fff;
+	padding-top:10px;
+}
+
+.footer02 ul {
+	margin:0px;
+	padding:0px;
+	list-style-type:none;
+}
+.footer02 ul li {
+	display:inline;
+}
+span.footerpad {
+	padding-right:4px;	
+	padding-left:4px;	
+}
+A.footerlinks01:link, A.footerlinks01:visited, A.footerlinks01:active {
+	color: #fff;
+	font-weight:normal;
+	font-size:11px;	
+}
+A.footerlinks01:hover {
+	color: #fff;	
+	font-weight:normal;
+	font-size:11px;	
+	text-decoration: underline;
+}
+#siteinfoLegal {
+	color: #333;
+	font-weight:normal;
+	font-size:11px;		
+}
+#siteinfoLegal a:link, #siteinfoLegal a:visited, #siteinfoLegal a:active {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #333;
+	font-weight:normal;
+	font-size:11px;	
+}
+#siteinfoLegal a:hover {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #333;	
+	font-weight:normal;
+	font-size:11px;	
+	text-decoration: underline;
+}
+.footbg01 {
+	width:100%;
+	margin-top:0px;
+
+}
+.footbg02 {
+	/*width:1018px;*/
+ width:998px;
+ margin:auto;
+ 	margin-top:0px;
+ background-image: url(../images/design/totalbg002.jpg);
+ background-repeat:no-repeat;
+ background-position: -10px 0px;
+}
+/*eof footer css*/
+
+/* center css*/
+.cattab01 {
+	color:#FFFFFF;
+	width:208px;
+	height:24px;
+	background-image:url(../images/design/nav_bg.jpg);
+	padding-left:5px;
+	/*line-height:24px;*/
+	padding-top:7px;
+}
+.cattab02 {
+color:#FFFFFF;
+	width:208px;
+	padding-left:5px;
+	line-height:24px;
+	
+	background-image:url(../images/design/nav_bg.gif);
+}
+.cattab03 {
+	color:#FFFFFF;
+	width:208px;
+	height:24px;
+	background-image:url(../images/design/nav_bg.jpg);
+	padding-left:5px;
+	/*line-height:24px;*/
+	padding-top:7px;
+}/*
+.cattab03 a:link {
+	color:#FFFFFF;
+	width:208px;
+	height:24px;
+	background-image:url(../images/design/nav_bg.jpg);
+	padding-left:5px;
+	line-height:24px;
+	padding-top:7px;
+	
+}
+.cattab03 a:visited {
+	color:#FFFFFF;
+	width:208px;
+	height:24px;
+	background-image:url(../images/design/nav_bg.jpg);
+	padding-left:5px;
+	/*line-height:24px;
+	padding-top:7px;
+	
+}
+.cattab03 a:hover {
+
+text-decoration:underline;
+	color:#FFFFFF;
+	width:208px;
+	height:24px;
+	background-image:url(../images/design/nav_bg.jpg);
+	padding-left:5px;
+	/*line-height:24px;
+	padding-top:7px;
+	
+}
+.cattab03 a:active {
+	color:#FFFFFF;
+	width:208px;
+	height:24px;
+	background-image:url(../images/design/nav_bg.jpg);
+	padding-left:5px;
+	/*line-height:24px;
+	padding-top:7px;
+}
+*/
+A.category-top:link, A.category-top:visited, A.category-top:active {
+	color: #fff;
+	font-weight:normal;
+	font-size:13px;
+}
+A.category-top:hover {
+	color: #fff;	
+	font-weight:normal;
+	font-size:13px;	
+	text-decoration: underline;
+}
+.ban01 {
+	border:2px solid #c7c7c7;
+}
+#indexDefaultMainContent p {
+	margin:0px;
+}
+.centerColumn2 {
+	padding-left:0.0em;
+	padding-right:0.0em;	
+/*	padding-top:2px;*/
+}
+.centerColumn {
+	padding-left:0.8em;
+	padding-right:0.8em;	
+/*	padding-top:2px;*/
+	padding-bottom:0px;
+}
+/*eof center css*/
+
+/* product listing  css*/
+.prod_table {
+	width:170px;
+	margin:auto;
+
+}
+.prod_image {
+	width:170px;
+	height:170px;
+	margin:auto;
+	padding-bottom:10px;
+	overflow:hidden;
+}
+.prod_name {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	line-height:15px;
+	width:170px;
+	height:30px;
+	margin:auto;
+	padding:3px;
+	text-align:left;
+	overflow:hidden;
+	background-color:#ededed;
+	border-top:#36b9cb; border-top-style:solid; border-top-width:3px;
+}
+.prod_price {
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	width:168px;
+	height:20px;
+	margin:auto;
+	padding:3px;
+	padding-left:5px;
+	text-align:left;
+	overflow:hidden;
+	color: #333333;
+	font-weight:bold;
+	font-size:12px;	
+	text-decoration: none;	
+	line-height:15px;
+	background-color:#ededed;
+}
+A.prod_namelink:link, A.prod_namelink:visited, A.prod_namelink:active {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #333333;
+	padding:3px;
+	font-size:11px;	
+	text-decoration: none;
+	background-color:#ededed;
+}
+A.prod_namelink:hover {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #36b9cb;
+	padding:3px;
+	font-size:11px;	
+	background-color:#ededed;
+}
+
+/*eof product listing css*/
+
+#checkoutPayment, .ccinfo, .termsdescription, .inputLabelPayment, .important, label.inputLabelPayment, .ws, .centerColumn, #productDescription, .prod_descr, .information, #checkoutPayment p {
+	white-space:normal;
+}
+.rowOdd {
+	background-color: #E8E8E8;
+	height: 1.5em;
+	vertical-align: top;
+	}
+
+.rowEven {
+	background-color: #F0F0F0;
+	height: 1.5em;
+	vertical-align: top;
+	}
+#checkoutShipping form, #checkoutShipping input, #checkoutPayment form, #checkoutPayment input {
+	margin:0px;
+	padding:0px;
+}
+p {
+	padding:0;
+	margin:0;
+}
+#manufacturersContent {
+text-align:center;
+	background-color:#000;
+	border:#000000;
+	border:solid;
+	border-width:1px;
+
+}
+#manufacturersContent a:hover {
+text-align:center;
+	background-color:#000;
+	text-decoration:underline;
+}
+
+#showmanu {
+	display:none;
+		border:#000000;
+	border:solid;
+	border-width:1px;
+}
+#showmanu:hover {
+	display:none;
+		text-decoration:none;
+}
+.cycle_banner:hover {
+cursor:pointer;
+}
+.pics { /*height: 245px; 
+/*width: 492px;*/height: 326px;
+width:755px; padding:0; margin:0; overflow: hidden }
+.pics img { /*height: 245px; /*width: 492px;*/height: 326px; width:755px; top:0; left:0; cursor:pointer;}
+/*select option:hover {
+	text-decoration:underline;
+	cursor:pointer;
+}*/
+.centerColumn2 {
+	padding-left:0.0em;
+	padding-right:0.0em;
+	padding-bottom:0.8em;	
+}
+#search01 {
+  	width:136px;
+	height:27px;
+	margin-top:4px;
+/*	background-image: url(../images/design/searchbg01.jpg);*/
+	background-image: url(../images/design/searchbg01.png);
+}
+#search02 {
+  	width:78px;
+	height:20px;
+	margin-top:4px;
+}
+#search01 form, #search01 input, #search02 form, #search02 input {
+	padding:0px;
+	margin:0px;
+	
+}
+.sideBoxContent2 {
+	margin-bottom:0.4em;
+}
+#showmanu a:hover, #showmanua:hover, #showmanu a:hover, #showmanu a:hover {
+	text-decoration:none;
+}
+#showmanu select:hover {
+	text-decoration:none;
+}
+.headpics {
+	width:100%;
+	background-color:#fff;
+}
+.manu_desc {
+	padding-left:5px;
+}

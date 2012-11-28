@@ -1,0 +1,14 @@
+<Files ~ "^\.">
+Order allow,deny
+Deny from all
+</Files>
+
+<IfModule mod_php4.c>
+php_flag zlib.output_compression Off
+php_value magic_quotes_gpc Off
+</IfModule>
+
+<IfModule mod_php5.c>
+php_flag zlib.output_compression Off
+php_value magic_quotes_gpc Off
+</IfModule>

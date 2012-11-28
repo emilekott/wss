@@ -1,0 +1,80 @@
+/**
+ * JSWeb CSS Stylesheet IE specific
+ *
+ * 
+ * @copyright Copyright 2007 JSWeb
+ * @version $Id: ie_stylesheet.css 0001 2007-06-05 16:00:00Z  ricksuffolk
+ */
+
+.cssButton, .cssButtonHover{
+  /*  _width: 0; needed to stop IE adding "magic" padding to the input, _width is a hack that uses an IE6 bug */
+  _width: 0;
+  overflow: visible;  
+}
+#search01 form, #search01 input, #search02 form, #search02 input {
+	padding:0px;
+	margin:0px;
+}
+#search01 {
+  	width:135px;
+	height:27px;
+	margin-top:4px;
+/*	background-image: url(../images/design/searchbg01.jpg);*/
+	background-image: url(../images/design/searchbg01.png);
+}
+#search02 {
+  	width:78px;
+	height:27px;
+	margin-top:4px;
+}
+h2.centerBoxHeading {
+	margin-bottom:15px;
+}
+
+#big-table-wrapper {
+float:left;
+width:370px;
+padding-left:20px;
+}
+
+#createAcctDefaultHeading h1 {
+width:390px;
+
+}
+
+#newsletter-image {
+width:370px;
+float:left;
+
+}
+
+#newsletter-wrapper {
+overflow:hidden;
+padding-top:20px;
+width:762px;
+}
+
+.table-left {
+width:80px;
+float:left;
+padding-right:10px;
+text-align:right;
+font-size:11px;
+color:#000000;
+}
+
+.table-right {
+float:left;
+width:250px;
+}
+
+
+.submnu {
+    z-index: 1000;
+}
+.header03 ul li a {
+    padding: 0px 10px 0px 10px;
+}
+#search01 {
+    width: 113px;
+}

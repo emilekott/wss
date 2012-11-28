@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Surf Cam</title>
+<script type="text/javascript" src="jwplayer.js"></script>
+<script type="text/javascript" src="settings.js"></script>
+</head>
+<body>
+	<div id="player" style="position:relative; left:0px; top:0px; width:775px; height:550px; z-index:1; padding:0px" width="775px" height="550px">
+        <script type="text/javascript">
+            function setup(firsttime) {
+				if (!firsttime) {
+					jwplayer("player").remove();
+				}
+            	jwplayer("player").setup({
+            		players: settings.players(window.location.href, ["html5", "download"]),
+					file: "http://niihau.metcentral.com:1935/live/eastwitterings.stream/playlist.m3u8",
+					stretching: "exactfit",
+					'controlbar.position': "over"
+            	});
+            }
+			setup(true);
+		</script>
+    </div>
+</body>
+</html>

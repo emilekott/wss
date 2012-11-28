@@ -1,0 +1,2 @@
+<p><strong>Sorry the page you are after could not be found ...</strong></p>
+<p>If you have followed this link from a page on our site please tell us so we can fix it - info@witteringsurfshop.com. If you are still looking for the page please view our site map below.</p>

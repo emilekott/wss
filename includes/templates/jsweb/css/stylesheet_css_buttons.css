@@ -1,0 +1,43 @@
+/* css buttons */
+.cssButton, .cssButtonHover {
+  font: bold 1.1em Verdana, Arial, Helvetica, sans-serif;
+  /* to center the button texts vertically line-height and height need to be equal */
+  line-height: 1.5em;
+  height: 1.5em;
+  border: none;
+  color: white;
+  background-color: #b00 !important; /* !important to retain the background color after auto form field coloring fix */
+  white-space: nowrap;
+  text-align: center;
+  cursor: pointer;
+  margin: 1px;
+  padding: 0 0.5em;
+}
+.cssButtonHover, a:hover .cssButton, input.cssButton:hover {
+  color: #ff0;
+  background-color: #d00 !important;
+}
+
+span.cssButton, span.cssButtonHover{
+/* added to get the right line-height */
+display: block;
+}
+.navNextPrevWrapper span.cssButton, .navNextPrevWrapper span.cssButtonHover{
+/* note that the diplay inline removes line-height from the element (depending on doctype settings) */
+display: inline;
+}
+/* css popups */
+.cssButtonLinkPopup strong, .cssButtonSubmitPopup strong{
+display: none;
+}
+span.cssButtonLinkPopup, span.cssButtonSubmitPopup{
+position: relative;
+}
+a:hover .cssButtonLinkPopup strong, span.cssButtonSubmitPopup:hover strong{
+display: block;
+position: absolute;
+top: 2em;
+left: 0;
+color: black;
+background: #fe3;
+}

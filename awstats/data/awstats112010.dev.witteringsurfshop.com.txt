@@ -1,0 +1,351 @@
+AWSTATS DATA FILE 6.8 (build 1.910)
+# If you remove this file, all statistics for date 201011 will be lost/reset.
+
+# Position (offset in bytes) in this file of beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 1915                
+POS_TIME 2592                
+POS_VISITOR 7526                
+POS_DAY 7966                
+POS_DOMAIN 3295                
+POS_LOGIN 3546                
+POS_ROBOT 3701                
+POS_WORMS 3872                
+POS_EMAILSENDER 4003                
+POS_EMAILRECEIVER 4146                
+POS_SESSION 8429                
+POS_SIDER 8623                
+POS_FILETYPES 4281                
+POS_OS 4510                
+POS_BROWSER 4606                
+POS_SCREENSIZE 4770                
+POS_UNKNOWNREFERER 4844                
+POS_UNKNOWNREFERERBROWSER 4931                
+POS_ORIGIN 5013                
+POS_SEREFERRALS 5152                
+POS_PAGEREFS 5305                
+POS_SEARCHWORDS 5453                
+POS_KEYWORDS 5605                
+POS_MISC 2256                
+POS_ERRORS 5664                
+POS_CLUSTER 3402                
+POS_SIDER_404 5803                
+POS_PLUGIN_geoip_city_maxmind 7065                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20101130235747 4288 1207210 0
+FirstTime 20101104205236
+LastTime 20101130235720
+LastUpdate 20101201034848 4288 1179 3109 0 0
+TotalVisits 42                  
+TotalUnique 8                   
+MonthHostsKnown 0                   
+MonthHostsUnknown 8                   
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 0 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 0 0 0 0 0 0
+1 0 0 0 0 0 0
+2 0 0 0 3 3 3016
+3 0 0 0 9 9 221940
+4 0 0 0 0 0 0
+5 0 0 0 0 0 0
+6 1 30 194678 0 1 3612
+7 3 64 1315496 0 2 7224
+8 1 47 1118897 0 1 3612
+9 5 77 1258581 0 5 18060
+10 69 674 9811822 11 35 119677
+11 97 959 9592664 16 103 352812
+12 52 677 6019773 26 50 242359
+13 23 281 1597927 5 15 66390
+14 43 451 6703761 7 21 51008
+15 266 1682 26144249 43 104 455896
+16 172 1829 24978716 15 131 484475
+17 17 40 383234 0 8 28896
+18 3 80 1431338 0 2 7342
+19 0 0 0 0 0 0
+20 5 131 2688377 0 4 14566
+21 5 105 1420606 4 6 112046
+22 2 2 52050 0 0 0
+23 3 122 3289872 0 2 7224
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 2
+gb 747 6768 86132096
+us 20 483 11869945
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 1
+ia_archiver 27 511189 20101123214410 6
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 9
+htc 12 83772 0 0
+css 1315 3324483 0 0
+png 1219 4720419 0 0
+php 343 20385766 0 0
+html 412 10920883 0 0
+xml 7 23373 0 0
+js 791 12861282 0 0
+jpg 1873 44114171 0 0
+gif 1279 1567892 0 0
+END_FILETYPES
+
+# OS ID - Hits
+BEGIN_OS 5
+macosx 461
+winxp 670
+winlong 3837
+win2003 273
+winnt 2010
+END_OS
+
+# Browser ID - Hits
+BEGIN_BROWSER 8
+msie8.0 47
+msie6.0 137
+firefox3.6.12 2712
+firefox3.0.18 84
+firefox3.6 84
+firefox3.6.10 3718
+msie7.0 50
+safari 419
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 0
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 0
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 110 110
+From1 0 0
+From2 5 5
+From3 0 0
+From4 652 7136
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 1
+live 5 5
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 5
+403 18 76374
+302 86 0
+206 7 160176
+301 8 164833
+404 356 1287583
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 9
+/editors/fckeditor/editor/includes/templates/template_default/buttons/english/button_send.gif 2 http://dev.witteringsurfshop.com/editors/fckeditor/editor/fckeditor.html
+/editors/fckeditor/editor/bmz_cache/9/90c03c0321f7b86cbf2d5cf42ced8d12.image.172x172.jpg 1 http://dev.witteringsurfshop.com/editors/fckeditor/editor/fckeditor.html
+/editors/fckeditor/editor/bmz_cache/0/0f2301e18efb56a476f4a8d99b64ab14.image.172x172.jpg 1 http://dev.witteringsurfshop.com/editors/fckeditor/editor/fckeditor.html
+/images/forecast_current.jpg 3 http://dev.witteringsurfshop.com/index.php
+/images/forecast_cam.jpg 8 http://dev.witteringsurfshop.com/index.php
+/editors/fckeditor/editor/bmz_cache/3/35d9b961105385c44cfa09e5ca530ed3.image.172x172.jpg 1 http://dev.witteringsurfshop.com/editors/fckeditor/editor/fckeditor.html
+/images/forecast_reportdate.jpg 3 http://dev.witteringsurfshop.com/index.php
+/includes/templates/jsweb/css/images/nav_bg.gif 336 http://dev.witteringsurfshop.com/includes/templates/jsweb/css/stylesheet.css
+/editors/fckeditor/editor/bmz_cache/3/335f7379f02297dedaf07ec42bb218a9.image.171x172.jpg 1 http://dev.witteringsurfshop.com/editors/fckeditor/editor/fckeditor.html
+END_SIDER_404
+
+# Plugin key - Pages - Hits - Bandwidth - Last access
+BEGIN_PLUGIN_geoip_city_maxmind 5
+gb_oxford_k2 0 3718 0 0
+gb_portsmouth_k6 0 1930 0 0
+gb_london_h9 0 840 0 0
+us_san%20jose_ca 0 483 0 0
+unknown 0 280 0 0
+END_PLUGIN_geoip_city_maxmind
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 8
+81.178.6.169 492 3718 44293179 20101130163309
+82.27.150.51 141 1930 25391438 20101130152838
+87.114.214.19 81 670 6926256 20101130174112
+192.150.3.7 20 483 11869945 20101123161759
+87.112.146.147 20 119 2917829 20101122114444
+81.129.216.97 5 170 3829820 20101130235720 20101130232247 /
+86.185.38.245 5 81 1401407 20101117222435
+62.172.80.241 3 80 1372167 20101104205252
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 16
+20101104 4 108 2184228 2
+20101105 3 77 1430040 1
+20101106 1 1 35450 1
+20101108 44 342 4183775 2
+20101109 1 34 1065523 1
+20101110 1 47 1123304 1
+20101111 5 76 1477130 1
+20101112 24 209 3948540 2
+20101115 6 111 1432577 1
+20101117 282 1433 19469736 7
+20101118 6 96 2315982 2
+20101119 60 434 4636400 5
+20101122 39 258 4977615 2
+20101123 24 578 14092940 3
+20101129 47 530 7539200 5
+20101130 220 2917 28089601 6
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 6
+1h+ 7
+5mn-15mn 4
+30s-2mn 4
+2mn-5mn 3
+0s-30s 18
+30mn-1h 5
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 60
+/ 118 3762422 34 16
+/admin/product.php 91 2596685 0 0
+/page.html 88 2581959 3 8
+/admin/categories.php 74 5733327 0 0
+/index.php 55 6962297 3 4
+/editors/fckeditor/editor/fckeditor.html 53 121190 0 1
+/admin/ezpages.php 40 1954774 0 0
+/admin/banner_manager.php 36 2461299 0 0
+/cortez-7ft-4-epoxy-mini-mal-surfboard-red-stripe-p-440.html 28 938534 1 3
+/surfboards-beginner-surfboards-c-5_36.html 26 748361 0 1
+/luke-young-sr70rs-6ft-3-shortboard-p-151.html 1 33411 0 0
+/editors/fckeditor/editor/filemanager/browser/default/frmfolders.html 1 5442 0 0
+/wetsuits-ladies-wetsuits-c-47_51.html 1 28322 0 0
+/editors/fckeditor/editor/filemanager/browser/default/frmactualfolder.html 1 2332 0 0
+/creatures-2011-pro-black-tail-pad-p-532.html 1 33351 0 0
+/editors/fckeditor/editor/filemanager/connectors/php/connector.php 1 337 0 0
+/surfboards-c-5.html 4 107531 0 0
+/accessories-surfing-accessories-c-40_57.html 1 32321 0 0
+/includes/csshover.htc 12 83772 0 1
+/sunglasses-c-35.html 3 100604 0 0
+/surfboards-mini-mals-c-5_28.html 5 184234 0 0
+/admin/login.php 21 62622 0 0
+/admin/index.php 15 339436 0 1
+/shippinginfo.html 1 34430 0 0
+/editors/fckeditor/editor/dialog/fck_image/fck_image_preview.html 1 2903 0 0
+/clothing-ladies-jackets-c-38_62.html 1 25089 0 0
+/hawaiian-soul-7-ft-6-surfboard-package-free-bag-and-leash-p-445.html 1 34235 0 0
+/xcel-mens-infiniti-543-winter-wetsuit-p-98.html 1 35907 0 0
+/editors/fckeditor/editor/dialog/fck_image.html 1 9527 0 0
+/editors/fckeditor/editor/fckdialog.html 2 44192 0 0
+/contact_us.html 7 206665 1 0
+/clothing-mens-hoodys-c-38_58.html 1 25083 0 0
+/clothing-mens-t-shirts-c-38_39.html 1 30213 0 0
+/clothing-ladies-hoodys-c-38_60.html 1 25086 0 0
+/editors/fckeditor/editor/filemanager/browser/default/browser.html 1 5917 0 0
+/surface-10-ft-softboard-surfboard-blue-p-397.html 6 203956 0 1
+/dragon-sunglasses-calavera-tiger-tortoise-bronze-p-380.html 1 33246 0 1
+/christmas-ideas-c-15.html 14 415896 0 1
+/clothing-c-38.html 14 418889 0 1
+/hardware-c-48.html 1 30234 0 0
+/editors/fckeditor/editor/filemanager/browser/default/frmresourceslist.html 1 4835 0 0
+/editors/fckeditor/editor/filemanager/browser/default/frmupload.html 1 3592 0 0
+/editors/fckeditor/editor/filemanager/browser/default/frmcreatefolder.html 1 2936 0 0
+/hardware-boardbags-c-48_6.html 1 37098 0 0
+/editors/fckeditor/editor/filemanager/browser/default/frmresourcetype.html 1 1830 0 0
+/wetsuits-mens-wetsuits-c-47_50.html 1 30480 0 0
+/wetsuits-wetsuit-gloves-c-47_53.html 1 29152 0 0
+/xcel-hooded-polypro-rash-vest-p-121.html 1 34506 0 0
+/creatures-2011-pro-black-tail-pad-p-364.html 1 34047 0 0
+/aloha-surfboards-m-39.html 1 31589 0 0
+/dvds-books-c-49.html 1 28859 0 0
+/admin/store_manager.php 2 53038 0 0
+/accessories-c-40.html 1 28871 0 0
+/mundaka-surf-co-m-48.html 1 26529 0 0
+/editors/fckeditor/editor/dialog/fck_div.html 1 10396 0 1
+/lessons_form.php 1 493 0 0
+/captcha_img.php 7 221458 0 1
+/black-white-surfboards-m-15.html 4 123493 0 0
+/wetsuits-c-47.html 7 199889 0 0
+/jp-surfboards-m-16.html 1 31299 0 0
+END_SIDER

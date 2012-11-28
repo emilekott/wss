@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>.:: Ceon :: Zen Cart :: Module  :: advshipper ::.</title>
+	<style type="text/css">
+	/*<![CDATA[*/
+	@import url(../_css/inc.css.layout_styles.css);
+	@import url(../_css/inc.css.styles.css);
+	/*]]>*/
+	</style>
+	<link href="../_css/inc.css.layout_styles_print.css" type="text/css" media="print" />
+	<script src="../_javascript/inc.js.general_functions.js" type="text/javascript"></script>
+	<script src="../_javascript/inc.js.css_functions.js" type="text/javascript"></script>
+	<script src="../_javascript/inc.js.restrict_width.js" language="javascript" type="text/javascript"></script>
+</head>
+
+<body><a name="top" id="top"></a>
+
+<script language="JavaScript" type="text/javascript"> 
+<!-- 
+// Script resizes main div if client window is larger than a predefined variable
+var restrict_width = new CeonRestrictWidth(360, 900);
+// -->
+</script>
+
+<div id="grad_horiz_left">
+	<div id="grad_horiz_right">
+
+<h1 class="Title">advshipper</h1>
+<p class="TitleByLine">probably the best Zen Cart Shipping Module in the world! ...ever!</p>
+<ul class="MainMenu">
+	<li><a href="../index.html">Overview</a><span> | </span></li>
+	<li><a href="essential_info.html">Essential Info</a><span> | </span></li>
+	<li><a href="features.html">Features</a><span> | </span></li>
+	<li><a href="revision_history.html">Revision History</a><span> | </span></li>
+	<li><a href="installation.html">Installation</a><span> | </span></li>
+	<li><a href="configuration.html">Configuration</a><span> | </span></li>
+	<li><a href="upgrading.html">Upgrading</a><span> | </span></li>
+	<li><a href="faqs.html">FAQs</a><span> | </span></li>
+	<li><a href="support.html">Support</a><span> | </span></li>
+	<li><a href="known_issues.html">Known Issues</a></li>
+</ul>
+
+<h2><a name="faqs" id="faqs"></a>Frequently Asked Questions (FAQs)</h2>
+
+<ol class="TableOfContents">
+	<li><a href="#remote_loader_javascript_error">A JavaScript error message, &ldquo;There was an error on this page. Error: missing ; before statement...&rdquo; appears in the admin.</a></li>
+	<li><a href="#changing_method_title_layout">How can the layout and/or style of the Method Titles be changed or a Method Description be added?</a></li>
+	<li><a href="#changing_module_title">How can the overall title for the shipping be changed from the default of &ldquo;Shipping&rdquo; to something else?</a></li>
+	<li><a href="#changing_zen_cart_shipping_method_display">How can the overall title of the module and/or the brackets surrounding the shipping method quote(s)/title(s) be removed from the quote(s)/title(s)? E.g. &ldquo;Advanced Shipper (First Class (&pound;3.50))&rdquo;</a></li>
+	<li><a href="#changing_zen_cart_order_total_shipping_display">How can the title for the shipping method selected by the customer be simplified in the Order Total listings and/or the Order e-mail?</a></li>
+	<li><a href="#no_shipping_options_at_checkout">The message &ldquo;Sorry but there are no shipping options to your address at this time!&rdquo; appears.</a></li>
+	<li><a href="#module_not_appearing_in_catalog">The module isn't showing in the list of shipping options at the checkout.</a></li>
+	<li><a href="#store_postcode_not_valid_error">The error &ldquo;Module configuration error: The Store's Postcode is not valid!&rdquo; appears.</a></li>
+	<li><a href="#module_does_not_use_zone_definitions">Does this module use the store's Zone Definitions?</a></li>
+	<li><a href="#rate_displayed_factor_higher_than_expected">The rate being shown to the customer is several times the expected rate!</a></li>
+	<li><a href="#adding_on_packaging_tare_weights">How can packaging/tare weights be added on?</a></li>
+	<li><a href="#not_sure_about_configuring_regions">I'm not sure how to configure regions. Help!</a></li>
+	<li><a href="#module_not_appearing_in_admin">The module isn't showing in the list of shipping modules in the admin.</a></li>
+	<li><a href="#adding_additional_country_postcode_range_support">A country I'd like to check postcode ranges against isn't covered, what can I do?</a></li>
+	<li><a href="#reselling_distributing_advanced_shipper">Can we distribute/resell this distribution to our clients?</a></li>
+	<li><a href="#upgrade_costs">Will downloading new versions of this distribution cost money?</a></li>
+</ol>
+
+<ol>
+	<li>
+		<h4><a name="remote_loader_javascript_error" id="remote_loader_javascript_error"></a>A JavaScript error message, &ldquo;There was an error on this page. Error: missing ; before statement...&rdquo; appears in the admin.</h4>
+		<p>This error occurs whenever the &ldquo;Remote Loader&rdquo; scripts can't run properly. More than likely you have the &ldquo;Admin Profiles&rdquo; module installed. Otherwise your admin session must have timed out.</p>
+		<ul class="Steps">
+			<li>
+				<p>Use the &ldquo;Admin Profiles&rdquo; utility to enable access to all of Advanced Shipper's admin files.</p>
+				<p>This may take several jaunts into the Admin Profiles admin utility, as additional &ldquo;locked out&rdquo; files will become available to be &ldquo;unlocked&rdquo; as more of the Advanced Shipper Configuration utility is used.</p>
+			</li>
+		</ul>
+		<p class="BackToTableOfContents"><a href="#top">Back to top</a></p>
+	</li>
+	
+	<li>
+		<h4><a name="changing_method_title_layout" id="changing_method_title_layout"></a>How can the layout and/or style of the Method Titles be changed or a Method Description be added?</h4>
+		<p>The output template and placement tag support introduced in version 3.0.0 gives the most flexibility possible for laying out the titles for each method.</p>
+		<p>Full instructions on how to make use of this functionality is available in <a href="configuration_method_titles.html#method_title" target="_blank">this section</a> of the documentation.</p>
+		<p class="BackToTableOfContents"><a href="#top">Back to top</a></p>
+	</li>
+	
+	<li>
+		<h4><a name="changing_module_title" id="changing_module_title"></a>How can the overall title for the shipping be changed from the default of &ldquo;Advanced Shipper&rdquo; to something else?</h4>
+		<p>The text &ldquo;Advanced Shipper&rdquo; is used by default as Zen Cart requires that all shipping modules have something for their name. Changing it is easy enough but requires applying the same change each time the module is updated.</p>
+		<p>To change the title, a copy of the language definition file for the module must be made for each language the store uses.</p>
+		<p>As with all other language definition overrides in Zen Cart, this modified copy should be stored in the template directory for each language.</p>
+		<ul class="Steps">
+			<li>Copy the file <span class="FileName">includes/languages/english/modules/shipping/advshipper.php</span> to the store's language templates folder. (E.g. <span class="FileName">includes/languages/english/modules/shipping/YOUR_TEMPLATE/advshipper.php</span>).</li>
+			<li>Make the necessary changes to this copy of the file.</li>
+		</ul>
+		<p class="Note"><strong>Please Note:</strong> The module <strong>must</strong> have a title defined or it <strong>will not appear as an option at checkout</strong>! If it is preferred not to display a title for the module, please take a look at <a href="changing_zen_cart_shipping_method_display">this FAQ</a>.</p>
+		<p class="Note"><strong>Please Note:</strong> Anytime the module is being updated to a newer version, the changes made in any copies of the languages file should be re-applied to fresh copies of the new language file for the updated version of Advanced Shipper. (I.e. this process should be repeated again after every upgrade).</p>
+		<p class="BackToTableOfContents"><a href="#top">Back to top</a></p>
+	</li>
+	
+	<li>
+		<h4><a name="changing_zen_cart_shipping_method_display" id="changing_zen_cart_shipping_method_display"></a>How can the overall title of the module and/or the brackets surrounding the shipping method quote(s)/title(s) be removed from the quote(s)/title(s)?</h4>
+		<p>Unfortunately the formatting/display of the overall quote(s)/title(s) cannot be controlled by Advanced Shipper. It is Zen Cart itself which controls this formatting/display.</p>
+		<p><strong>To change this formatting/display, changes must be made to core Zen Cart files.</strong></p>
+		<div class="Note">
+			<p><strong>Important! Please Note:</strong> Below will follow some hints and two examples of how to make these changes. However, these changes are regarded by Ceon as <strong>&ldquo;custom coding&rdquo;</strong> and are therefore <strong>not covered by the free support offered with the purchase of the Advanced Shipper distribution from Ceon's website.</strong></p>
+			<p>If support from Ceon is required regarding these sorts of changes, payment to Ceon will be required to cover the time spent.</p>
+		</div>
+		<h5>Modifications introduction</h5>
+		<p>Zen Cart adds the module's title and the brackets to the quote(s)/title(s) in several files. Two of these files are discussed below. However, the store's Zen Cart installation may be customised and may have additional files which format/display this information. The format of the code - and subsequently the changes necessary - should be fairly similar in each file.</p>
+		
+		<h5>includes/modules/pages/checkout_shipping/header_php.php</h5>
+		<p>The following line in this file adds the module's title to the formatting/display output, &ldquo;<code>$quote[0]['module'] .</code>&rdquo;, and adds brackets around the output from Advanced Shipper, &ldquo;<code>' (' .</code>&rdquo; and &ldquo;<code>. ')'</code>&rdquo;:</p>
+		<p class="Example"><code>'title' => (($free_shipping == true) ?  $quote[0]['methods'][0]['title'] : <span class="Highlight1">$quote[0]['module'] .</span> <span class="Highlight2">' (' .</span> $quote[0]['methods'][0]['title'] <span class="Highlight3">. ')'</span>),</code></p>
+		<p>To remove the module's title and the brackets from the display output, leaving only the actual shipping method quote(s), the line could be updated as follows:</p>
+		<p class="Example"><code>'title' => (($free_shipping == true) ?  $quote[0]['methods'][0]['title'] : $quote[0]['methods'][0]['title']),</code></p>
+		
+		<h5>includes/templates/template_default/templates/tpl_modules_shipping_estimator.php</h5>
+		<p>As with any other template file being modified for a store, the template file should copied from the <span class="FileName">template_default/templates</span> folder to the template folder for the store.</p>
+		<p>The following line in this file is one of several lines in the file which adds the module's title to the formatting/display output, &ldquo;<code>echo $quotes[$i]['module'];</code>&rdquo;, and adds brackets around the output from Advanced Shipper, &ldquo;<code>&amp;nbsp;(</code>&rdquo; and &ldquo;<code>)</code>&rdquo;:</p>
+		<p class="Example"><code>&lt;td&gt;&lt;?php <span class="Highlight1">echo $quotes[$i]['module'];</span> ?&gt;<span class="Highlight2">&amp;nbsp;(</span>&lt;?php echo $quotes[$i]['methods'][0]['title']; ?&gt;<span class="Highlight3">)</span>&lt;/td&gt;</p>
+		<p>To remove the module's title and the brackets from the display output, leaving only the actual shipping method quote(s), the line could be updated as follows:</p>
+		<p class="Example"><code>&lt;td&gt;&lt;?php echo $quotes[$i]['methods'][0]['title']; ?&gt;&lt;/td&gt;</p>
+		<p>The other lines of the file which also add the module's title and brackets to the display output are very similar so will not be discussed here.</p>
+		<p class="BackToTableOfContents"><a href="#top">Back to top</a></p>
+	</li>
+	
+	<li>
+		<h4><a name="changing_zen_cart_order_total_shipping_display" id="changing_zen_cart_order_total_shipping_display"></a>How can the title for the shipping method selected by the customer be simplified in the Order Total listings and/or the Order e-mail?</h4>
+		<p>Unfortunately the formatting/display title for the shipping method selected by the customer cannot be controlled by Advanced Shipper. It is Zen Cart itself which controls this formatting/display.</p>
+		<p><strong>To change this formatting/display, changes must be made to core Zen Cart files.</strong></p>
+		<div class="Note">
+			<p><strong>Important! Please Note:</strong> Below will follow some hints and two examples of how to make these changes. However, these changes are regarded by Ceon as <strong>&ldquo;custom coding&rdquo;</strong> and are therefore <strong>not covered by the free support offered with the purchase of the Advanced Shipper distribution from Ceon's website.</strong></p>
+			<p>If support from Ceon is required regarding these sorts of changes, payment to Ceon will be required to cover the time spent.</p>
+		</div>
+		<h5>Modifications introduction</h5>
+		<p>Zen Cart formats the full title of the shipping method selected by the customer for display in several files. Three of these files are discussed below. Several additional files within the standard Zen Cart distribution also perform this formatting but are not discussed here as the process for modifying them is quite similar. The store's Zen Cart installation may also be customised and may have further additional files which format/display this information. The format of the code - and subsequently the changes necessary - is likely to be fairly similar in each file.</p>
+		
+		<h5>Order Total Summary Displays within the Store</h5>
+		<p>File: <span class="FileName">includes/templates/template_default/templates/tpl_modules_order_totals.php</span></p>
+		<p>As with any other template file being modified for a store, the template file should copied from the <span class="FileName">template_default/templates</span> folder to the template folder for the store.</p>
+		<p>The following lines in this file output the Order Total information:</p>
+		<pre class="Example"><code>for ($i=0; $i&lt;$size; $i++) { ?&gt;
+&lt;div id=&quot;&lt;?php echo str_replace('_', '', $GLOBALS[$class]-&gt;code); ?&gt;&quot;&gt;
+    &lt;div class=&quot;totalBox larger forward&quot;&gt;&lt;?php echo $GLOBALS[$class]-&gt;output[$i]['text']; ?&gt;&lt;/div&gt;
+    &lt;div class=&quot;lineTitle larger forward&quot;&gt;&lt;?php echo $GLOBALS[$class]-&gt;output[$i]['title']; ?&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;br class=&quot;clearBoth&quot; /&gt;
+&lt;?php } ?&gt;</code></pre>
+		<p>To simplify the output for the shipping info, a check needs to be made against which order total module is currently having its output formatted for display and the desired adjustments made. In this case, a title of &ldquo;Shipping&rdquo; is used for the Order Total line if it is the line concerned with outputting the shipping information:</p>
+		<pre class="Example"><code>for ($i=0; $i&lt;$size; $i++) { ?&gt;
+&lt;div id=&quot;&lt;?php echo str_replace('_', '', $GLOBALS[$class]-&gt;code); ?&gt;&quot;&gt;
+    &lt;div class=&quot;totalBox larger forward&quot;&gt;&lt;?php
+        <span class="Highlight1">if ($GLOBALS[$class]-&gt;code == 'ot_shipping') {
+                echo 'Shipping';
+        } else {
+                echo $GLOBALS[$class]-&gt;output[$i]['text'];
+        }</span>
+        ?&gt;&lt;/div&gt;
+    &lt;div class=&quot;lineTitle larger forward&quot;&gt;&lt;?php echo $GLOBALS[$class]-&gt;output[$i]['title']; ?&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;br class=&quot;clearBoth&quot; /&gt;
+&lt;?php } ?&gt;</code></pre>
+		
+		<h5>Order E-mails</h5>
+		<p>File: <span class="FileName">includes/classes/order.php</span></p>
+		<p>The format of the shipping line in the Order e-mail can be modified by modifying the code in this file.</p>
+		<p>The following lines in this file output the Order Total information (please note though that these have been reformatted slightly to fit in here):</p>
+		<pre class="Example"><code>//order totals area
+    $html_ot .= '&lt;td class=&quot;order-totals-text&quot; align=&quot;right&quot; width=&quot;100%&quot;&gt;' .
+      '&amp;nbsp;' . '&lt;/td&gt; ' . &quot;\n&quot; .
+      '&lt;td class=&quot;order-totals-num&quot; align=&quot;right&quot; nowrap=&quot;nowrap&quot;&gt;' . '---------' .
+      '&lt;/td&gt; &lt;/tr&gt;' . &quot;\n&quot; . '&lt;tr&gt;';
+    for ($i=0, $n=sizeof($order_totals); $i&lt;$n; $i++) {
+      $email_order .= strip_tags($order_totals[$i]['title']) . ' ' . strip_tags($order_totals[$i]['text']) . &quot;\n&quot;;
+      $html_ot .= '&lt;td class=&quot;order-totals-text&quot; align=&quot;right&quot; width=&quot;100%&quot;&gt;' .
+        $order_totals[$i]['title'] . '&lt;/td&gt; ' . &quot;\n&quot; .
+        '&lt;td class=&quot;order-totals-num&quot; align=&quot;right&quot; nowrap=&quot;nowrap&quot;&gt;' .
+        ($order_totals[$i]['text']) .'&lt;/td&gt; &lt;/tr&gt;' . &quot;\n&quot; . '&lt;tr&gt;';
+    }</code></pre>
+		<p>To simplify the output for the shipping info, a check needs to be made against which order total module is currently having its output formatted for display and the desired adjustments made. In this case, a title of &ldquo;Shipping&rdquo; is used for the Order Total line if it is the line concerned with outputting the shipping information:</p>
+		<pre class="Example"><code>//order totals area
+    $html_ot .= '&lt;td class=&quot;order-totals-text&quot; align=&quot;right&quot; width=&quot;100%&quot;&gt;' .
+      '&amp;nbsp;' . '&lt;/td&gt; ' . &quot;\n&quot; .
+      '&lt;td class=&quot;order-totals-num&quot; align=&quot;right&quot; nowrap=&quot;nowrap&quot;&gt;' . '---------' .
+      '&lt;/td&gt; &lt;/tr&gt;' . &quot;\n&quot; . '&lt;tr&gt;';
+    for ($i=0, $n=sizeof($order_totals); $i&lt;$n; $i++) {
+      <span class="Highlight1">if ($order_totals[$i]['code'] == 'ot_shipping') {
+        $email_order .= 'Shipping: ' . strip_tags($order_totals[$i]['text']) . &quot;\n&quot;;
+        $html_ot .= '&lt;td class=&quot;order-totals-text&quot; align=&quot;right&quot; width=&quot;100%&quot;&gt;' .
+        'Shipping' . '&lt;/td&gt; ' . &quot;\n&quot; .
+        '&lt;td class=&quot;order-totals-num&quot; align=&quot;right&quot; nowrap=&quot;nowrap&quot;&gt;' .
+        ($order_totals[$i]['text']) .'&lt;/td&gt; &lt;/tr&gt;' . &quot;\n&quot; . '&lt;tr&gt;';
+      } else {</span>
+        $email_order .= strip_tags($order_totals[$i]['title']) . ' ' . strip_tags($order_totals[$i]['text']) . &quot;\n&quot;;
+        $html_ot .= '&lt;td class=&quot;order-totals-text&quot; align=&quot;right&quot; width=&quot;100%&quot;&gt;' .
+        $order_totals[$i]['title'] . '&lt;/td&gt; ' . &quot;\n&quot; .
+        '&lt;td class=&quot;order-totals-num&quot; align=&quot;right&quot; nowrap=&quot;nowrap&quot;&gt;' .
+        ($order_totals[$i]['text']) .'&lt;/td&gt; &lt;/tr&gt;' . &quot;\n&quot; . '&lt;tr&gt;';
+      <span class="Highlight1">}</span>
+    }</code></pre>
+		
+		<h5>Admin Files</h5>
+		<p>Changes are also needed in any Admin files which are used by the store to generate a display of the order totals for an order to the customer.</p>
+		<p class="Note"><strong>Please Note:</strong> For these files, the associative array's key changes from &ldquo;<code>code</code>&rdquo; to &ldquo;<code>class</code>&rdquo; when performing the check against &ldquo;<code>ot_shipping</code>&rdquo;.</p>
+		<p>Example file: <span class="FileName">admin/invoice.php</span></p>
+		<p>The following lines in this file output the Order Total information (please note though that these have been reformatted slightly to fit in here):</p>
+		<pre class="Example"><code>for ($i = 0, $n = sizeof($order-&gt;totals); $i &lt; $n; $i++) {
+    echo '          &lt;tr&gt;' . &quot;\n&quot; .
+         '            &lt;td align=&quot;right&quot; class=&quot;'. str_replace('_', '-', $order-&gt;totals[$i]['class']) .
+           '-Text&quot;&gt;' . $order-&gt;totals[$i]['title'] . '&lt;/td&gt;' . &quot;\n&quot; .
+         '            &lt;td align=&quot;right&quot; class=&quot;'. str_replace('_', '-', $order-&gt;totals[$i]['class']) .
+           '-Amount&quot;&gt;' . $order-&gt;totals[$i]['text'] . '&lt;/td&gt;' . &quot;\n&quot; .
+         '          &lt;/tr&gt;' . &quot;\n&quot;;
+  }</code></pre>
+		<p>To simplify the output for the shipping info, a check needs to be made against which order total module is currently having its output formatted for display and the desired adjustments made. In this case, a title of &ldquo;Shipping&rdquo; is used for the Order Total line if it is the line concerned with outputting the shipping information:</p>
+		<pre class="Example"><code>for ($i = 0, $n = sizeof($order-&gt;totals); $i &lt; $n; $i++) {
+    echo '          &lt;tr&gt;' . &quot;\n&quot;<span class="Highlight1">;
+    if ($order->totals[$i]['class'] == 'ot_shipping') {
+      echo '            &lt;td align=&quot;right&quot; class=&quot;'. str_replace('_', '-', $order-&gt;totals[$i]['class']) .
+           '-Text&quot;&gt;' . 'Shipping:' . '&lt;/td&gt;' . &quot;\n&quot;;
+    } else {
+      echo</span> '            &lt;td align=&quot;right&quot; class=&quot;'. str_replace('_', '-', $order-&gt;totals[$i]['class']) .
+           '-Text&quot;&gt;' . $order-&gt;totals[$i]['title'] . '&lt;/td&gt;' . &quot;\n&quot;<span class="Highlight1">;
+    }
+    echo</span> '            &lt;td align=&quot;right&quot; class=&quot;'. str_replace('_', '-', $order-&gt;totals[$i]['class']) .
+           '-Amount&quot;&gt;' . $order-&gt;totals[$i]['text'] . '&lt;/td&gt;' . &quot;\n&quot; .
+         '          &lt;/tr&gt;' . &quot;\n&quot;;
+  }</code></pre>
+		
+		<p class="BackToTableOfContents"><a href="#top">Back to top</a></p>
+	</li>
+	
+	<li>
+		<h4><a name="no_shipping_options_at_checkout" id="no_shipping_options_at_checkout"></a>The message &ldquo;Sorry but there are no shipping options to your address at this time!&rdquo; appears.</h4>
+		<p>This message is displayed because one or more of the item(s) in the cart doesn't have a shipping method set up which has a table of rates that covers the item(s), either on their own, or in the combination in which they are present in the cart.</p>
+		<p>This situation can only be avoided by careful planning of the shipping methods, regions and rates.</p>
+		<p>Does the table of rates that covers the item(s) have a provision for the number of item(s) present in the cart? Or for the combined weight of the item(s) in the cart? Care must be taken to check that a simple logical error hasn't been made in the configuration!</p>
+		<p class="BackToTableOfContents"><a href="#top">Back to top</a></p>
+	</li>
+	
+	<li>
+		<h4><a name="module_not_appearing_in_catalog" id="module_not_appearing_in_catalog"></a>The module isn't showing in the list of shipping options at the checkout.</h4>
+		<p>This can occur if the title for the module has been removed from the languages file. Please read <a href="#changing_module_title">this FAQ</a> carefully!</p>
+		<p>If that is not the problem then check that the module is enabled in the admin by going to &ldquo;<em>Modules</em>&rdquo; &gt; &ldquo;<em>Shipping</em>&rdquo; and clicking on &ldquo;<em>advshipper</em>&rdquo;, then &ldquo;<em>Edit</em>&rdquo;. (It should be obvious what to do from there).</p>
+		<p class="BackToTableOfContents"><a href="#top">Back to top</a></p>
+	</li>
+	
+	<li>
+		<h4><a name="store_postcode_not_valid_error" id="store_postcode_not_valid_error"></a>The error &ldquo;Module configuration error: The Store's Postcode is not valid!&rdquo; appears.</h4>
+		<p>For the geolocation functionality to work it must know where your store is located!</p>
+		<p>You have to ensure that your store's shipping address country and postcode have been set correctly in the Zen Cart admin.</p>
+		<p>You can change these settings in <em>Configuration</em> &gt; <em>Shipping/Packaging</em>.</p>
+		<p class="BackToTableOfContents"><a href="#top">Back to top</a></p>
+	</li>
+	
+	<li>
+		<h4><a name="module_does_not_use_zone_definitions" id="module_does_not_use_zone_definitions"></a>Does this module use the store's Zone Definitions?</h4>
+		<p>No, this module only makes use of the country for a shipping address and, optionally, the postcode for that address.</p>
+		<p>If the module has been configured to use geolocation it will always require a postcode to check against, the same applies if postcode ranges have been specified in any of the regions' <em>Countries/Postcodes</em> configuration values.</p>
+		<p>If a customer has not entered their postcode properly the module will warn them. It will even display instructions on how to update their postcode, with specific information about the format of postcodes for their country!</p>
+		<p>The module can be extended to use <em>Zones</em> using the <a href="http://dev.ceon.net/web/zen-cart/advshipper_zones">Advanced Shipper Zones</a> expansion module, and/or even more options, <em>Country/State Matching</em> and <em>Country/City Matching</em> can be added using the <a href="http://dev.ceon.net/web/zen-cart/advshipper_localities">Advanced Shipper Localities</a> expansion module.</p>
+		<p class="Note"><strong>Please Note:</strong> Advanced Shipper Localities is not going to be upgraded for Zen Cart 2.x. (Advanced Shipper and Advanced Shipper Zones both will be though).</p>
+		<p class="BackToTableOfContents"><a href="#top">Back to top</a></p>
+	</li>
+	
+	<li>
+		<h4><a name="rate_displayed_factor_higher_than_expected" id="rate_displayed_factor_higher_than_expected"></a>The rate being shown to the customer is several times the expected rate!</h4>
+		<p>Zen Cart has a configuration setting which can affect how a weight-based order is shipped (outside of Advanced Shipper's own <em class="ConfigurationOption">Maximum Weight Per Package</em> setting).</p>
+		<ul class="Steps">
+			<li>
+				<p>Check the setting for <em>&ldquo;Enter the Maximum Package Weight you will ship&rdquo;</em> in <em>Configuration</em> &gt; <em>Shipping/Packaging</em>.</p>
+				<p>If it is too low the customer's order will be split into several deliveries, before Advanced Shipper has a chance to build its own quotes. It should be raised to an appropriate (i.e. very high) value, allowing Advanced Shipper to handle the shipping for the order properly!</p>
+			</li>
+		</ul>
+		<p class="BackToTableOfContents"><a href="#top">Back to top</a></p>
+	</li>
+	
+	<li>
+		<h4><a name="adding_on_packaging_tare_weights" id="adding_on_packaging_tare_weights"></a>How can packaging/tare weights be added on?</h4>
+		<p>Advanced Shipper totally ignores Zen Cart's (rather ambiguous) Tare settings.</p>
+		<p>Support for tables of packaging weights was added to the module in version 3.4.0.</p>
+		<p>Full instructions on how to make use of this functionality is available in <a href="configuration_region_rates.html#packaging_weights">this section</a> of the documentation.</p>
+		<p class="BackToTableOfContents"><a href="#top">Back to top</a></p>
+	</li>
+	
+	<li>
+		<h4><a name="not_sure_about_configuring_regions" id="not_sure_about_configuring_regions"></a>I'm not sure how to configure regions. Help!</h4>
+		<p>The best way to learn about configuring this module is to <a href="configuration.html">read the documentation</a>. Some insight into how to define <em>regions</em> can be gained from taking a look at the example region definitions in <a href="configuration_appendix_b.html">Appendix B</a>.</p>
+		<p>However, once you've done that, the main point to remember is that the module identifies the region a customer's address is in on a <strong>&ldquo;first region to match&rdquo;</strong> basis, so great care has to be taken in the planning of the order of the region definitions. The first regions should have the <strong>most specific</strong> definitions, allowing the latter regions to act as <strong>&ldquo;fall backs&rdquo;</strong> which catch any addresses that are not covered by any of the previous regions.</p>
+	</li>
+	
+	<li>
+		<h4><a name="module_not_appearing_in_admin" id="module_not_appearing_in_admin"></a>The module isn't showing in the list of shipping modules in the admin.</h4>
+		<p>If this is happening, the first thing that should be checked is if there are two advshipper.php files in <span class="FileName">includes/modules/shipping/</span>.</p>
+		<p>If you have backed up a previous version of Advanced Shipper in that folder, under a different name, Zen Cart will fail! Zen Cart auto-instantiates every file in the <span class="FileName">includes/modules/payment / shipping / order_total</span> directories, so when you create a copy of a file in any of those directories, there are two files declaring the same class, which causes PHP to fail with a fatal error (which Zen Cart normally doesn't display!).</p>
+		<ul class="Steps">
+			<li>
+				<p>Delete the duplicate/renamed file to fix this problem. There should only be one Advanced Shipper file in <span class="FileName">includes/modules/shipping</span>.</p>
+			</li>
+		</ul>
+		<p>If the above doesn't apply, the only other option is that the files haven't uploaded properly.</p>
+		<ul class="Steps">
+			<li>
+				<p>Re-upload the files from the module's distribution, overwriting <strong>all</strong> existing files.</p>
+			</li>
+		</ul>
+		<p class="BackToTableOfContents"><a href="#top">Back to top</a></p>
+	</li>
+	
+	<li>
+		<h4><a name="adding_additional_country_postcode_range_support" id="adding_additional_country_postcode_range_support"></a>A country I'd like to check postcode ranges against isn't covered, what can I do?</h4>
+		<p>This module is extensible and will automatically try to run a postcode matching method for any country code used in a <em>Region X Countries/Postcodes</em> configuration field.</p>
+		<p>The method called has to have a name in the format &ldquo;_regionMatchesRangeXX()&rdquo; where &lsquo;XX&rsquo; is the two digit ISO code for the country.</p>
+		<p>If you are handy with PHP, just look at the existing methods and the format of the postcodes for the country in question and add this method yourself! :)</p>
+		<p>Of course, it'd be appreciated by all if, having done so, you would send the code to us so we can add it to the module for others to use.</p>
+		<p><strong>Please Note</strong>: If you want us to write a method to match postcodes for a country for you then please be aware that we will charge for this service. The rate is &pound;40 an hour with a minimum charge of &pound;60. Examining the postcode formats for an entire country and coding a routine to match postcodes for that country takes a reasonable amount of effort!</p>
+		<p class="BackToTableOfContents"><a href="#top">Back to top</a></p>
+	</li>
+	
+	<li>
+		<h4><a name="reselling_distributing_advanced_shipper" id="reselling_distributing_advanced_shipper"></a>Can we distribute/resell this distribution to our clients?</h4>
+		<p>No. This distribution includes commercial documentation and therefore each copy requires an individual license.</p>
+		<p>We are more than happy to discuss <strong>Huge Discounts for Bulk Licensing</strong> or the setting up of a personal <strong>Affiliate/Referral Commission Scheme</strong> for you, please <a href="/contact_us">contact us</a> to discuss your needs! </p>
+		<p class="BackToTableOfContents"><a href="#top">Back to top</a></p>
+	</li>
+	
+	<li>
+		<h4><a name="upgrade_costs" id="upgrade_costs"></a>Will downloading new versions of this distribution cost money?</h4>
+		<p>Bug-fixes and minor updates that require a new distribution to be made available, but don't require the changing of the major part of the version number, e.g. 3.x to 4.x, will always be made available for free, with upgrading likely to be a simple matter of downloading the updated distribution from our store.</p>
+		<p>However, the development time for this module and production of this distribution has been huge, and the addition of any further major functionality would be expected to also take a lot of time to write and document, so it is anticipated that a charge would be required to download a new version of the distribution which had major new features added and documented - however, no charge has yet been made for upgrading versions up to 3.x, so you never know!</p>
+		<p class="BackToTableOfContents"><a href="#top">Back to top</a></p>
+	</li>
+	
+	<li>
+		<h4>How can I help with the module?</h4>
+		<p>If you have any feedback or a bug report, please <a href="http://dev.ceon.net/contact_us">send it to us</a>! There's nothing that makes developing more rewarding than feeling that it is appreciated!</p>
+		<p class="BackToTableOfContents"><a href="#top">Back to top</a></p>
+	</li>
+</ol>
+
+<p id="footer"><a href="http://ceon.net" target="_blank"><img src="../_images/ceon_button_logo.png" alt="Ceon" id="ceon_button_logo" /></a>Module &amp; Documentation &copy; Copyright 2007-2009 <a href="http://ceon.net">Ceon</a></p>
+
+	</div>
+</div>
+
+<script type="text/javascript">
+<!-- // Output resizeable div end tag
+restrict_width.outputClosingTag();
+// -->
+</script>
+
+</body>
+</html>
