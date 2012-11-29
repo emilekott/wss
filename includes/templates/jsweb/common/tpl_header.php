@@ -122,7 +122,7 @@ function hideSubMenu(parentCatId){
 <div id="header-main">
     <div id="header-main-locate">
         <div id="header-main-right">
-            <img src="/images/header/call.gif" alt="Call us: 01243 672292 - Expert advice 7 days a week" />
+            <img src="images/header/call.gif" alt="Call us: 01243 672292 - Expert advice 7 days a week" />
             <div id="header-main-basket">
                 <div id="content-text">
                     <?php require(DIR_WS_MODULES . 'sideboxes/jsweb/shopping_cart.php'); ?>
@@ -130,7 +130,7 @@ function hideSubMenu(parentCatId){
             </div>
         </div>
         <div id="header-main-logo">
-            <a href="<?=zen_href_link('index')?>"><img src="/images/logotop.png" alt="Wittering Surf Shop" /></a>
+            <a href="<?=zen_href_link('index')?>"><img src="images/logotop.png" alt="Wittering Surf Shop" /></a>
         </div>
         <div id="header-mnu">
             <ul>
@@ -157,7 +157,7 @@ function hideSubMenu(parentCatId){
     </div>
 </div>
 <div class="message-main">
-<div class="message-home" ><img src="http://www.witteringsurfshop.com/includes/templates/jsweb/css/images/offer-icon.jpg" /> <a href="http://www.witteringsurfshop.com/kayaks-c-91.html">NEW Osprey Kayaks In Store Now!</a> | <a href="http://www.witteringsurfshop.com/shippinginfo.html">FREE UK Delivery for orders over £50</a></div>
+<div class="message-home" ><img src="http://www.witteringsurfshop.com/includes/templates/jsweb/css/images/offer-icon.jpg" /> <a href="http://www.witteringsurfshop.com/kayaks-c-91.html">NEW Osprey Kayaks In Store Now!</a> | <a href="http://www.witteringsurfshop.com/shippinginfo.html">FREE UK Delivery for orders over ï¿½50</a></div>
 <div class="message-fb" ><img src="http://www.witteringsurfshop.com/includes/templates/jsweb/css/images/fb-icon.jpg" /> <a href="http://www.facebook.com/witteringsurfshop" target="_blank">Like us on Facebook for exclusive offers, competitions, news &amp; deals!</a></div>
 </div>
 <div style="clear:both;"></div><br />
