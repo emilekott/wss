@@ -42,3 +42,4 @@ admin/includes/configure.php
 images/*
 cache/*
 bmz_cache/*
+/.git-rewrite/
