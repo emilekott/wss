@@ -40,3 +40,5 @@ Thumbs.db
 includes/configure.php
 admin/includes/configure.php
 images/*
+cache/*
+bmz_cache/*

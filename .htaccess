@@ -4,8 +4,8 @@ Options +FollowSymLinks
 RewriteEngine On
 RewriteBase /
 
-rewritecond %{http_host} ^witteringsurfshop.com
-rewriteRule ^(.*) http://www.witteringsurfshop.com/$1 [R=301,L]
+#rewritecond %{http_host} ^witteringsurfshop.com
+#rewriteRule ^(.*) http://www.witteringsurfshop.com/$1 [R=301,L]
 
 # From Ultimate SEO URLs
 RewriteRule ^(.*)-p-(.*).html$ index\.php?main_page=product_info&products_id=$2&%{QUERY_STRING} [L]

@@ -1100,7 +1100,7 @@ width:762px;
 
 #header-main {
     height: 153px;
-    background-image: url(/images/header/bgmain.jpg);
+    background-image: url(/witteringsurfshop/images/header/bgmain.jpg);
     background-repeat: repeat-x;
     background-position: bottom;
 }
@@ -1120,7 +1120,7 @@ width:762px;
 #header-main-basket {
     width: 334px;
     height: 46px;
-    background-image: url(/images/header/basketbg.gif);
+    background-image: url(/witteringsurfshop/images/header/basketbg.gif);
     background-repeat: no-repeat;
     position: relative;
     float: right;
@@ -1159,7 +1159,7 @@ width:762px;
     line-height: 31px;
     padding: 0px 27px 0px 25px;
     color: #FFFFFF;
-    background-image: url(/images/header/mnu_normal.png);
+    background-image: url(/witteringsurfshop/images/header/mnu_normal.png);
     background-repeat: no-repeat;
     background-position: right;
     font-size: 12px;
@@ -1168,19 +1168,19 @@ width:762px;
 }
 #menuitem-15 {
     padding: 0 30px 0 30px !important;
-    background-image: url(/images/header/salebg.png) !important;
+    background-image: url(/witteringsurfshop/images/header/salebg.png) !important;
     background-repeat: repeat-x !important;
 }
 .submnu a {
     font-size: 11px !important;
 }
 #header-mnu a:hover {
-    background-image: url(/images/header/mnu_active.png);
+    background-image: url(/witteringsurfshop/images/header/mnu_active.png);
     text-decoration: none !important;
 }
 
 #header-mnu ul li:last-child a:hover {
-    background-image: url(/images/header/mnu_active_last-child.png);
+    background-image: url(/witteringsurfshop/images/header/mnu_active_last-child.png);
 }
 #header-mnu ul li:last-child a {
     
@@ -1197,7 +1197,7 @@ width:762px;
     right: -5px;
 }
 #header-mnu ul li .submnu .submnu-main {
-    background-image: url(/images/header/dropdown-mnu-bg-mid.png);
+    background-image: url(/witteringsurfshop/images/header/dropdown-mnu-bg-mid.png);
     background-repeat: repeat-y;
     width: 475px;
     padding-bottom: 14px;
@@ -1205,7 +1205,7 @@ width:762px;
 #header-mnu ul li .submnu .submnu-bot {
     width: 475px;
     height: 15px;
-    background-image: url(/images/header/dropdown-mnu-bg-bot.png);
+    background-image: url(/witteringsurfshop/images/header/dropdown-mnu-bg-bot.png);
     background-repeat: no-repeat;
 }
 #header-mnu ul li .submnu .submnu-main li a {
@@ -1214,12 +1214,12 @@ width:762px;
     margin: 0px 14px 0px 0px;
     height: 42px;
     line-height: 44px;
-    background-image: url(/images/header/sub-mnu-item-off.gif);
+    background-image: url(/witteringsurfshop/images/header/sub-mnu-item-off.gif);
     background-repeat: no-repeat;
     background-position: left;
 }
 #header-mnu ul li .submnu .submnu-main li a:hover {
-    background-image: url(/images/header/sub-mnu-item.gif);
+    background-image: url(/witteringsurfshop/images/header/sub-mnu-item.gif);
 }
 #header-mnu ul li .submnu .submnu-main ul {
     padding: 14px 0px 19px 19px;
@@ -1254,7 +1254,7 @@ width:762px;
 
 }
 #rtop {
-    background-image: url(/images/rcol/rtop.jpg);
+    background-image: url(/witteringsurfshop/images/rcol/rtop.jpg);
     background-repeat: no-repeat;
     width: 213px;
     height: 33px;
@@ -1290,14 +1290,14 @@ width:762px;
     list-style: none !important;
 }
 #rspotlight-main li {
-    background-image: url(/images/rcol/bullet.gif);
+    background-image: url(/witteringsurfshop/images/rcol/bullet.gif);
     background-position: 3px center;
     background-repeat: no-repeat;
 }
 #rspotlight-main li a {
     display: block;
     height: 29px;
-    background-image: url(/images/rcol/rspotlightrow.gif);
+    background-image: url(/witteringsurfshop/images/rcol/rspotlightrow.gif);
     line-height: 29px;
     padding: 0px 0px 0px 18px;
     background-position: bottom;
@@ -1360,7 +1360,7 @@ width:762px;
 
 /* prod listing */
 .product-listing-multibar {
-    background-image: url(/images/header/bgmain.jpg);
+    background-image: url(/witteringsurfshop/images/header/bgmain.jpg);
     background-repeat: repeat-x;
     height: 33px;
     background-position: left -110px;
@@ -1400,7 +1400,7 @@ a.page-nextbtn {
     display: inline-block;
     width: 31px;
     height: 19px;
-    background-image: url(/images/productlisting/btns.png);
+    background-image: url(/witteringsurfshop/images/productlisting/btns.png);
     background-repeat: no-repeat;
     text-indent: -30000px;
     outline: none;
@@ -1411,7 +1411,7 @@ a.page-prevbtn {
     display: inline-block;
     width: 31px;
     height: 19px;
-    background-image: url(/images/productlisting/btns.png);
+    background-image: url(/witteringsurfshop/images/productlisting/btns.png);
     background-repeat: no-repeat;
     text-indent: -30000px;
     outline: none;
@@ -1423,7 +1423,7 @@ a.page-prevbtn {
     height: 19px;
     text-indent: -30000px;
     outline: none;
-    background-image: url(/images/productlisting/btns.png);
+    background-image: url(/witteringsurfshop/images/productlisting/btns.png);
     background-position: -126px;
 }
 .showButton-showall {
@@ -1432,7 +1432,7 @@ a.page-prevbtn {
     height: 19px;
     text-indent: -30000px;
     outline: none;
-    background-image: url(/images/productlisting/btns.png);
+    background-image: url(/witteringsurfshop/images/productlisting/btns.png);
     background-position: -62px;
 }
 .product-listing-multibar select {
