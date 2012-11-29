@@ -148,10 +148,12 @@ function hideSubMenu(parentCatId){
         </div>
         <div id="header-mnu">
             <ul>
+             
                 <?php 
                 //print_r($topcats);
                 aasort($topcats, "sort_order");
                 foreach($topcats as $cat_id => $cat): ?>
+                
                     <li<?php if(isset($subcats[$cat_id])&&is_array($subcats[$cat_id])&&count($subcats[$cat_id])>0): ?> onmouseover="showSubMenu(<?=$cat_id?>)" onmouseout="hideSubMenu(<?=$cat_id?>)"<?php endif ?>>
                         <a href="<?=zen_href_link(FILENAME_DEFAULT,'cPath='.$cat['categories_id'])?>" id="menuitem-<?=$cat['categories_id']?>"><?=$cat['categories_name']?></a>
                         <?php if(isset($subcats[$cat_id])&&is_array($subcats[$cat_id])&&count($subcats[$cat_id])>0): ?>
@@ -169,14 +171,39 @@ function hideSubMenu(parentCatId){
                         <?php endif ?>
                     </li>
                 <?php endforeach ?>
+                    <li>
+                        <a href="index.php?main_page=surf_forecast">SURF FORECAST</a>
+                    </li>
+                    <li onmouseover="showSubMenu(200)" onmouseout="hideSubMenu(200)">
+                        <a href="index.php?main_page=page&id=1">ABOUT</a>
+                        <div class="submnu submnu-right" id="submnu-200">
+                            <div class="submnu-main">
+                                <ul>
+                                    <li><a href="index.php?main_page=page&id=1">THE TEAM</a></li>
+                                    <li><a href="index.php?main_page=page&id=4">THE SHOP</a></li>
+                                    <li><a href="index.php?main_page=page&id=5">THE CAFE</a></li>
+                                    <li><a href="index.php?main_page=page&id=19">HIRE AND REPAIR</a></li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="submnu-bot"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://blog.witteringsurfshop.com/">BLOG</a>
+                    </li>
+                    <li>
+                        <a href="index.php?main_page=contact_us">CONTACT</a>
+                    </li>
+                   
             </ul>
         </div>
     </div>
 </div>
-<div class="message-main">
+<!--<div class="message-main">
 <div class="message-home" ><img src="http://localhost:8888/witteringsurfshop/includes/templates/jsweb/css/images/offer-icon.jpg" /> <a href="http://www.witteringsurfshop.com/kayaks-c-91.html">NEW Osprey Kayaks In Store Now!</a> | <a href="http://www.witteringsurfshop.com/shippinginfo.html">FREE UK Delivery for orders over &pound;50</a></div>
 <div class="message-fb" ><img src="http://localhost:8888/witteringsurfshop/includes/templates/jsweb/css/images/fb-icon.jpg" /> <a href="http://www.facebook.com/witteringsurfshop" target="_blank">Like us on Facebook for exclusive offers, competitions, news &amp; deals!</a></div>
-</div>
+</div>-->
 <div style="clear:both;"></div><br />
 
 

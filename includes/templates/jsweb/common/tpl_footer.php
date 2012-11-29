@@ -28,6 +28,7 @@ if (!isset($flag_disable_footer) || !$flag_disable_footer) {
 		<li><a class="footerlinks01" href="<?php echo zen_href_link(FILENAME_DEFAULT, '', 'NONSSL'); ?>"><?php echo HEADER_TITLE_CATALOG; ?></a></li><span class="footerpad">&nbsp;|&nbsp;</span>
 		<li><a class="footerlinks01" href="<?php echo zen_href_link(FILENAME_EZPAGES, 'id=1', 'NONSSL'); ?>"><?php echo HEADER_TITLE_ABOUT; ?></a></li><span class="footerpad">&nbsp;|&nbsp;</span>
 		<li><a class="footerlinks01" href="<?php echo zen_href_link(FILENAME_CONTACT_US, '', 'NONSSL'); ?>"><?php echo HEADER_TITLE_CONTACT; ?></a></li><span class="footerpad">&nbsp;|&nbsp;</span>
+                <li><a class="footerlinks01" href="index.php?main_page=shippinginfo">Delivery &amp; Returns</a></li><span class="footerpad">&nbsp;|&nbsp;</span>
         <li><a class="footerlinks01" href="<?php echo zen_href_link(FILENAME_PRIVACY, '', 'NONSSL'); ?>"><?php echo BOX_INFORMATION_PRIVACY; ?></a></li><span class="footerpad">&nbsp;|&nbsp;</span>
          <li><a class="footerlinks01" href="<?php echo zen_href_link(FILENAME_CONDITIONS, '', 'NONSSL'); ?>"><?php echo BOX_INFORMATION_CONDITIONS; ?></a></li><span class="footerpad">&nbsp;|&nbsp;</span>
 		<li><a class="footerlinks01" href="<?php echo zen_href_link(FILENAME_ACCOUNT, '', 'NONSSL'); ?>"><?php echo HEADER_TITLE_MY_ACCOUNT; ?></a></li><span class="footerpad">&nbsp;|&nbsp;</span>

@@ -1166,10 +1166,10 @@ width:762px;
 	font-weight:bold;
     text-decoration: none !important;
 }
-#menuitem-15 {
-    padding: 0 30px 0 30px !important;
-    background-image: url(/witteringsurfshop/images/header/salebg.png) !important;
-    background-repeat: repeat-x !important;
+#header-mnu a#menuitem-15 {
+    padding: 0 17px 0 19px !important;
+    background-image: url(/witteringsurfshop/images/header/snowflakes.png);
+    background-repeat: no-repeat !important;
 }
 .submnu a {
     font-size: 11px !important;
@@ -1178,6 +1178,11 @@ width:762px;
     background-image: url(/witteringsurfshop/images/header/mnu_active.png);
     text-decoration: none !important;
 }
+#header-mnu a#menuitem-15:hover {
+    background-image: url(/witteringsurfshop/images/header/snowflake-active.png);
+    text-decoration: none !important;
+}
+
 
 #header-mnu ul li:last-child a:hover {
     background-image: url(/witteringsurfshop/images/header/mnu_active_last-child.png);
