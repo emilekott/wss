@@ -20,6 +20,20 @@
 
 <?php
 
+function aasort (&$array, $key) {
+    $sorter=array();
+    $ret=array();
+    reset($array);
+    foreach ($array as $ii => $va) {
+        $sorter[$ii]=$va[$key];
+    }
+    asort($sorter);
+    foreach ($sorter as $ii => $va) {
+        $ret[$ii]=$array[$ii];
+    }
+    $array=$ret;
+}
+
 if($_GET['main_page']=='index' and $_GET['cPath'] != '1') 
 {
  $red1 = 'redbg01';
@@ -69,7 +83,7 @@ if (!isset($flag_disable_header) || !$flag_disable_header) {
 
     //get all parent cats
     $instring = implode(',',$categories_in_header);
-    $top_cats_query = "SELECT categories_id,categories_name FROM zen_categories LEFT JOIN zen_categories_description USING(categories_id) WHERE categories_id IN($instring) ORDER BY  find_in_set(categories_id, '$instring');";
+    $top_cats_query = "SELECT categories_id,categories_name, sort_order FROM zen_categories LEFT JOIN zen_categories_description USING(categories_id) WHERE categories_id IN($instring) ORDER BY  find_in_set(categories_id, '$instring');";
     $top_cats_query = $db->Execute($top_cats_query);
     while(!$top_cats_query->EOF):
         $topcats[$top_cats_query->fields['categories_id']] = $top_cats_query->fields;
@@ -134,7 +148,10 @@ function hideSubMenu(parentCatId){
         </div>
         <div id="header-mnu">
             <ul>
-                <?php foreach($topcats as $cat_id => $cat): ?>
+                <?php 
+                //print_r($topcats);
+                aasort($topcats, "sort_order");
+                foreach($topcats as $cat_id => $cat): ?>
                     <li<?php if(isset($subcats[$cat_id])&&is_array($subcats[$cat_id])&&count($subcats[$cat_id])>0): ?> onmouseover="showSubMenu(<?=$cat_id?>)" onmouseout="hideSubMenu(<?=$cat_id?>)"<?php endif ?>>
                         <a href="<?=zen_href_link(FILENAME_DEFAULT,'cPath='.$cat['categories_id'])?>" id="menuitem-<?=$cat['categories_id']?>"><?=$cat['categories_name']?></a>
                         <?php if(isset($subcats[$cat_id])&&is_array($subcats[$cat_id])&&count($subcats[$cat_id])>0): ?>
@@ -157,8 +174,8 @@ function hideSubMenu(parentCatId){
     </div>
 </div>
 <div class="message-main">
-<div class="message-home" ><img src="http://www.witteringsurfshop.com/includes/templates/jsweb/css/images/offer-icon.jpg" /> <a href="http://www.witteringsurfshop.com/kayaks-c-91.html">NEW Osprey Kayaks In Store Now!</a> | <a href="http://www.witteringsurfshop.com/shippinginfo.html">FREE UK Delivery for orders over �50</a></div>
-<div class="message-fb" ><img src="http://www.witteringsurfshop.com/includes/templates/jsweb/css/images/fb-icon.jpg" /> <a href="http://www.facebook.com/witteringsurfshop" target="_blank">Like us on Facebook for exclusive offers, competitions, news &amp; deals!</a></div>
+<div class="message-home" ><img src="http://localhost:8888/witteringsurfshop/includes/templates/jsweb/css/images/offer-icon.jpg" /> <a href="http://www.witteringsurfshop.com/kayaks-c-91.html">NEW Osprey Kayaks In Store Now!</a> | <a href="http://www.witteringsurfshop.com/shippinginfo.html">FREE UK Delivery for orders over &pound;50</a></div>
+<div class="message-fb" ><img src="http://localhost:8888/witteringsurfshop/includes/templates/jsweb/css/images/fb-icon.jpg" /> <a href="http://www.facebook.com/witteringsurfshop" target="_blank">Like us on Facebook for exclusive offers, competitions, news &amp; deals!</a></div>
 </div>
 <div style="clear:both;"></div><br />
 
