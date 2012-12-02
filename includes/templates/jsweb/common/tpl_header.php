@@ -78,12 +78,10 @@ elseif($_GET['main_page']=='contact_us')
 <?php
 if (!isset($flag_disable_header) || !$flag_disable_header) {
 
-    //header output config
-    $categories_in_header = array(5,47,48,91,57,49,35,40,15);
-
+    //instead of shite hard-coding, how about just grabbing top-level categories???
     //get all parent cats
-    $instring = implode(',',$categories_in_header);
-    $top_cats_query = "SELECT categories_id,categories_name, sort_order FROM zen_categories LEFT JOIN zen_categories_description USING(categories_id) WHERE categories_id IN($instring) AND categories_status=1 ORDER BY  find_in_set(categories_id, '$instring');";
+    //$top_cats_query = "SELECT categories_id,categories_name, sort_order FROM zen_categories LEFT JOIN zen_categories_description USING(categories_id) WHERE categories_id IN($instring) AND categories_status=1 ORDER BY  find_in_set(categories_id, '$instring');";
+    $top_cats_query = "SELECT categories_id,categories_name, sort_order FROM zen_categories LEFT JOIN zen_categories_description USING(categories_id) WHERE parent_id=0 AND categories_status=1 ORDER BY  find_in_set(categories_id, '$instring');";
     $top_cats_query = $db->Execute($top_cats_query);
     while(!$top_cats_query->EOF):
         $topcats[$top_cats_query->fields['categories_id']] = $top_cats_query->fields;
