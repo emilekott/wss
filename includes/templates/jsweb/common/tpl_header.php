@@ -176,25 +176,22 @@ function hideSubMenu(parentCatId){
                     </li>
                     <li onmouseover="showSubMenu(200)" onmouseout="hideSubMenu(200)">
                         <a href="index.php?main_page=page&id=1">ABOUT</a>
-                        <div class="submnu" id="submnu-200">
+                        <div class="submnu submnu-right" id="submnu-200">
                             <div class="submnu-main">
                                 <ul>
                                     <li><a href="index.php?main_page=page&id=1">THE TEAM</a></li>
                                     <li><a href="index.php?main_page=page&id=4">THE SHOP</a></li>
                                     <li><a href="index.php?main_page=page&id=5">THE CAFE</a></li>
                                     <li><a href="index.php?main_page=page&id=19">HIRE AND REPAIR</a></li>
+                                    <li><a href="http://blog.witteringsurfshop.com/">BLOG</a></li>
                                 </ul>
                                 <div class="clear"></div>
                             </div>
                             <div class="submnu-bot"></div>
                         </div>
                     </li>
-                    <li>
-                        <a href="http://blog.witteringsurfshop.com/">BLOG</a>
-                    </li>
-                    <li>
-                        <a href="index.php?main_page=contact_us">CONTACT</a>
-                    </li>
+                    
+                 
                    
             </ul>
         </div>

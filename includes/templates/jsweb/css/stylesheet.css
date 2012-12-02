@@ -1192,14 +1192,14 @@ H4.optionName {
 }
 #header-mnu ul li .submnu {
     position: absolute;
-    left:0;
+    left:-1px;
     top: 30px;
     display: none;
     z-index: 90;
 }
 #header-mnu ul li .submnu-right {
     left: auto!important;
-    right: -5px;
+    right: 0;
 }
 #header-mnu ul li .submnu .submnu-main {
     /* background-image: url(/witteringsurfshop/images/header/dropdown-mnu-bg-mid.png);
