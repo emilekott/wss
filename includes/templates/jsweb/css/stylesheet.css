@@ -1,1099 +1,1099 @@
 BODY {
-	BACKGROUND-POSITION: top right; FONT-SIZE: 12px;  MARGIN: 0px; COLOR: #636363; BACKGROUND-REPEAT: no-repeat; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #FFFFFF; 
-	-webkit-text-size-adjust: none; /* Prevent font scaling in landscape */
+    BACKGROUND-POSITION: top right; FONT-SIZE: 12px;  MARGIN: 0px; COLOR: #636363; BACKGROUND-REPEAT: no-repeat; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #FFFFFF; 
+    -webkit-text-size-adjust: none; /* Prevent font scaling in landscape */
 
 }
 A IMG {
-	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+    BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
 }
 A:link {
-	FONT-WEIGHT: normal;  COLOR: #333; TEXT-DECORATION: none; 
+    FONT-WEIGHT: normal;  COLOR: #333; TEXT-DECORATION: none; 
 }
 #navEZPagesTOC UL LI A {
-	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #636363; TEXT-DECORATION: none;
+    FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #636363; TEXT-DECORATION: none;
 }
 A:visited {
-	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #333; TEXT-DECORATION: none;
+    FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #333; TEXT-DECORATION: none;
 }
 A:hover {
-	FONT-WEIGHT: normal;  COLOR: #666; TEXT-DECORATION: underline;
+    FONT-WEIGHT: normal;  COLOR: #666; TEXT-DECORATION: underline;
 }
 A:active {
-	FONT-WEIGHT: normal; COLOR: #333; TEXT-DECORATION: none;
+    FONT-WEIGHT: normal; COLOR: #333; TEXT-DECORATION: none;
 }
 H1 {
-	FONT-SIZE: 1.2em
+    FONT-SIZE: 1.2em
 }
 H2 {
-	FONT-SIZE: 1.1em
+    FONT-SIZE: 1.1em
 }
 H3 {
-	FONT-SIZE: 12px
+    FONT-SIZE: 12px
 }
 H4 {
-	FONT-SIZE: 1.1em
+    FONT-SIZE: 1.1em
 }
 H5 {
-	FONT-SIZE: 1.1em
+    FONT-SIZE: 1.1em
 }
 H6 {
-	FONT-SIZE: 1.1em
+    FONT-SIZE: 1.1em
 }
 LABEL {
-	FONT-SIZE: 1.1em;
+    FONT-SIZE: 1.1em;
 }
 H4.optionName {
-	FONT-SIZE: 1.1em
+    FONT-SIZE: 1.1em
 }
 LEGEND {
-	FONT-SIZE: 1.1em
+    FONT-SIZE: 1.1em
 }
 ADDRESS {
-	FONT-SIZE: 1.1em
+    FONT-SIZE: 1.1em
 }
 .sideBoxContent {
-	FONT-SIZE: 1.1em
+    FONT-SIZE: 1.1em
 }
 .larger {
-	FONT-SIZE: 1.1em
+    FONT-SIZE: 1.1em
 }
 INPUT:focus {
-	BACKGROUND: #f0f8ff
+    BACKGROUND: #f0f8ff
 }
 SELECT:focus {
-	BACKGROUND: #f0f8ff
+    BACKGROUND: #f0f8ff
 }
 TEXTAREA:focus {
-	BACKGROUND: #f0f8ff
+    BACKGROUND: #f0f8ff
 }
 .biggerText {
-	FONT-SIZE: 1.2em
+    FONT-SIZE: 1.2em
 }
 H1 {
-	FONT-WEIGHT: normal; MARGIN: 0.3em 0px; COLOR: #36b9cb; 
+    FONT-WEIGHT: normal; MARGIN: 0.3em 0px; COLOR: #36b9cb; 
 }
 H2 {
-	FONT-WEIGHT: normal; MARGIN: 0.3em 0px; COLOR: #36b9cb
+    FONT-WEIGHT: normal; MARGIN: 0.3em 0px; COLOR: #36b9cb
 }
 H3 {
-	FONT-WEIGHT: normal; MARGIN: 0.3em 3px; COLOR: #36b9cb
+    FONT-WEIGHT: normal; MARGIN: 0.3em 3px; COLOR: #36b9cb
 }
 H4 {
-	FONT-WEIGHT: normal; MARGIN: 0.3em 3px; COLOR: #36b9cb
+    FONT-WEIGHT: normal; MARGIN: 0.3em 3px; COLOR: #36b9cb
 }
 H5 {
-	FONT-WEIGHT: normal; MARGIN: 0.3em 3px; COLOR: #36b9cb
+    FONT-WEIGHT: normal; MARGIN: 0.3em 3px; COLOR: #36b9cb
 }
 H6 {
-	FONT-WEIGHT: normal; MARGIN: 0.3em 3px; COLOR: #36b9cb
+    FONT-WEIGHT: normal; MARGIN: 0.3em 3px; COLOR: #36b9cb
 }
 CODE {
-	FONT-SIZE: 1em; FONT-FAMILY:  Arial, Helvetica, sans-serif;
+    FONT-SIZE: 1em; FONT-FAMILY:  Arial, Helvetica, sans-serif;
 }
 FORM {
-	DISPLAY: inline; FONT-SIZE: 1em; MARGIN: 0.1em;
+    DISPLAY: inline; FONT-SIZE: 1em; MARGIN: 0.1em;
 }
 SELECT {
-	DISPLAY: inline; FONT-SIZE: 1em; MARGIN: 0.1em;
+    DISPLAY: inline; FONT-SIZE: 1em; MARGIN: 0.1em;
 }
 INPUT {
-	DISPLAY: inline; FONT-SIZE: 1em; MARGIN: 0.1em;
+    DISPLAY: inline; FONT-SIZE: 1em; MARGIN: 0.1em;
 }
 TEXTAREA {
-	DISPLAY: block; MARGIN: auto; WIDTH: 95%
+    DISPLAY: block; MARGIN: auto; WIDTH: 95%
 }
 FIELDSET {
-	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 0.5em; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 0.5em; MARGIN: 0.5em 0em; BORDER-LEFT: #cccccc 1px solid; PADDING-TOP: 0.5em; BORDER-BOTTOM: #cccccc 1px solid; background-color:#f1f1f1;
+    BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 0.5em; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 0.5em; MARGIN: 0.5em 0em; BORDER-LEFT: #cccccc 1px solid; PADDING-TOP: 0.5em; BORDER-BOTTOM: #cccccc 1px solid; background-color:#f1f1f1;
 }
 LEGEND {
-	PADDING-RIGHT: 0.3em; PADDING-LEFT: 0.3em; FONT-WEIGHT: bold; PADDING-BOTTOM: 0.3em; PADDING-TOP: 0.3em; background-color:#41b3bd; color:#FFFFFF;
-	border-bottom:#FFFFFF 1px solid; border-right:#FFFFFF 1px solid;
+    PADDING-RIGHT: 0.3em; PADDING-LEFT: 0.3em; FONT-WEIGHT: bold; PADDING-BOTTOM: 0.3em; PADDING-TOP: 0.3em; background-color:#41b3bd; color:#FFFFFF;
+    border-bottom:#FFFFFF 1px solid; border-right:#FFFFFF 1px solid;
 }
 H4.optionName {
-	PADDING-LEFT: 0.2em;
+    PADDING-LEFT: 0.2em;
 }
 LABEL.checkboxLabel {
-	MARGIN: 0.5em 0.3em
+    MARGIN: 0.5em 0.3em
 }
 LABEL.radioButtonLabel {
-	MARGIN: 0.5em 0.3em
+    MARGIN: 0.5em 0.3em
 }
 #logo {
-	FLOAT: left
+    FLOAT: left
 }
 .centerBoxContents {
-	FLOAT: left
+    FLOAT: left
 }
 .specialsListBoxContents {
-	FLOAT: left
+    FLOAT: left
 }
 .categoryListBoxContents {
-	FLOAT: left
+    FLOAT: left
 }
 .centerBoxContentsAlsoPurch {
-	FLOAT: left
+    FLOAT: left
 }
 .attribImg {
-	FLOAT: left
+    FLOAT: left
 }
 LABEL.inputLabel {
-	FLOAT: left; WIDTH: 11em;
-	margin-bottom:20px;
-	padding:4px;
+    FLOAT: left; WIDTH: 11em;
+    margin-bottom:20px;
+    padding:4px;
 }
 LABEL.inputLabelPayment {
-	FLOAT: left; WIDTH: 15em
+    FLOAT: left; WIDTH: 15em
 }
 LABEL.selectLabel {
-	FLOAT: left; WIDTH: 12em
+    FLOAT: left; WIDTH: 12em
 }
 LABEL.switchedLabel {
-	FLOAT: left; WIDTH: 12em
+    FLOAT: left; WIDTH: 12em
 }
 LABEL.uploadsLabel {
-	FLOAT: left; WIDTH: 12em
+    FLOAT: left; WIDTH: 12em
 }
 P {
-	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.5em; PADDING-TOP: 0.5em
+    PADDING-RIGHT: 0.5em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.5em; PADDING-TOP: 0.5em
 }
 ADDRESS {
-	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 0.5em; PADDING-TOP: 0.5em
+    PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 0.5em; PADDING-TOP: 0.5em
 }
 ADDRESS {
-	FONT-STYLE: normal
+    FONT-STYLE: normal
 }
 .clearBoth {
-	CLEAR: both
+    CLEAR: both
 }
 HR {
-	MARGIN-TOP: 0.5em; BORDER-TOP-STYLE: none; BORDER-BOTTOM: #c7c7c7 1px solid; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 1px
+    MARGIN-TOP: 0.5em; BORDER-TOP-STYLE: none; BORDER-BOTTOM: #c7c7c7 1px solid; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 1px
 }
 .messageStackWarning {
-	BORDER-RIGHT: #c7c7c7 1px solid; PADDING-RIGHT: 0.2em; BORDER-TOP: #c7c7c7 1px solid; PADDING-LEFT: 0.2em; PADDING-BOTTOM: 0.2em; BORDER-LEFT: #c7c7c7 1px solid; LINE-HEIGHT: 1.8em; PADDING-TOP: 0.2em; BORDER-BOTTOM: #c7c7c7 1px solid
+    BORDER-RIGHT: #c7c7c7 1px solid; PADDING-RIGHT: 0.2em; BORDER-TOP: #c7c7c7 1px solid; PADDING-LEFT: 0.2em; PADDING-BOTTOM: 0.2em; BORDER-LEFT: #c7c7c7 1px solid; LINE-HEIGHT: 1.8em; PADDING-TOP: 0.2em; BORDER-BOTTOM: #c7c7c7 1px solid
 }
 .messageStackError {
-	BORDER-RIGHT: #c7c7c7 1px solid; PADDING-RIGHT: 0.2em; BORDER-TOP: #c7c7c7 1px solid; PADDING-LEFT: 0.2em; PADDING-BOTTOM: 0.2em; BORDER-LEFT: #c7c7c7 1px solid; LINE-HEIGHT: 1.8em; PADDING-TOP: 0.2em; BORDER-BOTTOM: #c7c7c7 1px solid
+    BORDER-RIGHT: #c7c7c7 1px solid; PADDING-RIGHT: 0.2em; BORDER-TOP: #c7c7c7 1px solid; PADDING-LEFT: 0.2em; PADDING-BOTTOM: 0.2em; BORDER-LEFT: #c7c7c7 1px solid; LINE-HEIGHT: 1.8em; PADDING-TOP: 0.2em; BORDER-BOTTOM: #c7c7c7 1px solid
 }
 .messageStackSuccess {
-	BORDER-RIGHT: #c7c7c7 1px solid; PADDING-RIGHT: 0.2em; BORDER-TOP: #c7c7c7 1px solid; PADDING-LEFT: 0.2em; PADDING-BOTTOM: 0.2em; BORDER-LEFT: #c7c7c7 1px solid; LINE-HEIGHT: 1.8em; PADDING-TOP: 0.2em; BORDER-BOTTOM: #c7c7c7 1px solid
+    BORDER-RIGHT: #c7c7c7 1px solid; PADDING-RIGHT: 0.2em; BORDER-TOP: #c7c7c7 1px solid; PADDING-LEFT: 0.2em; PADDING-BOTTOM: 0.2em; BORDER-LEFT: #c7c7c7 1px solid; LINE-HEIGHT: 1.8em; PADDING-TOP: 0.2em; BORDER-BOTTOM: #c7c7c7 1px solid
 }
 .messageStackCaution {
-	BORDER-RIGHT: #c7c7c7 1px solid; PADDING-RIGHT: 0.2em; BORDER-TOP: #c7c7c7 1px solid; PADDING-LEFT: 0.2em; PADDING-BOTTOM: 0.2em; BORDER-LEFT: #c7c7c7 1px solid; LINE-HEIGHT: 1.8em; PADDING-TOP: 0.2em; BORDER-BOTTOM: #c7c7c7 1px solid
+    BORDER-RIGHT: #c7c7c7 1px solid; PADDING-RIGHT: 0.2em; BORDER-TOP: #c7c7c7 1px solid; PADDING-LEFT: 0.2em; PADDING-BOTTOM: 0.2em; BORDER-LEFT: #c7c7c7 1px solid; LINE-HEIGHT: 1.8em; PADDING-TOP: 0.2em; BORDER-BOTTOM: #c7c7c7 1px solid
 }
 .messageStackWarning {
-	COLOR: #ffffff; BACKGROUND-COLOR: #ff0000
+    COLOR: #ffffff; BACKGROUND-COLOR: #ff0000
 }
 .messageStackError {
-	COLOR: #ffffff; BACKGROUND-COLOR: #ff0000
+    COLOR: #ffffff; BACKGROUND-COLOR: #ff0000
 }
 .messageStackSuccess {
-	COLOR: #ffffff; font-weight:bold; BACKGROUND-COLOR: #36b7cd
+    COLOR: #ffffff; font-weight:bold; BACKGROUND-COLOR: #36b7cd
 }
 .messageStackCaution {
-	COLOR: #000000; BACKGROUND-COLOR: #ffff66
+    COLOR: #000000; BACKGROUND-COLOR: #ffff66
 }
 #mainWrapper2 {
-/*	BACKGROUND-IMAGE: url(../images/design/totalbg03.jpg);*/ PADDING-BOTTOM: 0px; MARGIN: auto auto 0px; WIDTH: 998px; BACKGROUND-REPEAT: repeat-y
+    /*	BACKGROUND-IMAGE: url(../images/design/totalbg03.jpg);*/ PADDING-BOTTOM: 0px; MARGIN: auto auto 0px; WIDTH: 998px; BACKGROUND-REPEAT: repeat-y
 }
 #mainWrapper {
-	TEXT-ALIGN: left
+    TEXT-ALIGN: left
 }
 #headerWrapper {
-	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0em; MARGIN: 0em; PADDING-TOP: 0em
+    PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0em; MARGIN: 0em; PADDING-TOP: 0em
 }
 #contentMainWrapper {
-	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0em; MARGIN: -9px 0px 0px 0px; PADDING-TOP: 0em;
+    PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0em; MARGIN: -9px 0px 0px 0px; PADDING-TOP: 0em;
 }
 #logoWrapper {
-	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0em; MARGIN: 0em; PADDING-TOP: 0em
+    PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0em; MARGIN: 0em; PADDING-TOP: 0em
 }
 #cartBoxListWrapper {
-	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0em; MARGIN: 0em; PADDING-TOP: 0em
+    PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0em; MARGIN: 0em; PADDING-TOP: 0em
 }
 #ezPageBoxList {
-	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0em; MARGIN: 0em; PADDING-TOP: 0em
+    PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0em; MARGIN: 0em; PADDING-TOP: 0em
 }
 #cartBoxListWrapper UL {
-	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0em; MARGIN: 0em; PADDING-TOP: 0em
+    PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0em; MARGIN: 0em; PADDING-TOP: 0em
 }
 #ezPageBoxList UL {
-	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0em; MARGIN: 0em; PADDING-TOP: 0em
+    PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0em; MARGIN: 0em; PADDING-TOP: 0em
 }
 #mainWrapper {
-	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0em; MARGIN: 0em; PADDING-TOP: 0em
+    PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0em; MARGIN: 0em; PADDING-TOP: 0em
 }
 #popupAdditionalImage {
-	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0em; MARGIN: 0em; PADDING-TOP: 0em
+    PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0em; MARGIN: 0em; PADDING-TOP: 0em
 }
 #popupImage {
-	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0em; MARGIN: 0em; PADDING-TOP: 0em
+    PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0em; MARGIN: 0em; PADDING-TOP: 0em
 }
 #navColumnOneWrapper {
-margin-top:auto;
-background-color:#F3F3F3;
+    margin-top:auto;
+    background-color:#F3F3F3;
 }
 #navColumnTwoWrapper {
-	MARGIN: auto
+    MARGIN: auto
 }
 #mainWrapper {
-	MARGIN: auto
+    MARGIN: auto
 }
 #tagline {
-	FONT-SIZE: 2em; VERTICAL-ALIGN: middle; COLOR: #000; TEXT-ALIGN: center
+    FONT-SIZE: 2em; VERTICAL-ALIGN: middle; COLOR: #000; TEXT-ALIGN: center
 }
 #sendSpendWrapper {
-	BORDER-RIGHT: #cacaca 1px solid; BORDER-TOP: #cacaca 1px solid; FLOAT: right; MARGIN: 0em 0em 1em 1em; BORDER-LEFT: #cacaca 1px solid; BORDER-BOTTOM: #cacaca 1px solid
+    BORDER-RIGHT: #cacaca 1px solid; BORDER-TOP: #cacaca 1px solid; FLOAT: right; MARGIN: 0em 0em 1em 1em; BORDER-LEFT: #cacaca 1px solid; BORDER-BOTTOM: #cacaca 1px solid
 }
 .floatingBox {
-	MARGIN: 0px; WIDTH: 47%
+    MARGIN: 0px; WIDTH: 47%
 }
 #accountLinksWrapper {
-	MARGIN: 0px; WIDTH: 47%
+    MARGIN: 0px; WIDTH: 47%
 }
 #sendSpendWrapper {
-	MARGIN: 0px; WIDTH: 47%
+    MARGIN: 0px; WIDTH: 47%
 }
 #checkoutShipto {
-	MARGIN: 0px; WIDTH: 47%
+    MARGIN: 0px; WIDTH: 47%
 }
 #checkoutBillto {
-	MARGIN: 0px; WIDTH: 47%
+    MARGIN: 0px; WIDTH: 47%
 }
 #navEZPagesTOCWrapper {
-	MARGIN: 0px; WIDTH: 47%
+    MARGIN: 0px; WIDTH: 47%
 }
 .wrapperAttribsOptions {
-	MARGIN: 0.3em 0em
+    MARGIN: 0.3em 0em
 }
 .navSplitPagesResult {
-width:720px;
-height:25px;
-background-color: #333333;
-color:#FFFFFF;
-line-height:25px;
-padding:5px;
-margin-left:10px;
-	
+    width:720px;
+    height:25px;
+    background-color: #333333;
+    color:#FFFFFF;
+    line-height:25px;
+    padding:5px;
+    margin-left:10px;
+
 }
 .navSplitPagesLinks {
-	
+
 }
 .navNextPrevCounter {
-	FONT-SIZE: 0.9em; MARGIN: 0em
+    FONT-SIZE: 0.9em; MARGIN: 0em
 }
 .navNextPrevList {
-	PADDING-RIGHT: 0em; DISPLAY: inline; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.5em; MARGIN: 0px; PADDING-TOP: 0.5em; WHITE-SPACE: nowrap; LIST-STYLE-TYPE: none
+    PADDING-RIGHT: 0em; DISPLAY: inline; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.5em; MARGIN: 0px; PADDING-TOP: 0.5em; WHITE-SPACE: nowrap; LIST-STYLE-TYPE: none
 }
 #navMainWrapper {
-	FONT-WEIGHT: bold; MARGIN: 0em; WIDTH: 100%; COLOR: #ffffff; HEIGHT: 1%; BACKGROUND-COLOR: #c7c7c7
+    FONT-WEIGHT: bold; MARGIN: 0em; WIDTH: 100%; COLOR: #ffffff; HEIGHT: 1%; BACKGROUND-COLOR: #c7c7c7
 }
 #navSuppWrapper {
-	FONT-WEIGHT: bold; MARGIN: 0em; WIDTH: 100%; COLOR: #ffffff; HEIGHT: 1%; BACKGROUND-COLOR: #c7c7c7
+    FONT-WEIGHT: bold; MARGIN: 0em; WIDTH: 100%; COLOR: #ffffff; HEIGHT: 1%; BACKGROUND-COLOR: #c7c7c7
 }
 #navCatTabsWrapper {
-	FONT-WEIGHT: bold; MARGIN: 0em; WIDTH: 100%; COLOR: #ffffff; HEIGHT: 1%; BACKGROUND-COLOR: #c7c7c7
+    FONT-WEIGHT: bold; MARGIN: 0em; WIDTH: 100%; COLOR: #ffffff; HEIGHT: 1%; BACKGROUND-COLOR: #c7c7c7
 }
 #navSuppWrapper {
-	MARGIN-TOP: 1em
+    MARGIN-TOP: 1em
 }
 #navMain UL {
-	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.5em; MARGIN: 0px; LINE-HEIGHT: 1.5em; PADDING-TOP: 0.5em; LIST-STYLE-TYPE: none; TEXT-ALIGN: center
+    PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.5em; MARGIN: 0px; LINE-HEIGHT: 1.5em; PADDING-TOP: 0.5em; LIST-STYLE-TYPE: none; TEXT-ALIGN: center
 }
 #navSupp UL {
-	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.5em; MARGIN: 0px; LINE-HEIGHT: 1.5em; PADDING-TOP: 0.5em; LIST-STYLE-TYPE: none; TEXT-ALIGN: center
+    PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.5em; MARGIN: 0px; LINE-HEIGHT: 1.5em; PADDING-TOP: 0.5em; LIST-STYLE-TYPE: none; TEXT-ALIGN: center
 }
 #navCatTabs UL {
-	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.5em; MARGIN: 0px; LINE-HEIGHT: 1.5em; PADDING-TOP: 0.5em; LIST-STYLE-TYPE: none; TEXT-ALIGN: center
+    PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.5em; MARGIN: 0px; LINE-HEIGHT: 1.5em; PADDING-TOP: 0.5em; LIST-STYLE-TYPE: none; TEXT-ALIGN: center
 }
 #navMain UL LI {
-	DISPLAY: inline
+    DISPLAY: inline
 }
 #navSupp UL LI {
-	DISPLAY: inline
+    DISPLAY: inline
 }
 #navCatTabs UL LI {
-	DISPLAY: inline
+    DISPLAY: inline
 }
 #navMain UL LI A {
-	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 0em; MARGIN: 0px; COLOR: #ffffff; PADDING-TOP: 0em; WHITE-SPACE: nowrap; TEXT-DECORATION: none
+    PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 0em; MARGIN: 0px; COLOR: #ffffff; PADDING-TOP: 0em; WHITE-SPACE: nowrap; TEXT-DECORATION: none
 }
 #navSupp UL LI A {
-	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 0em; MARGIN: 0px; COLOR: #ffffff; PADDING-TOP: 0em; WHITE-SPACE: nowrap; TEXT-DECORATION: none
+    PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 0em; MARGIN: 0px; COLOR: #ffffff; PADDING-TOP: 0em; WHITE-SPACE: nowrap; TEXT-DECORATION: none
 }
 #navCatTabs UL LI A {
-	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 0em; MARGIN: 0px; COLOR: #ffffff; PADDING-TOP: 0em; WHITE-SPACE: nowrap; TEXT-DECORATION: none
+    PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 0em; MARGIN: 0px; COLOR: #ffffff; PADDING-TOP: 0em; WHITE-SPACE: nowrap; TEXT-DECORATION: none
 }
 #navEZPagesTOCWrapper {
-	BORDER-RIGHT: #c7c7c7 1px solid; BORDER-TOP: #c7c7c7 1px solid; FONT-WEIGHT: bold; FLOAT: right; BORDER-LEFT: #c7c7c7 1px solid; BORDER-BOTTOM: #c7c7c7 1px solid; HEIGHT: 1%
+    BORDER-RIGHT: #c7c7c7 1px solid; BORDER-TOP: #c7c7c7 1px solid; FONT-WEIGHT: bold; FLOAT: right; BORDER-LEFT: #c7c7c7 1px solid; BORDER-BOTTOM: #c7c7c7 1px solid; HEIGHT: 1%
 }
 #navEZPagesTOC UL LI A:hover {
-	COLOR: #ff0
+    COLOR: #ff0
 }
 #navMain UL LI A:hover {
-	COLOR: #ff0
+    COLOR: #ff0
 }
 #navSupp UL LI A:hover {
-	COLOR: #ff0
+    COLOR: #ff0
 }
 #navCatTabs UL LI A:hover {
-	COLOR: #ff0
+    COLOR: #ff0
 }
 #navEZPagesTOC UL {
-	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.5em; MARGIN: 0px; LINE-HEIGHT: 1.5em; PADDING-TOP: 0.5em; LIST-STYLE-TYPE: none
+    PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.5em; MARGIN: 0px; LINE-HEIGHT: 1.5em; PADDING-TOP: 0.5em; LIST-STYLE-TYPE: none
 }
 #navEZPagesTop {
-	BACKGROUND-COLOR: #ffff33
+    BACKGROUND-COLOR: #ffff33
 }
 #navEZPagesTOC UL LI {
-	WHITE-SPACE: nowrap
+    WHITE-SPACE: nowrap
 }
 #navEZPagesTOC UL LI A {
-	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 0em; MARGIN: 0px; PADDING-TOP: 0em
+    PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 0em; MARGIN: 0px; PADDING-TOP: 0em
 }
 #navCategoryIcon {
-	MARGIN: 0.5em
+    MARGIN: 0.5em
 }
 .buttonRow {
-	MARGIN: 0.5em
+    MARGIN: 0.5em
 }
 #indexProductListCatDescription {
-	MARGIN: 0.5em
+    MARGIN: 0.5em
 }
 #navMainSearch {
-	FLOAT: right
+    FLOAT: right
 }
 #navBreadCrumb {
-	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; FONT-WEIGHT: bold; FONT-SIZE: 0.95em; PADDING-BOTTOM: 0.5em; MARGIN-LEFT: 0.5em; PADDING-TOP: 0.5em; BACKGROUND-COLOR: #fff
+    PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; FONT-WEIGHT: bold; FONT-SIZE: 0.95em; PADDING-BOTTOM: 0.5em; MARGIN-LEFT: 0.5em; PADDING-TOP: 0.5em; BACKGROUND-COLOR: #fff
 }
 #navEZPagesTop {
-	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; FONT-WEIGHT: bold; FONT-SIZE: 0.95em; PADDING-BOTTOM: 0.5em; MARGIN-LEFT: 0.5em; PADDING-TOP: 0.5em; BACKGROUND-COLOR: #fff
+    PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; FONT-WEIGHT: bold; FONT-SIZE: 0.95em; PADDING-BOTTOM: 0.5em; MARGIN-LEFT: 0.5em; PADDING-TOP: 0.5em; BACKGROUND-COLOR: #fff
 }
 #navColumnOne {
-	
+
 }
 #navColumnTwo {
-	BACKGROUND-COLOR: #fff
+    BACKGROUND-COLOR: #fff
 }
 #contentColumnMain {
-	VERTICAL-ALIGN: top
+    VERTICAL-ALIGN: top
 }
 #navColumnOne {
-	VERTICAL-ALIGN: top
+    VERTICAL-ALIGN: top
 }
 #navColumnTwo {
-	VERTICAL-ALIGN: top
+    VERTICAL-ALIGN: top
 }
 .centerBoxContents {
-	VERTICAL-ALIGN: top
+    VERTICAL-ALIGN: top
 }
 .specialsListBoxContents {
-	VERTICAL-ALIGN: top
+    VERTICAL-ALIGN: top
 }
 .categoryListBoxContents {
-	VERTICAL-ALIGN: top
+    VERTICAL-ALIGN: top
 }
 .additionalImages {
-	VERTICAL-ALIGN: top;
-	text-align:left;
+    VERTICAL-ALIGN: top;
+    text-align:left;
 }
 .centerBoxContentsSpecials {
-	VERTICAL-ALIGN: top
+    VERTICAL-ALIGN: top
 }
 .centerBoxContentsAlsoPurch {
-	VERTICAL-ALIGN: top
+    VERTICAL-ALIGN: top
 }
 .centerBoxContentsFeatured {
-	VERTICAL-ALIGN: top
+    VERTICAL-ALIGN: top
 }
 .centerBoxContentsNew {
-	VERTICAL-ALIGN: top
+    VERTICAL-ALIGN: top
 }
 .alert {
-	VERTICAL-ALIGN: top
+    VERTICAL-ALIGN: top
 }
 #productDescription {
-	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 0.5em; PADDING-TOP: 0.5em
+    PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 0.5em; PADDING-TOP: 0.5em
 }
 .shippingEstimatorWrapper {
-	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 0.5em; PADDING-TOP: 0.5em
+    PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 0.5em; PADDING-TOP: 0.5em
 }
 .alert {
-	MARGIN-LEFT: 0.5em; COLOR: #ff0000
+    MARGIN-LEFT: 0.5em; COLOR: #ff0000
 }
 .advisory {
-	
+
 }
 .important {
-	FONT-WEIGHT: bold
+    FONT-WEIGHT: bold
 }
 .notice {
-	
+
 }
 .rating {
-	
+
 }
 .gvBal {
-	FLOAT: right
+    FLOAT: right
 }
 .centerColumn {
-	
+
 }
 #bannerOne {
-	PADDING-RIGHT: 0.8em; PADDING-LEFT: 0.8em; PADDING-BOTTOM: 0.8em; PADDING-TOP: 0.8em
+    PADDING-RIGHT: 0.8em; PADDING-LEFT: 0.8em; PADDING-BOTTOM: 0.8em; PADDING-TOP: 0.8em
 }
 #bannerTwo {
-	PADDING-RIGHT: 0.8em; PADDING-LEFT: 0.8em; PADDING-BOTTOM: 0.8em; PADDING-TOP: 0.8em
+    PADDING-RIGHT: 0.8em; PADDING-LEFT: 0.8em; PADDING-BOTTOM: 0.8em; PADDING-TOP: 0.8em
 }
 #bannerThree {
-	PADDING-RIGHT: 0.8em; PADDING-LEFT: 0.8em; PADDING-BOTTOM: 0.8em; PADDING-TOP: 0.8em
+    PADDING-RIGHT: 0.8em; PADDING-LEFT: 0.8em; PADDING-BOTTOM: 0.8em; PADDING-TOP: 0.8em
 }
 #bannerFour {
-	PADDING-RIGHT: 0.8em; PADDING-LEFT: 0.8em; PADDING-BOTTOM: 0.8em; PADDING-TOP: 0.8em
+    PADDING-RIGHT: 0.8em; PADDING-LEFT: 0.8em; PADDING-BOTTOM: 0.8em; PADDING-TOP: 0.8em
 }
 #bannerFive {
-	PADDING-RIGHT: 0.8em; PADDING-LEFT: 0.8em; PADDING-BOTTOM: 0.8em; PADDING-TOP: 0.8em
+    PADDING-RIGHT: 0.8em; PADDING-LEFT: 0.8em; PADDING-BOTTOM: 0.8em; PADDING-TOP: 0.8em
 }
 #bannerSix {
-	PADDING-RIGHT: 0.8em; PADDING-LEFT: 0.8em; PADDING-BOTTOM: 0.8em; PADDING-TOP: 0.8em
+    PADDING-RIGHT: 0.8em; PADDING-LEFT: 0.8em; PADDING-BOTTOM: 0.8em; PADDING-TOP: 0.8em
 }
 .smallText {
-	FONT-SIZE: 0.9em
+    FONT-SIZE: 0.9em
 }
 #siteinfoLegal {
-	FONT-SIZE: 0.9em
+    FONT-SIZE: 0.9em
 }
 #siteinfoCredits {
-	FONT-SIZE: 0.9em
+    FONT-SIZE: 0.9em
 }
 #siteinfoStatus {
-	FONT-SIZE: 0.9em
+    FONT-SIZE: 0.9em
 }
 #siteinfoIP {
-	FONT-SIZE: 0.9em
+    FONT-SIZE: 0.9em
 }
 #cartSubTotal {
-	PADDING-RIGHT:10px; BORDER-TOP: #cccccc 1px solid; FONT-WEIGHT: bold; LINE-HEIGHT: 2.2em; TEXT-ALIGN: right
+    PADDING-RIGHT:10px; BORDER-TOP: #cccccc 1px solid; FONT-WEIGHT: bold; LINE-HEIGHT: 2.2em; TEXT-ALIGN: right
 }
 .tableRow {
-	HEIGHT: 2.2em
+    HEIGHT: 2.2em
 }
 .tableHeading {
-	HEIGHT: 2.2em
+    HEIGHT: 2.2em
 }
 #cartSubTotal {
-	HEIGHT: 2.2em
+    HEIGHT: 2.2em
 }
 .tableHeading TH {
-	BORDER-BOTTOM: #cccccc 1px solid
+    BORDER-BOTTOM: #cccccc 1px solid
 }
 .tableHeading TH {
-	
+
 }
 #cartSubTotal {
-	
+
 }
 .cartProductDisplay {
-	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.5em; PADDING-TOP: 0.5em
+    PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.5em; PADDING-TOP: 0.5em
 }
 .cartUnitDisplay {
-	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.5em; PADDING-TOP: 0.5em
+    PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.5em; PADDING-TOP: 0.5em
 }
 .cartTotalDisplay {
-	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.5em; PADDING-TOP: 0.5em
+    PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.5em; PADDING-TOP: 0.5em
 }
 .cartRemoveItemDisplay {
-	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.5em; PADDING-TOP: 0.5em
+    PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.5em; PADDING-TOP: 0.5em
 }
 .cartQuantityUpdate {
-	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.5em; PADDING-TOP: 0.5em
+    PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.5em; PADDING-TOP: 0.5em
 }
 .cartQuantity {
-	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.5em; PADDING-TOP: 0.5em
+    PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.5em; PADDING-TOP: 0.5em
 }
 #cartInstructionsDisplay {
-	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.5em; PADDING-TOP: 0.5em
+    PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.5em; PADDING-TOP: 0.5em
 }
 .cartTotalsDisplay {
-	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.5em; PADDING-TOP: 0.5em
+    PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.5em; PADDING-TOP: 0.5em
 }
 .cartUnitDisplay {
-	PADDING-RIGHT: 0.2em; TEXT-ALIGN: right
+    PADDING-RIGHT: 0.2em; TEXT-ALIGN: right
 }
 .cartTotalDisplay {
-	PADDING-RIGHT: 0.2em; TEXT-ALIGN: right
+    PADDING-RIGHT: 0.2em; TEXT-ALIGN: right
 }
 #scUpdateQuantity {
-	WIDTH: 2em
+    WIDTH: 2em
 }
 .cartQuantity {
-	WIDTH: 4.7em
+    WIDTH: 4.7em
 }
 .cartNewItem {
-	FONT-WEIGHT: bold; COLOR: #009; POSITION: relative
+    FONT-WEIGHT: bold; COLOR: #009; POSITION: relative
 }
 .cartOldItem {
-	COLOR: #009; POSITION: relative
+    COLOR: #009; POSITION: relative
 }
 .cartBoxTotal {
-	FONT-WEIGHT: bold; TEXT-ALIGN: right
+    FONT-WEIGHT: bold; TEXT-ALIGN: right
 }
 .cartRemoveItemDisplay {
-	WIDTH: 3.5em
+    WIDTH: 3.5em
 }
 .cartAttribsList {
-	MARGIN-LEFT: 1px
+    MARGIN-LEFT: 1px
 }
 #mediaManager {
-	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 0.5em; MARGIN: 0.2em; WIDTH: 50%; PADDING-TOP: 0.5em
+    PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 0.5em; MARGIN: 0.2em; WIDTH: 50%; PADDING-TOP: 0.5em
 }
 .normalprice {
-	TEXT-DECORATION: line-through
+    TEXT-DECORATION: line-through
 }
 .productSpecialPriceSale {
-	TEXT-DECORATION: line-through
+    TEXT-DECORATION: line-through
 }
 .orderHistList {
-	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.2em; MARGIN: 1em; PADDING-TOP: 0.2em
+    PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.2em; MARGIN: 1em; PADDING-TOP: 0.2em
 }
 #cartBoxListWrapper UL {
-	LIST-STYLE-TYPE: none
+    LIST-STYLE-TYPE: none
 }
 #ezPageBoxList UL {
-	LIST-STYLE-TYPE: none
+    LIST-STYLE-TYPE: none
 }
 #cartBoxListWrapper LI {
-	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.2em; MARGIN: 0px; PADDING-TOP: 0.2em
+    PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.2em; MARGIN: 0px; PADDING-TOP: 0.2em
 }
 #ezPageBoxList LI {
-	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.2em; MARGIN: 0px; PADDING-TOP: 0.2em
+    PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.2em; MARGIN: 0px; PADDING-TOP: 0.2em
 }
 .cartBoxTotal {
-	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.2em; MARGIN: 0px; PADDING-TOP: 0.2em
+    PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.2em; MARGIN: 0px; PADDING-TOP: 0.2em
 }
 .productSpecialPrice {
-	COLOR: #ff0000
+    COLOR: #ff0000
 }
 .productSalePrice {
-	COLOR: #ff0000
+    COLOR: #ff0000
 }
 .productSpecialPriceSale {
-	COLOR: #ff0000
+    COLOR: #ff0000
 }
 .productPriceDiscount {
-	COLOR: #ff0000
+    COLOR: #ff0000
 }
 #cartBoxEmpty {
-	FONT-WEIGHT: bold
+    FONT-WEIGHT: bold
 }
 #cartBoxVoucherBalance {
-	FONT-WEIGHT: bold
+    FONT-WEIGHT: bold
 }
 .totalBox {
-	PADDING-RIGHT: 0.2em; PADDING-LEFT: 0.2em; PADDING-BOTTOM: 0.2em; WIDTH: 5.5em; PADDING-TOP: 0.2em; TEXT-ALIGN: right
+    PADDING-RIGHT: 0.2em; PADDING-LEFT: 0.2em; PADDING-BOTTOM: 0.2em; WIDTH: 5.5em; PADDING-TOP: 0.2em; TEXT-ALIGN: right
 }
 .lineTitle {
-	PADDING-RIGHT: 0.2em; PADDING-LEFT: 0.2em; PADDING-BOTTOM: 0.2em; PADDING-TOP: 0.2em; TEXT-ALIGN: right
+    PADDING-RIGHT: 0.2em; PADDING-LEFT: 0.2em; PADDING-BOTTOM: 0.2em; PADDING-TOP: 0.2em; TEXT-ALIGN: right
 }
 .amount {
-	PADDING-RIGHT: 0.2em; PADDING-LEFT: 0.2em; PADDING-BOTTOM: 0.2em; PADDING-TOP: 0.2em; TEXT-ALIGN: right
+    PADDING-RIGHT: 0.2em; PADDING-LEFT: 0.2em; PADDING-BOTTOM: 0.2em; PADDING-TOP: 0.2em; TEXT-ALIGN: right
 }
 .amount {
-	WIDTH: 5.5em
+    WIDTH: 5.5em
 }
 #reviewsInfoDefaultProductImage {
-	MARGIN: 0em 1em 1em 0em
+    MARGIN: 0em 1em 1em 0em
 }
 #productReviewsDefaultProductImage {
-	MARGIN: 0em 1em 1em 0em
+    MARGIN: 0em 1em 1em 0em
 }
 #reviewWriteMainImage {
-	MARGIN: 0em 1em 1em 0em
+    MARGIN: 0em 1em 1em 0em
 }
 #productMainImage {
-	FLOAT: right
+    FLOAT: right
 }
 .categoryIcon {
-	
+
 }
 #cartImage {
-	MARGIN: 0.5em 1em
+    MARGIN: 0.5em 1em
 }
 .attribImg {
-	MARGIN: 0.3em 0em; WIDTH: 20%
+    MARGIN: 0.3em 0em; WIDTH: 20%
 }
 .attributesComments {
-	
+
 }
 .centerBoxContents {
-	MARGIN: 1em 0em
+    MARGIN: 1em 0em
 }
 .specialsListBoxContents {
-	MARGIN: 1em 0em
+    MARGIN: 1em 0em
 }
 .categoryListBoxContents {
-	MARGIN: 1em 0em
+    MARGIN: 1em 0em
 }
 .additionalImages {
-	MARGIN: 1em 0em;
-	text-align:left;
-	
+    MARGIN: 1em 0em;
+    text-align:left;
+
 }
 .centerBoxContentsSpecials {
-	MARGIN: 1em 0em
+    MARGIN: 1em 0em
 }
 .centerBoxContentsAlsoPurch {
-	MARGIN: 1em 0em
+    MARGIN: 1em 0em
 }
 .centerBoxContentsFeatured {
-	MARGIN: 1em 0em
+    MARGIN: 1em 0em
 }
 .centerBoxContentsNew {
-	MARGIN: 1em 0em
+    MARGIN: 1em 0em
 }
 .columnLeft { 
-	
+
 }
 H3.leftBoxHeading {
-	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #ffffff; TEXT-ALIGN: left
+    FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #ffffff; TEXT-ALIGN: left
 }
 H3.leftBoxHeading A {
-	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #ffffff; TEXT-ALIGN: left
+    FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #ffffff; TEXT-ALIGN: left
 }
 H3.leftBoxHeading LABEL {
-	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #ffffff; TEXT-ALIGN: left
+    FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #ffffff; TEXT-ALIGN: left
 }
 .leftBoxHeading LABEL {
-	FONT-WEIGHT: bold;PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0em; LINE-HEIGHT: 21px; PADDING-TOP: 0px
+    FONT-WEIGHT: bold;PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0em; LINE-HEIGHT: 21px; PADDING-TOP: 0px
 }
 .leftBoxHeading {
-	FONT-WEIGHT: bold;PADDING-RIGHT: 0px; PADDING-LEFT: 5px; BACKGROUND-IMAGE: url(../images/design/cattabbg.jpg); PADDING-BOTTOM: 0px; MARGIN: 0em; WIDTH: 208px; PADDING-TOP: 7px; HEIGHT: 20px; TEXT-ALIGN: left
+    FONT-WEIGHT: bold;PADDING-RIGHT: 0px; PADDING-LEFT: 5px; BACKGROUND-IMAGE: url(../images/design/cattabbg.jpg); PADDING-BOTTOM: 0px; MARGIN: 0em; WIDTH: 208px; PADDING-TOP: 7px; HEIGHT: 20px; TEXT-ALIGN: left
 }
 H2.centerBoxHeading {
-	PADDING-RIGHT: 0px; BACKGROUND-POSITION: left top; PADDING-LEFT: 25px; FONT-WEIGHT: normal; FONT-SIZE: 0px; BACKGROUND-IMAGE: url(../images/design/dot2.jpg); PADDING-BOTTOM: 0px; MARGIN: 0em; COLOR: #56402b; LINE-HEIGHT: 14px; PADDING-TOP: 0px;  BACKGROUND-REPEAT: no-repeat; HEIGHT: 26px; TEXT-ALIGN: right
+    PADDING-RIGHT: 0px; BACKGROUND-POSITION: left top; PADDING-LEFT: 25px; FONT-WEIGHT: normal; FONT-SIZE: 0px; BACKGROUND-IMAGE: url(../images/design/dot2.jpg); PADDING-BOTTOM: 0px; MARGIN: 0em; COLOR: #56402b; LINE-HEIGHT: 14px; PADDING-TOP: 0px;  BACKGROUND-REPEAT: no-repeat; HEIGHT: 26px; TEXT-ALIGN: right
 }
 #whatsNew2 H2.centerBoxHeading {
     BACKGROUND-IMAGE: url(../images/design/dot3.gif);
 }
 .leftBoxContainer {
-	background-color:#DDDDDD;
-	
+    background-color:#DDDDDD;
+
 }
 .sideBoxContent {
-	 PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0.4em; PADDING-TOP: 0px; BACKGROUND-COLOR: #ffffff
+    PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0.4em; PADDING-TOP: 0px; BACKGROUND-COLOR: #ffffff
 }
 H3.rightBoxHeading {
-	PADDING-RIGHT: 0px; PADDING-LEFT: 38px; BACKGROUND-IMAGE: url(../images/design/cattabbg.jpg); PADDING-BOTTOM: 0px; MARGIN: 0em; WIDTH: 175px; PADDING-TOP: 9px; HEIGHT: 33px; TEXT-ALIGN: left
+    PADDING-RIGHT: 0px; PADDING-LEFT: 38px; BACKGROUND-IMAGE: url(../images/design/cattabbg.jpg); PADDING-BOTTOM: 0px; MARGIN: 0em; WIDTH: 175px; PADDING-TOP: 9px; HEIGHT: 33px; TEXT-ALIGN: left
 }
 H3.rightBoxHeading A {
-	PADDING-RIGHT: 0px; PADDING-LEFT: 38px; BACKGROUND-IMAGE: url(../images/design/cattabbg.jpg); PADDING-BOTTOM: 0px; MARGIN: 0em; WIDTH: 175px; PADDING-TOP: 9px; HEIGHT: 33px; TEXT-ALIGN: left
+    PADDING-RIGHT: 0px; PADDING-LEFT: 38px; BACKGROUND-IMAGE: url(../images/design/cattabbg.jpg); PADDING-BOTTOM: 0px; MARGIN: 0em; WIDTH: 175px; PADDING-TOP: 9px; HEIGHT: 33px; TEXT-ALIGN: left
 }
 H3.rightBoxHeading LABEL {
-	PADDING-RIGHT: 0px; PADDING-LEFT: 38px; BACKGROUND-IMAGE: url(../images/design/cattabbg.jpg); PADDING-BOTTOM: 0px; MARGIN: 0em; WIDTH: 175px; PADDING-TOP: 9px; HEIGHT: 33px; TEXT-ALIGN: left
+    PADDING-RIGHT: 0px; PADDING-LEFT: 38px; BACKGROUND-IMAGE: url(../images/design/cattabbg.jpg); PADDING-BOTTOM: 0px; MARGIN: 0em; WIDTH: 175px; PADDING-TOP: 9px; HEIGHT: 33px; TEXT-ALIGN: left
 }
 .rightBoxHeading LABEL {
-	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0em; LINE-HEIGHT: 15px; PADDING-TOP: 0px
+    PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0em; LINE-HEIGHT: 15px; PADDING-TOP: 0px
 }
 .rightBoxHeading {
-	PADDING-RIGHT: 0px; PADDING-LEFT: 38px; BACKGROUND-IMAGE: url(../images/design/cattabbg.jpg); PADDING-BOTTOM: 0px; MARGIN: 0em; WIDTH: 175px; PADDING-TOP: 9px; HEIGHT: 33px; TEXT-ALIGN: left
+    PADDING-RIGHT: 0px; PADDING-LEFT: 38px; BACKGROUND-IMAGE: url(../images/design/cattabbg.jpg); PADDING-BOTTOM: 0px; MARGIN: 0em; WIDTH: 175px; PADDING-TOP: 9px; HEIGHT: 33px; TEXT-ALIGN: left
 }
 H3.leftBoxHeading A:hover {
-	FONT-WEIGHT: normal; FONT-SIZE: 18px; COLOR: #4f4f4f; TEXT-ALIGN: left; TEXT-DECORATION: none
+    FONT-WEIGHT: normal; FONT-SIZE: 18px; COLOR: #4f4f4f; TEXT-ALIGN: left; TEXT-DECORATION: none
 }
 H3.rightBoxHeading A:hover {
-	FONT-WEIGHT: normal; FONT-SIZE: 18px; COLOR: #4f4f4f; TEXT-ALIGN: left; TEXT-DECORATION: none
+    FONT-WEIGHT: normal; FONT-SIZE: 18px; COLOR: #4f4f4f; TEXT-ALIGN: left; TEXT-DECORATION: none
 }
 .rightBoxContent {
-	BACKGROUND-COLOR: #ffffff
+    BACKGROUND-COLOR: #ffffff
 }
 #bannerboxHeading {
-	BACKGROUND-COLOR: #0000cc
+    BACKGROUND-COLOR: #0000cc
 }
 .centeredContent {
-	TEXT-ALIGN: center;
+    TEXT-ALIGN: center;
 
 }
 TH {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 #cartEmptyText {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 #cartBoxGVButton {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 #cartBoxEmpty {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 #cartBoxVoucherBalance {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 #navCatTabsWrapper {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 #navEZPageNextPrev {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 #bannerOne {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 #bannerTwo {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 #bannerThree {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 #bannerFour {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 #bannerFive {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 #bannerSix {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 #siteinfoLegal {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 #siteinfoCredits {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 #siteinfoStatus {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 #siteinfoIP {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 .center {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 .cartRemoveItemDisplay {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 .cartQuantityUpdate {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 .cartQuantity {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 .cartTotalsDisplay {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 #cartBoxGVBalance {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 .leftBoxHeading {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 .centerBoxHeading {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 .rightBoxHeading {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 .productListing-data {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 .accountQuantityDisplay {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 .ratingRow {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 LABEL#textAreaReviews {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 #productMainImage {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 #reviewsInfoDefaultProductImage {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 #productReviewsDefaultProductImage {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 #reviewWriteMainImage {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 .centerBoxContents {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 .specialsListBoxContents {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 .categoryListBoxContents {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 .additionalImages {
-	TEXT-ALIGN: left
+    TEXT-ALIGN: left
 }
 .centerBoxContentsSpecials {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 .centerBoxContentsAlsoPurch {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 .centerBoxContentsFeatured {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 .centerBoxContentsNew {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 .gvBal {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 .attribImg {
-	TEXT-ALIGN: center
+    TEXT-ALIGN: center
 }
 #bestsellers .wrapper {
-	MARGIN: 0em 0em 0em 1.5em
+    MARGIN: 0em 0em 0em 1.5em
 }
 #bestsellers OL {
-	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN-LEFT: 1.1em; PADDING-TOP: 0px
+    PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN-LEFT: 1.1em; PADDING-TOP: 0px
 }
 #bestsellers LI {
-	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0.3em 0em; PADDING-TOP: 0px
+    PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0.3em 0em; PADDING-TOP: 0px
 }
 #upProductsHeading {
-	TEXT-ALIGN: left
+    TEXT-ALIGN: left
 }
 #upDateHeading {
-	TEXT-ALIGN: right
+    TEXT-ALIGN: right
 }
 .back {
-	FLOAT: left
+    FLOAT: left
 }
 .forward {
-	FLOAT: right
+    FLOAT: right
 }
 #shoppingCartDefault #PPECbutton {
-	FLOAT: right
+    FLOAT: right
 }
 .bold {
-	FONT-WEIGHT: bold
+    FONT-WEIGHT: bold
 }
 .rowOdd {
-	VERTICAL-ALIGN: top; HEIGHT: 1.5em
+    VERTICAL-ALIGN: top; HEIGHT: 1.5em
 }
 .rowEven {
-	VERTICAL-ALIGN: top; HEIGHT: 1.5em
+    VERTICAL-ALIGN: top; HEIGHT: 1.5em
 }
 .rowOdd {
-	BACKGROUND-COLOR: #eee9ff
+    BACKGROUND-COLOR: #eee9ff
 }
 .rowEven {
-	BACKGROUND-COLOR: #dacfff
+    BACKGROUND-COLOR: #dacfff
 }
 .hiddenField {
-	DISPLAY: none
+    DISPLAY: none
 }
 .visibleField {
-	DISPLAY: inline
+    DISPLAY: inline
 }
 CAPTION {
-	
+
 }
 #myAccountGen LI {
-	MARGIN: 0px
+    MARGIN: 0px
 }
 #myAccountNotify LI {
-	MARGIN: 0px
+    MARGIN: 0px
 }
 .accountTotalDisplay {
-	WIDTH: 20%; TEXT-ALIGN: right
+    WIDTH: 20%; TEXT-ALIGN: right
 }
 .accountTaxDisplay {
-	WIDTH: 20%; TEXT-ALIGN: right
+    WIDTH: 20%; TEXT-ALIGN: right
 }
 .accountQuantityDisplay {
-	VERTICAL-ALIGN: top; WIDTH: 10%
+    VERTICAL-ALIGN: top; WIDTH: 10%
 }
 TR.tableHeading {
-	HEIGHT: 2em; BACKGROUND-COLOR: #cacaca
+    HEIGHT: 2em; BACKGROUND-COLOR: #cacaca
 }
 #siteMapList {
-	FLOAT: right; WIDTH: 90%
+    FLOAT: right; WIDTH: 90%
 }
 .ratingRow {
-	MARGIN: 1em 0em 1.5em
+    MARGIN: 1em 0em 1.5em
 }
 LABEL#textAreaReviews {
-	FONT-WEIGHT: normal; MARGIN: 1em 0em
+    FONT-WEIGHT: normal; MARGIN: 1em 0em
 }
 .information {
-	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 10px; LINE-HEIGHT: 150%; PADDING-TOP: 10px
+    PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 10px; LINE-HEIGHT: 150%; PADDING-TOP: 10px
 }
 A.category-top:link {
-	TEXT-DECORATION: none;
-	font-size:11px;
+    TEXT-DECORATION: none;
+    font-size:11px;
 }
 A.category-top:visited {
-	TEXT-DECORATION: none;
-	font-size:11px;
+    TEXT-DECORATION: none;
+    font-size:11px;
 }
 A.category-top:active {
-	TEXT-DECORATION: none;
-	font-size:11px;
+    TEXT-DECORATION: none;
+    font-size:11px;
 }
 A.category-links:link {
-	TEXT-DECORATION: none;
-	font-size:11px;
+    TEXT-DECORATION: none;
+    font-size:11px;
 }
 A.category-links:visited {
-	TEXT-DECORATION: none;
-	font-size:11px;
+    TEXT-DECORATION: none;
+    font-size:11px;
 }
 A.category-links:active {
-	TEXT-DECORATION: none;
-	font-size:11px;
+    TEXT-DECORATION: none;
+    font-size:11px;
 }
 A.category-subs:link {
-	TEXT-DECORATION: none;
-	font-size:11px;
+    TEXT-DECORATION: none;
+    font-size:11px;
 }
 A.category-products:link {
-	TEXT-DECORATION: none;
-	font-size:11px;
+    TEXT-DECORATION: none;
+    font-size:11px;
 }
 A.category-subs:visited {
-	TEXT-DECORATION: none;
-	font-size:11px;
+    TEXT-DECORATION: none;
+    font-size:11px;
 }
 A.category-products:visited {
-	TEXT-DECORATION: none;
-	font-size:11px;
+    TEXT-DECORATION: none;
+    font-size:11px;
 }
 A.category-subs:active {
-	TEXT-DECORATION: none;
-	font-size:11px;
+    TEXT-DECORATION: none;
+    font-size:11px;
 }
 A.category-products:active {
-	TEXT-DECORATION: none;
-	font-size:11px;
+    TEXT-DECORATION: none;
+    font-size:11px;
 }
 A.category-top:hover {
-	TEXT-DECORATION: underline;
-	font-size:11px;
+    TEXT-DECORATION: underline;
+    font-size:11px;
 }
 A.category-links:hover {
-	TEXT-DECORATION: underline;
-	font-size:11px;
+    TEXT-DECORATION: underline;
+    font-size:11px;
 }
 A.category-subs:hover {
-	TEXT-DECORATION: underline;
-	font-size:11px;
+    TEXT-DECORATION: underline;
+    font-size:11px;
 }
 A.category-products:hover {
-	TEXT-DECORATION: underline;
-	font-size:11px;
+    TEXT-DECORATION: underline;
+    font-size:11px;
 }
 SPAN.category-subs-parent {
-	FONT-WEIGHT: bold; COLOR: #36b9cb;
-	font-size:11px;
+    FONT-WEIGHT: bold; COLOR: #36b9cb;
+    font-size:11px;
 }
 SPAN.category-subs-selected {
-	FONT-WEIGHT: bold; COLOR: #fff;
-	font-size:11px;
+    FONT-WEIGHT: bold; COLOR: #fff;
+    font-size:11px;
 }
 #popupShippingEstimator {
-	BACKGROUND-COLOR: #ffffff
+    BACKGROUND-COLOR: #ffffff
 }
 #popupSearchHelp {
-	BACKGROUND-COLOR: #ffffff
+    BACKGROUND-COLOR: #ffffff
 }
 #popupAdditionalImage {
-	BACKGROUND-COLOR: #ffffff
+    BACKGROUND-COLOR: #ffffff
 }
 #popupImage {
-	BACKGROUND-COLOR: #ffffff
+    BACKGROUND-COLOR: #ffffff
 }
 #popupCVVHelp {
-	BACKGROUND-COLOR: #ffffff
+    BACKGROUND-COLOR: #ffffff
 }
 #popupCouponHelp {
-	BACKGROUND-COLOR: #ffffff
+    BACKGROUND-COLOR: #ffffff
 }
 #popupAtrribsQuantityPricesHelp {
-	BACKGROUND-COLOR: #ffffff
+    BACKGROUND-COLOR: #ffffff
 }
 #infoShoppingCart {
-	BACKGROUND-COLOR: #ffffff
+    BACKGROUND-COLOR: #ffffff
 }
 H4.optionName {
-	PADDING-right: 0.2em;
+    PADDING-right: 0.2em;
 }
 
 
 /* Newsletter Page */
 
 .inputNewsletter-name {
-text-align:right;
+    text-align:right;
 }
 
 .inputNewsletter-email {
 }
 
 .newsletter-input {
-padding:5px;
-border:1px solid #CCCCCC;
--moz-border-radius: 5px;
--webkit-border-radius: 5px;
-color:#999999;
+    padding:5px;
+    border:1px solid #CCCCCC;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    color:#999999;
 }
 
 .table-left {
-width:90px;
-float:left;
-padding-right:10px;
-text-align:right;
-font-size:11px;
-color:#000000;
+    width:90px;
+    float:left;
+    padding-right:10px;
+    text-align:right;
+    font-size:11px;
+    color:#000000;
 }
 
 .table-right {
-float:left;
-width:260px;
+    float:left;
+    width:260px;
 }
 
 .table-wrapper {
-overflow:hidden;
-clear:both;
-padding-bottom:10px;
+    overflow:hidden;
+    clear:both;
+    padding-bottom:10px;
 }
 
 #newsletter-info {
-clear:both;
-padding-top:20px;
+    clear:both;
+    padding-top:20px;
 }
 
 .table-wrapper select {
-background:#FFFFFF;
-color:#999999;
-border:1px solid #CCCCCC;
--moz-border-radius: 5px;
--webkit-border-radius: 5px;
+    background:#FFFFFF;
+    color:#999999;
+    border:1px solid #CCCCCC;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
 }
 
 #big-table-wrapper {
-float:left;
-width:390px;
+    float:left;
+    width:390px;
 
 }
 
 #createAcctDefaultHeading h1 {
-width:390px;
+    width:390px;
 
 }
 
 #newsletter-image {
-width:370px;
-float:left;
+    width:370px;
+    float:left;
 
 }
 
 #newsletter-wrapper {
-overflow:hidden;
-padding-top:20px;
-width:762px;
+    overflow:hidden;
+    padding-top:20px;
+    width:762px;
 }
 
 /* 92010 */
@@ -1163,7 +1163,7 @@ width:762px;
     background-repeat: no-repeat;
     background-position: right;
     font-size: 12px;
-	font-weight:bold;
+    font-weight:bold;
     text-decoration: none !important;
 }
 #header-mnu a#menuitem-15 {
@@ -1188,7 +1188,7 @@ width:762px;
     background-image: url(/witteringsurfshop/images/header/mnu_active_last-child.png);
 }
 #header-mnu ul li:last-child a {
-    
+
 }
 #header-mnu ul li .submnu {
     position: absolute;
@@ -1202,13 +1202,22 @@ width:762px;
     right: -5px;
 }
 #header-mnu ul li .submnu .submnu-main {
-   /* background-image: url(/witteringsurfshop/images/header/dropdown-mnu-bg-mid.png);
-    background-repeat: repeat-y;
-    padding-bottom: 0px;*/
-   background: #311f1f;
-   padding-top: 2px;
-   padding-bottom: 5px;
-    
+    /* background-image: url(/witteringsurfshop/images/header/dropdown-mnu-bg-mid.png);
+     background-repeat: repeat-y;
+     padding-bottom: 0px;*/
+    background: #311f1f;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    -webkit-box-shadow: 7px 7px 5px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    7px 7px 5px rgba(50, 50, 50, 0.75);
+    box-shadow:         7px 7px 5px rgba(50, 50, 50, 0.75);
+    -moz-border-radius-topright: 10px;
+    border-top-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    border-bottom-right-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-left-radius: 10px;
+
 }
 #header-mnu ul li li {
     float:none;
@@ -1225,7 +1234,7 @@ width:762px;
     background-position: left;
 }
 #header-mnu ul li .submnu .submnu-main li a:hover {
-   /* background-image: url(/witteringsurfshop/images/header/sub-mnu-item.gif);*/
+    /* background-image: url(/witteringsurfshop/images/header/sub-mnu-item.gif);*/
 }
 #header-mnu ul li .submnu .submnu-main ul {
 
@@ -1254,9 +1263,9 @@ width:762px;
 #search-right {
     width: 213px;
     height: 39px;
-   /* background-image: url(/images/rcol/searchbg.gif);
-    background-repeat: no-repeat; */
-	background-color: #CFC6B3;
+    /* background-image: url(/images/rcol/searchbg.gif);
+     background-repeat: no-repeat; */
+    background-color: #CFC6B3;
 
 }
 #rtop {
@@ -1490,7 +1499,7 @@ a.page-prevbtn {
 .footer-map{
     width: 998px;
     margin: 20px auto;
-    
+
 }
 
 .footer-map ul{
@@ -1518,5 +1527,5 @@ a.page-prevbtn {
 .footer-map ul li ul{
     padding: 0;
     margin: 3px 0;
-    
+
 }
