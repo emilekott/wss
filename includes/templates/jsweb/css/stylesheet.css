@@ -1204,18 +1204,18 @@ width:762px;
 #header-mnu ul li .submnu .submnu-main {
     background-image: url(/witteringsurfshop/images/header/dropdown-mnu-bg-mid.png);
     background-repeat: repeat-y;
-    width: 475px;
+    width: 200px;
     padding-bottom: 14px;
 }
 #header-mnu ul li .submnu .submnu-bot {
-    width: 475px;
+    width: 200px;
     height: 15px;
     background-image: url(/witteringsurfshop/images/header/dropdown-mnu-bg-bot.png);
     background-repeat: no-repeat;
 }
 #header-mnu ul li .submnu .submnu-main li a {
     display: block;
-    width: 160px;
+    width: 120px;
     margin: 0px 14px 0px 0px;
     height: 42px;
     line-height: 44px;
@@ -1227,7 +1227,7 @@ width:762px;
     background-image: url(/witteringsurfshop/images/header/sub-mnu-item.gif);
 }
 #header-mnu ul li .submnu .submnu-main ul {
-    padding: 14px 0px 19px 19px;
+    padding: 0px 0px 10px 15px;
 }
 #loggedout-bar {
     font-size: 10px;

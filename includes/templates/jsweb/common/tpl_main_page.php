@@ -85,6 +85,9 @@
         <?php if($flag_disable_left): ?>
            <div id="search-right" class="prod-page-search"><?php require(DIR_WS_MODULES . 'sideboxes/jsweb/search.php'); ?></div>
         <?php endif ?>
+        <?php
+        $display_crap = false;
+        if ($display_crap){ ?>
         <div class="header03">
             
             <ul>
@@ -100,6 +103,7 @@
                 
             </ul>
         </div>
+           <?php } ?>
 
 <!-- bof  breadcrumb -->
 <?php if (DEFINE_BREADCRUMB_STATUS == '1') { ?>

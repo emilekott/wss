@@ -92,7 +92,7 @@ if (!isset($flag_disable_header) || !$flag_disable_header) {
 
     //get all sub-cats
     foreach($topcats as $parent_cat_id => $junk):
-        $get_sub_cats = "SELECT categories_id,categories_name FROM zen_categories LEFT JOIN zen_categories_description USING(categories_id) WHERE parent_id = $parent_cat_id ORDER BY categories_name";
+        $get_sub_cats = "SELECT categories_id,categories_name, sort_order FROM zen_categories LEFT JOIN zen_categories_description USING(categories_id) WHERE parent_id = $parent_cat_id ORDER BY categories_name";
         $get_sub_cats = $db->Execute($get_sub_cats);
         while(!$get_sub_cats->EOF):
             $subcats[$parent_cat_id][] = $get_sub_cats->fields;
@@ -160,7 +160,9 @@ function hideSubMenu(parentCatId){
                         <div class="submnu<?=$cat_id==40 ? ' submnu-right' : '' ?>" id="submnu-<?=$cat_id?>">
                             <div class="submnu-main">
                                 <ul>
-                                    <?php foreach($subcats[$cat_id] as $sub): ?>
+                                    <?php 
+                                        aasort($subcats[$cat_id], "sort_order");
+                                        foreach($subcats[$cat_id] as $sub): ?>
                                     <li><a href="<?=zen_href_link(FILENAME_DEFAULT,'cPath='.$sub['categories_id'])?>"><?=$sub['categories_name']?></a></li>
                                     <?php endforeach ?>
                                 </ul>
@@ -176,7 +178,7 @@ function hideSubMenu(parentCatId){
                     </li>
                     <li onmouseover="showSubMenu(200)" onmouseout="hideSubMenu(200)">
                         <a href="index.php?main_page=page&id=1">ABOUT</a>
-                        <div class="submnu submnu-right" id="submnu-200">
+                        <div class="submnu" id="submnu-200">
                             <div class="submnu-main">
                                 <ul>
                                     <li><a href="index.php?main_page=page&id=1">THE TEAM</a></li>
