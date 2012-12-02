@@ -1483,3 +1483,40 @@ a.page-prevbtn {
 
 .message-fb a:visited {background-color: #3a589a; font-weight:bold; text-align:left; color: #FFF;  
 }
+
+
+
+/*Footer-map*/
+.footer-map{
+    width: 998px;
+    margin: 20px auto;
+    
+}
+
+.footer-map ul{
+    margin: 0 0 0 38px;
+    padding: 0;
+}
+
+.footer-map li{
+    list-style-type:none;
+}
+
+.footer-map li.top-level{
+    float: left;
+    width: 240px;
+}
+
+.footer-map li.top-level a{
+    font-weight: bold;
+}
+
+.footer-map li.sub-level a{
+    font-weight: normal;
+}
+
+.footer-map ul li ul{
+    padding: 0;
+    margin: 3px 0;
+    
+}

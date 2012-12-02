@@ -90,7 +90,7 @@ if (!isset($flag_disable_header) || !$flag_disable_header) {
 
     //get all sub-cats
     foreach($topcats as $parent_cat_id => $junk):
-        $get_sub_cats = "SELECT categories_id,categories_name, sort_order FROM zen_categories LEFT JOIN zen_categories_description USING(categories_id) WHERE parent_id = $parent_cat_id ORDER BY categories_name";
+        $get_sub_cats = "SELECT categories_id,categories_name, sort_order FROM zen_categories LEFT JOIN zen_categories_description USING(categories_id) WHERE parent_id = $parent_cat_id AND categories_status=1 ORDER BY categories_name";
         $get_sub_cats = $db->Execute($get_sub_cats);
         while(!$get_sub_cats->EOF):
             $subcats[$parent_cat_id][] = $get_sub_cats->fields;
