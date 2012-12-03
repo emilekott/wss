@@ -1157,7 +1157,7 @@ H4.optionName {
     display: block;
     height: 31px;
     line-height: 31px;
-    padding: 0px 27px 0px 25px;
+    padding: 0px 25px;
     color: #FFFFFF;
     background-image: url(/witteringsurfshop/images/header/mnu_normal.png);
     background-repeat: no-repeat;
@@ -1526,4 +1526,29 @@ a.page-prevbtn {
     padding: 0;
     margin: 3px 0;
 
+}
+
+#subcategory-list{
+    margin: 10px 0;
+    padding: 0;
+    float:left;
+}
+
+#subcategory-list li{
+    float: left;
+    list-style-type: none;
+    margin: 0 10px 10px 0;
+}
+
+#subcategory-list li a{
+    display: block;
+    padding: 10px;
+    background-color: #eee;
+    text-transform: uppercase;
+}
+
+#subcategory-list li a:hover{
+    background-color: #311F1F;
+    color: #fff;
+    text-decoration: none;
 }

@@ -50,7 +50,7 @@ if (PRODUCT_LISTING_LAYOUT_STYLE == 'columns') {
 <form name="productsort2" action="<?php echo zen_href_link(FILENAME_DEFAULT,zen_get_all_get_params(array('sort'))) ?>" method="get">
     <div class="product-listing-multibar">
         <div class="listing-pagination"><?=$listing_split->display_links(MAX_DISPLAY_PAGE_LINKS, zen_get_all_get_params(array('page', 'info', 'x', 'y')));?>
-            
+            <?php if (!$_GET['showAll']) { ?><input type="submit" name="showAll" value="SHOW ALL" /><?php } else { ?><a href="<?php echo zen_href_link(FILENAME_DEFAULT, "cPath=" . $_GET['cPath']); ?>">RESET</a><?php } ?>
         </div>
 
         <?php echo $listing_split->display_count(TEXT_DISPLAY_NUMBER_OF_PRODUCTS); ?>
