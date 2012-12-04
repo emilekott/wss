@@ -1528,8 +1528,12 @@ a.page-prevbtn {
 
 }
 
+#categoryImgListing{
+    margin-bottom: 10px;
+}
+
 #subcategory-list{
-    margin: 10px 0;
+    margin: 0;
     padding: 0;
     float:left;
 }
@@ -1545,6 +1549,11 @@ a.page-prevbtn {
     padding: 10px;
     background-color: #eee;
     text-transform: uppercase;
+    font-weight: bold;
+    -webkit-transition: color 0.4s, background-color 0.4s ease;
+    -moz-transition: color 0.4s, background-color 0.4s ease;
+    -o-transition: color 0.4s, background-color 0.4s ease;
+    transition: color 0.4s, background-color 0.4s ease;
 }
 
 #subcategory-list li a:hover{
