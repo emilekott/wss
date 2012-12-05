@@ -35,7 +35,7 @@ echo zen_get_manufacturers_desc($_GET['manufacturers_id']);
 // categories_description
     if ($current_categories_description != '') {
 ?>
-<div id="indexProductListCatDescription" class="content"><?php echo $current_categories_description;  ?><div class="clear"></div></div>
+<div id="indexProductListCatDescription" class="content"><?php //echo $current_categories_description;  ?><div class="clear"></div></div>
 <?php } // categories_description ?>
 
 <?php
