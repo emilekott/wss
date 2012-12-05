@@ -52,8 +52,13 @@ if (!defined('IS_ADMIN_FLAG')) {
             $random_cats_query = $db->Execute("SELECT manufacturers_id,manufacturers_name FROM zen_manufacturers ORDER BY RAND() LIMIT 5");
         ?>
         <ul>
+            
             <?php while(!$random_cats_query->EOF): ?>
-            <li><a href="<?=zen_href_link(FILENAME_DEFAULT, 'manufacturers_id='.$random_cats_query->fields['manufacturers_id'])?>"><?=$random_cats_query->fields['manufacturers_name']?></a></li>
+            <?php 
+                $man_name = $random_cats_query->fields['manufacturers_name'];
+                $short_name = (strlen($man_name) > 26) ? substr($man_name,0,23).'...' : $man_name;
+              ?>
+            <li><a href="<?=zen_href_link(FILENAME_DEFAULT, 'manufacturers_id='.$random_cats_query->fields['manufacturers_id'])?>"><?=$short_name?></a></li>
             <?php $random_cats_query->MoveNext(); endwhile; ?>
         </ul>
     </div>
