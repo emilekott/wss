@@ -25,7 +25,7 @@ if (!defined('IS_ADMIN_FLAG')) {
           $cPath_current[] = $check_if_sub_of_cat->fields['parent_id'];
     endif;
 
-    $sub_cats_query = $db->Execute("SELECT categories_name,categories_id FROM (SELECT categories_id FROM zen_categories WHERE parent_id = ".zen_db_input(end($cPath_current)).") cats LEFT JOIN zen_categories_description USING(categories_id)");
+    $sub_cats_query = $db->Execute("SELECT categories_name,categories_id FROM (SELECT categories_id FROM zen_categories WHERE categories_status=1 AND parent_id = ".zen_db_input(end($cPath_current)).") cats LEFT JOIN zen_categories_description USING(categories_id)");
 ?>
     <?php if($sub_cats_query->RecordCount()>0): ?>
     <div id="rtop">
