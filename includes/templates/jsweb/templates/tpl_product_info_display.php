@@ -97,14 +97,18 @@ require($template->get_template_dir('/tpl_products_next_previous.php',DIR_WS_TEM
 <div id="productName" class="color01 back"><?php echo $products_name; ?></div>
 <!--eof Product Name-->
 <?php
+//calculate delivery date
+//get day. if mon - thurs before 12, day+1
+//if fri before 12, day + 3
 $prod_quantity = ($products_quantity == 1)? '1 item in stock.' : $products_quantity.' items in stock.';
 if(zen_get_products_manufacturers_image((int)$_GET['products_id'])){
 
 	echo '<div class="manu1 forward"><a href="'. zen_href_link(FILENAME_DEFAULT, 'manufacturers_id='. $product_info->fields['manufacturers_id'] .'', 'NONSSL') .'">' . zen_image(DIR_WS_IMAGES . zen_get_products_manufacturers_image((int)$_GET['products_id']), 'View all products from this manufacturer', '100', 100, 'class="listingProductImage"') . '</a></div>';
 }
 if($flag_show_product_info_quantity == 1){
-    echo '<div class="back stockq">'.$prod_quantity.'</div>';
+    echo '<div class="back stockq">'.$prod_quantity.'<br /><span class="del-est">'.get_estimated_delivery_date().'</span></div>';
 }
+
 ?>
 <br class="clearBoth" />
 <br class="clearBoth" />
@@ -338,3 +342,34 @@ if (CUSTOMERS_APPROVAL == 3 and TEXT_LOGIN_FOR_PRICE_BUTTON_REPLACE_SHOWROOM == 
 </form>
 <!--bof Form close-->
 </div>
+
+<?php 
+function get_estimated_delivery_date(){
+    $day_today = date('N');
+    $hour_today = date('G');
+    
+    //day 1,2,3,4 with hour < 12 = date+1
+    //day 1,2,3,4 with hour > 12 = date+2
+    //day 5 with hour < 12 = date+3
+    //day 5 with hour > 12 = date+4
+    //day 6 = date+3
+    //day 7 = date+2
+    $todayDate = date("d-m-Y");
+    if ($day_today<=4 && $hour_today <12){
+        $estimate = strtotime(date("d-m-Y", strtotime($todayDate)) . "+1 day");
+    }elseif($day_today<=4 && $hour_today >12){
+        $estimate = strtotime(date("d-m-Y", strtotime($todayDate)) . "+2 day");
+    }elseif($day_today==5 && $hour_today < 12){
+        $estimate = strtotime(date("d-m-Y", strtotime($todayDate)) . "+3 day");
+    }elseif($day_today==5 && $hour_today > 12){
+        $estimate = strtotime(date("d-m-Y", strtotime($todayDate)) . "+4 day");
+    }elseif($day_today==6){
+        $estimate = strtotime(date("d-m-Y", strtotime($todayDate)) . "+3 day");
+    }elseif($day_today==7){
+        $estimate = strtotime(date("d-m-Y", strtotime($todayDate)) . "+2 day");
+    }
+    
+    return "UK Mainland delivery by ".date("D jS M", $estimate);
+}
+
+?>
