@@ -385,7 +385,7 @@
 // success messages for added to cart when display cart is off
 // set to blank for no messages
 // for all pages except where multiple add to cart is used:
-  define('SUCCESS_ADDED_TO_CART_PRODUCT', 'Successfully added Product to the cart ...');
+  define('SUCCESS_ADDED_TO_CART_PRODUCT', 'Product was added to the cart.');
 // only for where multiple add to cart is used:
   define('SUCCESS_ADDED_TO_CART_PRODUCTS', 'Successfully added selected Product(s) to the cart ...');
 

@@ -44,7 +44,8 @@ class messageStack extends base {
       } elseif ($type == 'warning') {
         $this->messages[] = array('params' => 'class="messageStackWarning larger"', 'class' => $class, 'text' => zen_image($template->get_template_dir(ICON_IMAGE_WARNING, DIR_WS_TEMPLATE, $current_page_base,'images/icons'). '/' . ICON_IMAGE_WARNING, ICON_WARNING_ALT) . '  ' . $message);
       } elseif ($type == 'success') {
-        $this->messages[] = array('params' => 'class="messageStackSuccess larger"', 'class' => $class, 'text' => zen_image($template->get_template_dir(ICON_IMAGE_SUCCESS, DIR_WS_TEMPLATE, $current_page_base,'images/icons'). '/' . ICON_IMAGE_SUCCESS, ICON_SUCCESS_ALT) . '  ' . $message);
+          $message .= ' <a href="' . zen_href_link(FILENAME_CHECKOUT_SHIPPING, '', 'SSL') . '"><img class="mini-checkout" src="'. DIR_WS_TEMPLATES . $template_dir . 'jsweb/buttons/english/mini-checkout.png" border="0" alt="Checkout Now" /></a>';
+        $this->messages[] = array('params' => 'class="messageStackSuccess larger"', 'class' => $class, 'text' => $message);
       } elseif ($type == 'caution') {
         $this->messages[] = array('params' => 'class="messageStackCaution larger"', 'class' => $class, 'text' => zen_image($template->get_template_dir(ICON_IMAGE_WARNING, DIR_WS_TEMPLATE, $current_page_base,'images/icons'). '/' . ICON_IMAGE_WARNING, ICON_WARNING_ALT) . '  ' . $message);
       } else {

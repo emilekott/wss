@@ -175,7 +175,7 @@ HR {
     BORDER-RIGHT: #c7c7c7 1px solid; PADDING-RIGHT: 0.2em; BORDER-TOP: #c7c7c7 1px solid; PADDING-LEFT: 0.2em; PADDING-BOTTOM: 0.2em; BORDER-LEFT: #c7c7c7 1px solid; LINE-HEIGHT: 1.8em; PADDING-TOP: 0.2em; BORDER-BOTTOM: #c7c7c7 1px solid
 }
 .messageStackSuccess {
-    BORDER-RIGHT: #c7c7c7 1px solid; PADDING-RIGHT: 0.2em; BORDER-TOP: #c7c7c7 1px solid; PADDING-LEFT: 0.2em; PADDING-BOTTOM: 0.2em; BORDER-LEFT: #c7c7c7 1px solid; LINE-HEIGHT: 1.8em; PADDING-TOP: 0.2em; BORDER-BOTTOM: #c7c7c7 1px solid
+    BORDER-RIGHT: #c7c7c7 1px solid; PADDING-RIGHT: 0.2em; BORDER-TOP: #c7c7c7 1px solid; PADDING-LEFT: 0.2em; PADDING-BOTTOM: 0.2em; BORDER-LEFT: #c7c7c7 1px solid; LINE-HEIGHT: 1.8em; PADDING-TOP: 0.2em; BORDER-BOTTOM: #c7c7c7 1px solid; margin: 0 0 30px 0; text-align: center;
 }
 .messageStackCaution {
     BORDER-RIGHT: #c7c7c7 1px solid; PADDING-RIGHT: 0.2em; BORDER-TOP: #c7c7c7 1px solid; PADDING-LEFT: 0.2em; PADDING-BOTTOM: 0.2em; BORDER-LEFT: #c7c7c7 1px solid; LINE-HEIGHT: 1.8em; PADDING-TOP: 0.2em; BORDER-BOTTOM: #c7c7c7 1px solid
@@ -199,7 +199,7 @@ HR {
     TEXT-ALIGN: left
 }
 #headerWrapper {
-    PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0em; MARGIN: 0em; PADDING-TOP: 0em
+    PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0em; MARGIN: 0em; PADDING-TOP: 0em; width: 998px !important;
 }
 #contentMainWrapper {
     PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0em; MARGIN: -9px 0px 0px 0px; PADDING-TOP: 0em;
@@ -1560,4 +1560,16 @@ a.page-prevbtn {
     background-color: #311F1F;
     color: #fff;
     text-decoration: none;
+}
+
+
+
+.centerBoxContentsProducts.centeredContent.back{
+    margin-bottom: 30px;
+}
+
+
+.messageStackSuccess img{
+    vertical-align: middle;
+    margin: 5px 30px;
 }

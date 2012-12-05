@@ -282,15 +282,16 @@ if ($listing_split->number_of_rows > 0) {
             if ($listing->fields['products_quantity'] == 0) {
                 $buttonlist = '<img src="' . DIR_WS_TEMPLATES . $template_dir . '/images/design/sold.jpg" border="0" alt="" />';
             } else {
-                $buttonlist = '<a href="' . zen_href_link($_GET['main_page'], zen_get_all_get_params(array('action')) . 'action=buy_now&products_id=' . $listing->fields['products_id']) . '"><img src="' . DIR_WS_TEMPLATES . $template_dir . '/images/design/add.jpg" border="0" alt="" /></a>';
+                $buttonlist = '<a href="' . zen_href_link($_GET['main_page'], zen_get_all_get_params(array('action')) . 'action=buy_now&products_id=' . $listing->fields['products_id']) . '"><img src="' . DIR_WS_TEMPLATES . $template_dir . '/buttons/english/mini-add.jpg" border="0" alt="" /></a><br />';
             }
+            $buy_now = $lc_button = '<a href="' . zen_href_link($_GET['main_page'], zen_get_all_get_params(array('action')) . 'action=buy_now&products_id=' . $listing->fields['products_id']) . '">' . zen_image_button(BUTTON_IMAGE_BUY_NOW, BUTTON_BUY_NOW_ALT, 'class="listingBuyNowButton"') . '</a>';
             $list_box_contents[$rows][$column] = array('params' => 'class="centerBoxContentsProducts centeredContent back"' . ' ' . 'style="width:' . $col_width . '%;"',
                 'text' => $lc_text = '
 	    <div class="prod_table">
 	    <div class="prod_image"><a href="' . zen_href_link(zen_get_info_page($listing->fields['products_id']), 'products_id=' . $listing->fields['products_id']) . '">' . zen_image(DIR_WS_IMAGES . $listing->fields['products_image'], $listing->fields['products_name'], IMAGE_PRODUCT_LISTING_WIDTH, IMAGE_PRODUCT_LISTING_HEIGHT) . '</a></div>
 	    <div class="prod_name"><a class="prod_namelink" href="' . zen_href_link(zen_get_info_page($listing->fields['products_id']), 'products_id=' . $listing->fields['products_id']) . '">' . $listing->fields['products_name'] . '</a></div>
 	    <div class="prod_price">' . zen_get_products_display_price($listing->fields['products_id']) . '</div>
-	    <br />
+	    <br />'.$buttonlist.'
 	    </div>
 	      ');
 
