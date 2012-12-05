@@ -1573,3 +1573,8 @@ a.page-prevbtn {
     vertical-align: middle;
     margin: 5px 30px;
 }
+
+.stockq{
+    clear:both;
+    font-weight:bold;
+}

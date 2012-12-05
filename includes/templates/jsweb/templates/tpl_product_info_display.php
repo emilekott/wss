@@ -97,9 +97,13 @@ require($template->get_template_dir('/tpl_products_next_previous.php',DIR_WS_TEM
 <div id="productName" class="color01 back"><?php echo $products_name; ?></div>
 <!--eof Product Name-->
 <?php
+$prod_quantity = ($products_quantity == 1)? '1 item in stock.' : $products_quantity.' items in stock.';
 if(zen_get_products_manufacturers_image((int)$_GET['products_id'])){
 
 	echo '<div class="manu1 forward"><a href="'. zen_href_link(FILENAME_DEFAULT, 'manufacturers_id='. $product_info->fields['manufacturers_id'] .'', 'NONSSL') .'">' . zen_image(DIR_WS_IMAGES . zen_get_products_manufacturers_image((int)$_GET['products_id']), 'View all products from this manufacturer', '100', 100, 'class="listingProductImage"') . '</a></div>';
+}
+if($flag_show_product_info_quantity == 1){
+    echo '<div class="back stockq">'.$prod_quantity.'</div>';
 }
 ?>
 <br class="clearBoth" />
