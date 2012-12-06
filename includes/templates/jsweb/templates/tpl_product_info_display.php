@@ -357,9 +357,12 @@ function get_estimated_delivery_date(){
     $todayDate = date("d-m-Y");
     if ($day_today<=4 && $hour_today <12){
         $estimate = strtotime(date("d-m-Y", strtotime($todayDate)) . "+1 day");
-    }elseif($day_today<=4 && $hour_today >12){
+    }elseif($day_today<4 && $hour_today >12){
         $estimate = strtotime(date("d-m-Y", strtotime($todayDate)) . "+2 day");
-    }elseif($day_today==5 && $hour_today < 12){
+    }elseif($day_today==4 && $hour_today >12){
+        $estimate = strtotime(date("d-m-Y", strtotime($todayDate)) . "+4 day");
+    }
+    elseif($day_today==5 && $hour_today < 12){
         $estimate = strtotime(date("d-m-Y", strtotime($todayDate)) . "+3 day");
     }elseif($day_today==5 && $hour_today > 12){
         $estimate = strtotime(date("d-m-Y", strtotime($todayDate)) . "+4 day");
